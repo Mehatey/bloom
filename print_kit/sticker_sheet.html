@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — overstim sticker sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  /* ── 24 iOS-modal overstim notification stickers ─────────────
+     Print on A3 sticker paper (Avery full-sheet matte, or any
+     printable matte sticker stock). One sheet of 24 stickers.
+
+     Each sticker = 70mm × 45mm — about 2.75" × 1.75",
+     phone-notification proportions.
+
+     CUT options:
+       (a) X-Acto knife on a cutting mat — straight cuts
+       (b) Laser-cutter "kiss cut" — very low power line cut
+           on the rounded-rect boundary (red line in the design)
+  ─────────────────────────────────────────────────────────────── */
+
+  @page { size: A3 portrait; margin: 8mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 297mm;
+    background: #ffffff;
+    font-family: "Inter", -apple-system, "SF Pro Display", "Helvetica Neue", sans-serif;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .sheet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 45mm);
+    gap: 4mm;
+    padding: 4mm;
+    width: 297mm;
+  }
+
+  .sticker {
+    width: 70mm; height: 45mm;
+    background: rgba(248, 248, 252, 0.97);
+    border-radius: 3.5mm;
+    box-shadow: 0 1mm 3mm rgba(0,0,0,0.18), 0 0 0 0.2mm rgba(0,0,0,0.06);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+
+  .sticker .body {
+    padding: 4mm 5mm 3mm;
+    flex: 1;
+    display: flex; flex-direction: column;
+    justify-content: center;
+  }
+
+  .sticker .app {
+    font-size: 2.4mm;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 1mm;
+  }
+
+  .sticker .title {
+    font-size: 3.5mm;
+    font-weight: 600;
+    color: #1a1a1f;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+    margin-bottom: 1mm;
+  }
+
+  .sticker .msg {
+    font-size: 2.8mm;
+    font-weight: 400;
+    color: #4a4a52;
+    line-height: 1.3;
+  }
+
+  .sticker .btn {
+    border-top: 0.2mm solid rgba(0,0,0,0.12);
+    text-align: center;
+    padding: 2.3mm;
+    color: #007aff;
+    font-size: 3.2mm;
+    font-weight: 600;
+  }
+  .sticker .btn.red    { color: #ff3b30; }
+  .sticker .btn.split  { display: flex; padding: 0; }
+  .sticker .btn.split > div { flex: 1; padding: 2.3mm; }
+  .sticker .btn.split > div + div { border-left: 0.2mm solid rgba(0,0,0,0.12); }
+
+  /* time stamp / right-aligned meta */
+  .sticker .meta {
+    position: absolute;
+    top: 3mm; right: 4mm;
+    font-size: 2mm; color: #888;
+    letter-spacing: 0.04em;
+  }
+
+  /* a few stickers use different background for variety */
+  .sticker.dark   { background: #1a1a1f; }
+  .sticker.dark .app, .sticker.dark .msg { color: rgba(255,255,255,0.6); }
+  .sticker.dark .title { color: #ffffff; }
+  .sticker.dark .meta { color: rgba(255,255,255,0.4); }
+  .sticker.dark .btn { border-top-color: rgba(255,255,255,0.15); color: #ff453a; }
+
+  .sticker.warm   { background: #ffe6c8; }
+  .sticker.warm .title { color: #a02400; }
+  .sticker.warm .btn { color: #a02400; }
+
+  .footer-note {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 9pt;
+    color: #999;
+    margin-top: 6mm;
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <!-- ROW 1 — Wellness drugs -->
+  <div class="sticker">
+    <div class="meta">now</div>
+    <div class="body">
+      <div class="app">BetterHelp</div>
+      <div class="title">Talk to a therapist now.</div>
+      <div class="msg">Match with someone in 24 hrs. From $65/wk.</div>
+    </div>
+    <div class="btn">Start Free Trial</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">9:41</div>
+    <div class="body">
+      <div class="app">Calm</div>
+      <div class="title">Your daily meditation is ready.</div>
+      <div class="msg">Don't break your 0-day streak.</div>
+    </div>
+    <div class="btn">Open</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">2 min ago</div>
+    <div class="body">
+      <div class="app">Headspace</div>
+      <div class="title">You missed today's session.</div>
+      <div class="msg">Get back on track before bedtime.</div>
+    </div>
+    <div class="btn">Resume</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">1h ago</div>
+    <div class="body">
+      <div class="app">SYSTEM</div>
+      <div class="title">"You" Are Not Enough.</div>
+      <div class="msg">Update available.</div>
+    </div>
+    <div class="btn">Install</div>
+  </div>
+
+  <!-- ROW 2 — Surveillance / data -->
+  <div class="sticker dark">
+    <div class="meta">live</div>
+    <div class="body">
+      <div class="app">Screen Time</div>
+      <div class="title">Up 23% this week.</div>
+      <div class="msg">7h 14m daily average. Tap for breakdown.</div>
+    </div>
+    <div class="btn">See Report</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">now</div>
+    <div class="body">
+      <div class="app">Apple Health</div>
+      <div class="title">Your sleep was disturbed.</div>
+      <div class="msg">3 wake events between 2am and 5am.</div>
+    </div>
+    <div class="btn">Got It</div>
+  </div>
+
+  <div class="sticker dark">
+    <div class="meta">··· LIVE</div>
+    <div class="body">
+      <div class="app">YouTube</div>
+      <div class="title">You should be watching this.</div>
+      <div class="msg">Personalized for you. 12.7M views.</div>
+    </div>
+    <div class="btn">Play</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">now</div>
+    <div class="body">
+      <div class="app">Notifications</div>
+      <div class="title">247 unread.</div>
+      <div class="msg">14 reminders. 38 likes. 12 of them missed you.</div>
+    </div>
+    <div class="btn">Open All</div>
+  </div>
+
+  <!-- ROW 3 — Subscriptions / paywalls -->
+  <div class="sticker warm">
+    <div class="meta">!</div>
+    <div class="body">
+      <div class="app">Premium Required</div>
+      <div class="title">Subscribe to keep breathing.</div>
+      <div class="msg">$9.99/month after free trial.</div>
+    </div>
+    <div class="btn">Continue</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">3 days left</div>
+    <div class="body">
+      <div class="app">iCloud</div>
+      <div class="title">Your storage is full.</div>
+      <div class="msg">Can't back up your meditation data.</div>
+    </div>
+    <div class="btn">Upgrade</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">now</div>
+    <div class="body">
+      <div class="app">Spotify</div>
+      <div class="title">Calm Sounds Premium.</div>
+      <div class="msg">Skip the ads. Skip the silence.</div>
+    </div>
+    <div class="btn">Try Free</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">expires today</div>
+    <div class="body">
+      <div class="app">Wellness Score</div>
+      <div class="title">42 / 100.</div>
+      <div class="msg">Below average for your age group.</div>
+    </div>
+    <div class="btn">Improve</div>
+  </div>
+
+  <!-- ROW 4 — Urgency / FOMO -->
+  <div class="sticker dark">
+    <div class="meta">!</div>
+    <div class="body">
+      <div class="app">Battery</div>
+      <div class="title">Low Power Mode.</div>
+      <div class="msg">Performance reduced. Like you.</div>
+    </div>
+    <div class="btn">OK</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">last chance</div>
+    <div class="body">
+      <div class="app">LinkedIn</div>
+      <div class="title">12 people viewed your profile.</div>
+      <div class="msg">Don't fall behind. Update your photo.</div>
+    </div>
+    <div class="btn">Update</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">8s left</div>
+    <div class="body">
+      <div class="app">Duolingo</div>
+      <div class="title">You're losing your streak.</div>
+      <div class="msg">Your owl is concerned. So is your mom.</div>
+    </div>
+    <div class="btn">Keep Going</div>
+  </div>
+
+  <div class="sticker warm">
+    <div class="meta">!!</div>
+    <div class="body">
+      <div class="app">FOMO</div>
+      <div class="title">Everyone is doing better than you.</div>
+      <div class="msg">Statistically. Tap for proof.</div>
+    </div>
+    <div class="btn">Show Me</div>
+  </div>
+
+  <!-- ROW 5 — Self-improvement industrial complex -->
+  <div class="sticker">
+    <div class="meta">today</div>
+    <div class="body">
+      <div class="app">Goals</div>
+      <div class="title">Achievement Unlocked.</div>
+      <div class="msg">You meditated for 60 seconds. Now do 61.</div>
+    </div>
+    <div class="btn">Continue</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">now</div>
+    <div class="body">
+      <div class="app">Notion</div>
+      <div class="title">You said you'd journal today.</div>
+      <div class="msg">"Be better everyday" was due 4 days ago.</div>
+    </div>
+    <div class="btn">Snooze</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">8:00am</div>
+    <div class="body">
+      <div class="app">Reminders</div>
+      <div class="title">Reminder: Be present.</div>
+      <div class="msg">Scheduled for 8:00am · repeats daily</div>
+    </div>
+    <div class="btn split">
+      <div>Snooze</div>
+      <div style="color:#ff3b30;">Dismiss</div>
+    </div>
+  </div>
+
+  <div class="sticker dark">
+    <div class="meta">8 days</div>
+    <div class="body">
+      <div class="app">iOS Update</div>
+      <div class="title">Required.</div>
+      <div class="msg">You cannot continue without this update.</div>
+    </div>
+    <div class="btn">Install Now</div>
+  </div>
+
+  <!-- ROW 6 — The meta-satire close -->
+  <div class="sticker warm">
+    <div class="meta">trending</div>
+    <div class="body">
+      <div class="app">Optimize Yourself</div>
+      <div class="title">Connect Apple Health to continue.</div>
+      <div class="msg">We need your heart to keep going.</div>
+    </div>
+    <div class="btn">Allow Access</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">now</div>
+    <div class="body">
+      <div class="app">BLOOM ✻</div>
+      <div class="title">A meditation that listens.</div>
+      <div class="msg">No app required. No subscription. Just sit.</div>
+    </div>
+    <div class="btn">Begin</div>
+  </div>
+
+  <div class="sticker">
+    <div class="meta">3:42 am</div>
+    <div class="body">
+      <div class="app">Doom Scroll</div>
+      <div class="title">Just one more.</div>
+      <div class="msg">You said that 47 swipes ago.</div>
+    </div>
+    <div class="btn">One More</div>
+  </div>
+
+  <div class="sticker dark">
+    <div class="meta">end</div>
+    <div class="body">
+      <div class="app">SYSTEM</div>
+      <div class="title">You have always been bloom.</div>
+      <div class="msg">No update required.</div>
+    </div>
+    <div class="btn" style="color: #d97961;">Begin</div>
+  </div>
+
+  <div class="footer-note">
+    24 stickers · A3 · print on full-sheet matte sticker paper (Avery 8164 or Design Lab stock)<br>
+    cut by hand on cutting mat with X-Acto knife · OR kiss-cut on laser at very low power on the rounded boundaries
+  </div>
+
+</div>
+
+</body>
+</html>
