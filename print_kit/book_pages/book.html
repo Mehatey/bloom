@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — book interior</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ── 24-page book interior, A5 portrait ────────────────────
+     Print on cream/handmade paper.
+     Two options:
+       (a) Print A5 sheets — book becomes ~14.8 × 21cm bound
+       (b) Print A4 → 2 pages per sheet → fold & saddle-stitch
+     For (b), use Acrobat's "Booklet" print mode after exporting PDF. */
+  @page { size: 148mm 210mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    color: #1a1814;
+    background: #f1ecde;
+    line-height: 1.55;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 148mm; height: 210mm;
+    padding: 16mm 14mm;
+    page-break-after: always;
+    position: relative;
+    background: #f1ecde;
+    display: flex; flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .num {
+    position: absolute;
+    bottom: 8mm; left: 0; right: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 3mm; letter-spacing: 0.2em;
+    color: #8a7e6e;
+  }
+
+  h1 { font-size: 32mm; line-height: 0.9; letter-spacing: -0.02em; font-weight: 400; }
+  h2 { font-size: 12mm; line-height: 1.05; font-weight: 400; margin-bottom: 4mm; }
+  .kicker { font-family: "Inter"; font-size: 2.5mm; letter-spacing: 0.25em; text-transform: uppercase; color: #d97961; margin-bottom: 4mm; font-weight: 500; }
+  p { font-size: 3.6mm; line-height: 1.65; margin-bottom: 2mm; max-width: 110mm; color: #2a2620; }
+  p em { color: #1a1814; font-style: italic; }
+
+  .center  { justify-content: center; align-items: center; text-align: center; }
+  .end     { justify-content: flex-end; }
+
+  /* Cover */
+  .cover { padding: 0; background: #0a0a0a; color: #f1ecde; }
+  .cover .stage { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14mm; padding: 16mm; }
+  .cover .mark {
+    padding: 10mm 16mm; border-radius: 5mm;
+    background:
+      radial-gradient(ellipse 70% 50% at 30% 30%, rgba(255,255,255,0.5), transparent 55%),
+      conic-gradient(from 0deg, #d3a7ff, #ffd3a7, #fff3a7, #a7ffc5, #a7e0ff, #c5a7ff, #ffa7e0, #ffd3a7, #d3a7ff);
+    display: inline-flex; align-items: center; gap: 5mm;
+    font-family: "Helvetica Neue", sans-serif; font-weight: 900;
+    font-size: 22mm; color: #0a0a0a; letter-spacing: -0.04em; line-height: 0.85;
+  }
+  .cover .mark .fl { width: 16mm; height: 16mm; }
+  .cover .tag { font-style: italic; font-size: 5mm; color: rgba(241,236,222,0.8); letter-spacing: 0.04em; }
+  .cover .credits { position: absolute; bottom: 12mm; left: 0; right: 0; text-align: center; font-family: "Inter"; font-size: 2.6mm; letter-spacing: 0.22em; color: rgba(241,236,222,0.5); text-transform: uppercase; }
+
+  /* Big quote */
+  .quote { font-style: italic; font-size: 14mm; line-height: 1.15; max-width: 18em; text-wrap: balance; }
+  .quote .warm { color: #d97961; }
+
+  /* Two-column for scene library */
+  .scenes {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 3mm; margin-top: 6mm;
+  }
+  .scenes .cell {
+    aspect-ratio: 1/1;
+    background: #0a0a0a;
+    border-radius: 1mm;
+    overflow: hidden;
+    position: relative;
+  }
+  .scenes .cell .n {
+    position: absolute; top: 1.5mm; left: 2mm;
+    color: rgba(241,236,222,0.8);
+    font-family: "Inter"; font-size: 2mm; letter-spacing: 0.18em;
+  }
+  .scenes .cell .label {
+    position: absolute; bottom: 1.5mm; left: 2mm; right: 2mm;
+    color: rgba(241,236,222,0.8);
+    font-family: "Inter"; font-size: 1.8mm; line-height: 1.2;
+  }
+
+  /* Diagram for install */
+  .install-diagram {
+    border: 0.3mm solid #c8c2b4;
+    padding: 6mm;
+    margin: 4mm 0;
+    font-family: "Inter"; font-size: 3mm;
+    line-height: 1.5;
+    background: #ebe5d5;
+  }
+  .install-diagram strong { color: #d97961; }
+
+  /* Voices cards */
+  .voices { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 4mm; }
+  .voices .v {
+    padding: 4mm 5mm;
+    background: #ebe5d5;
+    border-radius: 1mm;
+    font-style: italic;
+    font-size: 3.2mm;
+    line-height: 1.45;
+  }
+
+  .mark-tiny { width: 8mm; height: 8mm; opacity: 0.6; align-self: center; margin-bottom: 4mm; }
+</style>
+</head>
+<body>
+
+<!-- ════ 1 · COVER ════ -->
+<div class="page cover">
+  <div class="stage">
+    <div class="mark">BLOOM
+      <svg class="fl" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+      </g></svg>
+    </div>
+    <div class="tag">a meditation that listens.</div>
+  </div>
+  <div class="credits">Siddharth Mehta · MFA D+T · Parsons · 2026</div>
+</div>
+
+<!-- ════ 2 · INSIDE FRONT — DEDICATION ════ -->
+<div class="page center">
+  <p style="font-style: italic; font-size: 5mm; max-width: 22em; color: #5a564e;">
+    for the twenty people<br>who answered:<br>
+    <em>when have you<br>felt the spirit.</em>
+  </p>
+  <div class="num">— 02 —</div>
+</div>
+
+<!-- ════ 3 · TITLE PAGE ════ -->
+<div class="page center">
+  <div class="kicker">parsons mfa d+t · 2026</div>
+  <h1 style="font-size: 26mm;">Bloom.</h1>
+  <p style="font-style: italic; font-size: 6mm; color: #5a564e; margin-top: 4mm;">A meditation that listens.</p>
+  <p style="margin-top: 16mm; font-family: 'Inter'; font-size: 2.8mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e;">Siddharth Mehta</p>
+  <div class="num">— 03 —</div>
+</div>
+
+<!-- ════ 4 · OPENING QUESTION ════ -->
+<div class="page center">
+  <p class="quote">
+    What is being sold<br>to you as <span class="warm">presence</span>,<br>
+    <em>and what is presence<br>when nothing is being sold?</em>
+  </p>
+  <div class="num">— 04 —</div>
+</div>
+
+<!-- ════ 5 · CONCEPT ════ -->
+<div class="page">
+  <div class="kicker">the work</div>
+  <h2>A meditation<br><em>that listens.</em></h2>
+  <p>A seated installation in three parts. A 6-minute body-driven
+  visual journey. A satirical overstimulation opening. A cork wall
+  for handwritten reflection.</p>
+  <p>The body controls the room. The room responds with patterns.
+  The room is also a critique of every wellness app you have ever
+  been sold.</p>
+  <div class="num">— 05 —</div>
+</div>
+
+<!-- ════ 6 · CONCEPT 2 ════ -->
+<div class="page">
+  <p>Sit in the chair. A BrainBit EEG senses your stillness, your
+  focus, your alpha rhythm. A Microsoft Kinect notices your body —
+  your lean, your hand, your motion energy.</p>
+  <p>A 75-inch screen unfolds in fifteen scenes across nine chapters:
+  nebulae, dividing cells, sacred geometry, sand mandalas, lunar
+  phases, golden phyllotaxis, lichtenberg lightning, breath.</p>
+  <p>Each scene is tuned to a chapter of pre-recorded narration in
+  a Watts / Sagan register — <em>soft authority without instruction.</em></p>
+  <div class="num">— 06 —</div>
+</div>
+
+<!-- ════ 7 · ORIGIN INTRO ════ -->
+<div class="page">
+  <div class="kicker">origin</div>
+  <h2>Before the code,<br><em>the conversation.</em></h2>
+  <p>It started as a question I asked twenty people: <em>when have you
+  felt the spirit?</em></p>
+  <p>The answers — <em>at a concert · holding my grandmother's hand ·
+  looking up at stars in Idaho · when I make something · in the silence
+  after a song ends · in a kitchen with people I love</em> — became the
+  seed of every scene in this work.</p>
+  <div class="num">— 07 —</div>
+</div>
+
+<!-- ════ 8 · ORIGIN — MIND MAP IMAGE ════ -->
+<div class="page">
+  <img src="../../mandala/j.png" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 1mm; margin-bottom: 4mm;">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; color: #8a7e6e; letter-spacing: 0.05em;">workshop · spring 2026 · mind-mapping <em style="color: #d97961;">moments I felt the spirit</em></p>
+  <div class="num">— 08 —</div>
+</div>
+
+<!-- ════ 9 · ORIGIN CONT ════ -->
+<div class="page">
+  <p>A mind-map taped to a studio wall. A sheet of butcher paper with
+  twenty fragments of <em>nirvana · nothing · somewhere · somebody.</em></p>
+  <p>Drawings of cages and bodies and questions: <em>who am I · what do
+  you need · want · to become?</em></p>
+  <p style="margin-top: 6mm;">Software was never the point. The
+  software is the room I built for the question to live in.</p>
+  <div class="num">— 09 —</div>
+</div>
+
+<!-- ════ 10 · PROCESS ════ -->
+<div class="page">
+  <div class="kicker">process</div>
+  <h2>Fifty modes.<br><em>Fifteen chosen.</em></h2>
+  <p>Over the studio year I built roughly fifty generative visual modes.
+  Each draws to a single canvas, each accepts inputs from the BrainBit
+  (stillness, focus, alpha) and the Kinect (hand, lean, motion energy).</p>
+  <p>Celtic interwoven · Flower of Life · rose · sand · lunar phases ·
+  golden phyllotaxis · fractal Lichtenberg branches · bioluminescent
+  organic glow · volumetric ray-marched nebulae.</p>
+  <div class="num">— 10 —</div>
+</div>
+
+<!-- ════ 11 · PROCESS — IMG ════ -->
+<div class="page">
+  <img src="../../mandala/install-mycelium.jpeg" style="width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 1mm; margin-bottom: 4mm;">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; color: #8a7e6e; letter-spacing: 0.05em;">scene 3 · <em style="color: #d97961;">rare earth</em> · mitotic mycelium</p>
+  <div class="num">— 11 —</div>
+</div>
+
+<!-- ════ 12 · SCENES — INTRO ════ -->
+<div class="page">
+  <div class="kicker">the journey</div>
+  <h2>15 scenes.<br>9 chapters.<br><em>~6 minutes.</em></h2>
+  <p>The visitor presses <em>begin</em>. A 40-second overstim collage plays,
+  ending with the popup <em>"You" Are Not Enough · Install</em>. The popup
+  is pressed. The meditation begins.</p>
+  <div class="num">— 12 —</div>
+</div>
+
+<!-- ════ 13 · SCENES — GRID 1 ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">selected stills · 01–06</p>
+  <div class="scenes">
+    <div class="cell"><span class="n">01</span><span class="label">silence · breath</span></div>
+    <div class="cell"><span class="n">02</span><span class="label">the singing · nebula</span></div>
+    <div class="cell"><span class="n">03</span><span class="label">rare earth · mitotic</span></div>
+    <div class="cell"><span class="n">04</span><span class="label">patterns · celtic</span></div>
+    <div class="cell"><span class="n">05</span><span class="label">patterns · flower</span></div>
+    <div class="cell"><span class="n">06</span><span class="label">beauty · rose</span></div>
+  </div>
+  <div class="num">— 13 —</div>
+</div>
+
+<!-- ════ 14 · SCENES — GRID 2 ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">selected stills · 07–12</p>
+  <div class="scenes">
+    <div class="cell"><span class="n">07</span><span class="label">inheritance · stars</span></div>
+    <div class="cell"><span class="n">08</span><span class="label">mindful™ · satire</span></div>
+    <div class="cell"><span class="n">09</span><span class="label">watchers · eyes</span></div>
+    <div class="cell"><span class="n">10</span><span class="label">let it go · nature</span></div>
+    <div class="cell"><span class="n">11</span><span class="label">impermanence · sand</span></div>
+    <div class="cell"><span class="n">12</span><span class="label">impermanence · moon</span></div>
+  </div>
+  <div class="num">— 14 —</div>
+</div>
+
+<!-- ════ 15 · SCENES — GRID 3 ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">selected stills · 13–15</p>
+  <div class="scenes" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="cell"><span class="n">13</span><span class="label">bloom · phyllotaxis</span></div>
+    <div class="cell"><span class="n">14</span><span class="label">bloom · lichtenberg</span></div>
+    <div class="cell"><span class="n">15</span><span class="label">bloom · breath close</span></div>
+  </div>
+  <p style="margin-top: 6mm; font-style: italic; color: #5a564e;">The bloom chapter — three minutes — is also the closing.</p>
+  <div class="num">— 15 —</div>
+</div>
+
+<!-- ════ 16 · OTHER HALF ════ -->
+<div class="page">
+  <div class="kicker">the other half</div>
+  <h2>The overstim<br><em>before the bloom.</em></h2>
+  <p>Before the visitor can rest, they are shown what they have been
+  resting <em>from</em>.</p>
+  <p>Forty seconds of overstimulation — Times Square walkers, news, ads,
+  surveillance, AI weirdness, a wellness commercial — ending with the
+  popup <em>"You" Are Not Enough · Install</em>.</p>
+  <p>The audience watches Install get pressed. What they receive is Bloom
+  — a wellness app that holds them.</p>
+  <div class="num">— 16 —</div>
+</div>
+
+<!-- ════ 17 · WALKER TRACKER ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">walkers · times square</p>
+  <p>YOLOv8 + ByteTrack identifies every pedestrian. Thirty-four percent
+  get a hidden story:</p>
+  <p style="font-style: italic; color: #d97961; margin: 6mm 0;">going through a breakup<br>missing their grandmother<br>in love for the first time<br>just got fired<br>writing a novel they will never finish</p>
+  <p>Every body in the frame is a whole life the surveillance camera does
+  not see.</p>
+  <div class="num">— 17 —</div>
+</div>
+
+<!-- ════ 18 · BE HERE NOW ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">be here now</p>
+  <p>A single CCTV camera scans the room. The phrase <em>be here now</em>
+  spawns at the visitor's hand position — in soft pastel typography.</p>
+  <p>Wellness commodified back into surveillance language. <em>The
+  sentences are the same sentences.</em></p>
+  <p>The visitor rotates the camera by leaning. The text accumulates,
+  fades, accumulates.</p>
+  <div class="num">— 18 —</div>
+</div>
+
+<!-- ════ 19 · INSTALL DIAGRAM ════ -->
+<div class="page">
+  <div class="kicker">the room</div>
+  <h2 style="font-size: 9mm;">Room 1205.</h2>
+  <div class="install-diagram">
+    <strong>A · ENTRY</strong> — A1 holographic logo + placard<br><br>
+    <strong>B · CENTER</strong> — chair · 75" screen · BrainBit · blue fire glass spiral behind<br><br>
+    <strong>C · BACK WALL</strong> — cork wall · 3 questions · 200 cards · pens · pushpins<br><br>
+    <strong>D · ALTAR</strong> — glass cube on turntable · 2 two-way mirrors (infinity) · Vision Pro coda<br><br>
+    <strong>E · CEILING</strong> — mylar strips · fresnel lens hanging<br><br>
+    <strong>F · HIDDEN</strong> — red filter reveal sheets · die-cut overlay
+  </div>
+  <div class="num">— 19 —</div>
+</div>
+
+<!-- ════ 20 · VOICES FROM THE WALL ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">voices from the wall</p>
+  <p>Three questions on three cards. Two hundred blank cards beneath
+  them. Each visitor writes one. By Saturday night the wall is the
+  show.</p>
+  <div class="voices">
+    <div class="v">"my grandmother's kitchen on a Sunday."</div>
+    <div class="v">"a stranger paying for my coffee."</div>
+    <div class="v">"the way the sky looked at five am."</div>
+    <div class="v">"the weight of my phone. for one day."</div>
+  </div>
+  <div class="num">— 20 —</div>
+</div>
+
+<!-- ════ 21 · CODA QUOTE ════ -->
+<div class="page center">
+  <p class="quote" style="font-size: 18mm;">You have<br>always been<br><span class="warm">bloom.</span></p>
+  <div class="num">— 21 —</div>
+</div>
+
+<!-- ════ 22 · CLOSING ════ -->
+<div class="page">
+  <p>The final words of the meditation are a closing release — a slow
+  exhalation, a permission. The visitor opens their eyes.</p>
+  <p>The closing trajectory of their own brain-stillness from the last
+  six minutes appears as a single golden line traced across the screen.
+  It fades.</p>
+  <p>The visitor stands, exits past the cork wall, and pins a card.</p>
+  <p style="margin-top: 6mm;"><em>The work is finally a small argument
+  for staying.</em></p>
+  <div class="num">— 22 —</div>
+</div>
+
+<!-- ════ 23 · CREDITS ════ -->
+<div class="page">
+  <p style="font-family: 'Inter'; font-size: 2.6mm; letter-spacing: 0.18em; text-transform: uppercase; color: #8a7e6e; margin-bottom: 4mm;">credits + thanks</p>
+  <p><em style="color: #1a1814;">Author.</em> Siddharth Mehta.</p>
+  <p><em style="color: #1a1814;">Advisor.</em> Clarinda Mac Low.</p>
+  <p><em style="color: #1a1814;">Tools.</em> BrainBit · Kinect · three.js · WebGL ·
+  YOLOv8 + ByteTrack · Adobe Premiere · Python WebSocket bridges.</p>
+  <p><em style="color: #1a1814;">Thank you.</em> Clarinda, Nancy, the cohort,
+  everyone who sat in the chair, the people whose answers became this work.</p>
+  <div class="num">— 23 —</div>
+</div>
+
+<!-- ════ 24 · BACK COVER ════ -->
+<div class="page cover end" style="background: #0a0a0a; padding: 16mm;">
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; gap: 8mm;">
+    <svg style="width: 24mm; height: 24mm; opacity: 0.7;" viewBox="-100 -100 200 200"><g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(315)"/>
+    </g></svg>
+    <p style="font-style: italic; font-size: 4mm; color: rgba(241,236,222,0.7); text-align: center;">be better everyday<span style="color: #d97961;">.</span></p>
+  </div>
+  <div style="text-align: center; font-family: 'Inter'; font-size: 2.4mm; letter-spacing: 0.22em; color: rgba(241,236,222,0.4); text-transform: uppercase;">
+    siddharthmehta.design/mandalas<br><br>
+    bloom · mfa d+t · parsons · 2026
+  </div>
+</div>
+
+</body>
+</html>

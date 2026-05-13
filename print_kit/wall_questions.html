@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Cork Wall Question Cards</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  /* Prints as 3 separate A4 cards. Each card is the same A4 page. */
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    color: #1a1814;
+    background: #f5f1e8;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .card {
+    width: 210mm; height: 297mm;
+    padding: 40mm 30mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    page-break-after: always;
+    background: #f5f1e8;
+    position: relative;
+  }
+  .card:last-child { page-break-after: auto; }
+
+  .kicker {
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 3.5mm;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #8a7e6e;
+    margin-bottom: 30mm;
+  }
+
+  .question {
+    font-style: italic;
+    font-size: 36mm;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: #1a1814;
+    margin-bottom: 30mm;
+    text-wrap: balance;
+  }
+
+  .underline {
+    width: 70mm; height: 0.5px;
+    background: #1a1814; opacity: 0.4;
+    margin-bottom: 14mm;
+  }
+
+  .prompt {
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 3.2mm;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a7e6e;
+  }
+
+  .corner-mark {
+    position: absolute;
+    bottom: 18mm; right: 22mm;
+    width: 18mm; height: 18mm;
+    opacity: 0.45;
+  }
+</style>
+</head>
+<body>
+
+<!-- CARD 1 — WHAT WAS BEAUTIFUL -->
+<section class="card">
+  <div class="kicker">Card · One</div>
+  <div class="question">what was<br>beautiful?</div>
+  <div class="underline"></div>
+  <div class="prompt">write · pin · leave</div>
+
+  <svg class="corner-mark" viewBox="-100 -100 200 200">
+    <g><path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(315)"/></g>
+  </svg>
+</section>
+
+<!-- CARD 2 — WHO HAS HELD YOU -->
+<section class="card">
+  <div class="kicker">Card · Two</div>
+  <div class="question">who has<br>held you?</div>
+  <div class="underline"></div>
+  <div class="prompt">write · pin · leave</div>
+
+  <svg class="corner-mark" viewBox="-100 -100 200 200">
+    <g><path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(315)"/></g>
+  </svg>
+</section>
+
+<!-- CARD 3 — WHAT CAN YOU PUT DOWN -->
+<section class="card">
+  <div class="kicker">Card · Three</div>
+  <div class="question">what can you<br>put down?</div>
+  <div class="underline"></div>
+  <div class="prompt">write · pin · leave</div>
+
+  <svg class="corner-mark" viewBox="-100 -100 200 200">
+    <g><path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(315)"/></g>
+  </svg>
+</section>
+
+</body>
+</html>

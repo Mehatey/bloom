@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BLOOM — Wall Placard (A2)</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* A2 portrait: 420mm × 594mm */
+  @page { size: 420mm 594mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 420mm; height: 594mm;
+    background: #f5f1e8;
+    color: #1a1814;
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 100%; height: 100%;
+    padding: 50mm 45mm;
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+  .top-rule { width: 60mm; height: 1px; background: #1a1814; margin-bottom: 14mm; }
+  .kicker {
+    font-family: "Inter", sans-serif;
+    font-size: 4mm; font-weight: 500;
+    letter-spacing: 0.25em; text-transform: uppercase;
+    color: #6a0c1a;
+    margin-bottom: 8mm;
+  }
+  h1 {
+    font-size: 88mm; line-height: 0.92;
+    letter-spacing: -0.025em;
+    margin-bottom: 6mm;
+    font-weight: 400;
+  }
+  .subtitle {
+    font-style: italic;
+    font-size: 16mm; line-height: 1.15;
+    color: #5a564e;
+    margin-bottom: 28mm;
+  }
+
+  .lead {
+    font-size: 7mm; line-height: 1.55;
+    margin-bottom: 10mm;
+    max-width: 26em;
+  }
+  .lead em { color: #6a0c1a; font-style: italic; }
+
+  .body {
+    font-size: 5.5mm; line-height: 1.6;
+    color: #2a2620;
+    max-width: 28em;
+    margin-bottom: 6mm;
+  }
+
+  .rule {
+    width: 100%; height: 0.5px; background: #c8c2b4;
+    margin: 30mm 0 14mm;
+  }
+
+  .meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4mm 16mm;
+    font-size: 4.5mm;
+  }
+  .meta dt {
+    font-family: "Inter", sans-serif;
+    font-size: 3.2mm; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #8a7e6e;
+  }
+  .meta dd { font-family: "Instrument Serif", serif; }
+
+  .footer {
+    position: absolute;
+    bottom: 40mm; left: 45mm; right: 45mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: "Inter", sans-serif;
+    font-size: 3.5mm; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #8a7e6e;
+    padding-top: 8mm;
+    border-top: 0.5px solid #c8c2b4;
+  }
+
+  /* Mark in corner */
+  .mark-corner {
+    position: absolute;
+    top: 50mm; right: 45mm;
+    width: 50mm; height: 50mm;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <svg class="mark-corner" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(315)"/>
+    </g>
+  </svg>
+
+  <div class="top-rule"></div>
+  <div class="kicker">MFA Design + Technology · Parsons · 2026</div>
+
+  <h1>Bloom.</h1>
+  <div class="subtitle">A meditation<br>that listens.</div>
+
+  <p class="lead">A seated installation. The body controls the room.
+  The room responds with patterns. The room is also a critique of every
+  wellness app you have ever been sold.</p>
+
+  <p class="body">Sit in the chair. A BrainBit EEG senses your stillness.
+  A Kinect notices your body. A 75-inch screen unfolds 15 generative
+  scenes across a 6-minute meditation — nebulae, mandalas, sand,
+  lightning, breath. <em>The scenes are tuned to you.</em></p>
+
+  <p class="body">Before the meditation, an overstimulation collage —
+  news, ads, surveillance, AI weirdness — ending with the popup
+  <em>"You" Are Not Enough · Install</em>. You watch Install get
+  pressed. What you receive is Bloom: a wellness app that holds you.</p>
+
+  <p class="body">After the meditation, write one card. Pin it to the
+  wall. By Saturday night the wall is the show.</p>
+
+  <div class="rule"></div>
+
+  <dl class="meta">
+    <dt>Author</dt>     <dd>Siddharth Mehta</dd>
+    <dt>Advisor</dt>    <dd>Clarinda Mac Low</dd>
+    <dt>Exhibition</dt> <dd>Friday May 15 + Saturday May 16, 2026<br>Room 1205 · Parsons School of Design</dd>
+    <dt>Online</dt>     <dd>siddharthmehta.design/mandalas</dd>
+  </dl>
+
+  <div class="footer">
+    <span>Bloom · 2026</span>
+    <span>be better everyday.</span>
+  </div>
+
+</div>
+</body>
+</html>

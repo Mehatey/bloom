@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Business Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Card size: 3.5 × 2 inches (US standard) = 88.9mm × 50.8mm */
+  /* Print multiple per page with bleed. */
+  @page { size: A4 portrait; margin: 10mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Inter", -apple-system, sans-serif;
+    background: white;
+    color: black;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .sheet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6mm;
+    width: 190mm;
+    padding: 4mm 0;
+  }
+
+  .card {
+    width: 88.9mm; height: 50.8mm;
+    border-radius: 2.5mm;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 0 0.2mm #ddd;
+  }
+
+  /* ──── FRONT ─────────────────────────────────────────────── */
+  .card.front {
+    background:
+      radial-gradient(ellipse 70% 50% at 30% 30%, rgba(255,255,255,0.50) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 70% at 80% 70%, rgba(255,255,255,0.28) 0%, transparent 60%),
+      conic-gradient(from 0deg at 50% 50%,
+        #d3a7ff 0%, #ffd3a7 14%, #fff3a7 26%, #a7ffc5 38%,
+        #a7e0ff 50%, #c5a7ff 62%, #ffa7e0 74%, #ffd3a7 86%, #d3a7ff 100%);
+    display: flex; align-items: center; justify-content: center;
+    gap: 4mm;
+  }
+  .card.front .b-text {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 21mm;
+    color: #0a0a0a;
+    letter-spacing: -0.04em;
+    line-height: 0.85;
+  }
+  .card.front .b-flower {
+    width: 15mm; height: 15mm;
+  }
+
+  /* ──── BACK ──────────────────────────────────────────────── */
+  .card.back {
+    background: #0a0a0a;
+    color: #f5f1e8;
+    padding: 6.5mm 7mm;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+  }
+  .card.back .top {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 4mm;
+  }
+  .card.back .name {
+    font-family: "Instrument Serif", serif;
+    font-size: 7mm;
+    line-height: 1.05;
+    color: #f5f1e8;
+  }
+  .card.back .role {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5mm;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8a857a;
+    margin-top: 1.6mm;
+  }
+  .card.back .flower-bw {
+    width: 9mm; height: 9mm;
+    flex-shrink: 0;
+  }
+  .card.back .contact {
+    display: flex; flex-direction: column; gap: 0.6mm;
+  }
+  .card.back .contact a,
+  .card.back .contact span {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5mm;
+    color: #f5f1e8;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .card.back .contact .label {
+    color: #8a857a;
+    font-size: 2.1mm;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 0.6mm;
+  }
+  .card.back .tagline {
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-size: 3.4mm;
+    color: #d97961;
+    letter-spacing: 0.02em;
+  }
+  .card.back .tagline .dot { color: #d97961; }
+
+  .cut-tip {
+    margin-top: 8mm;
+    font-family: "Inter", sans-serif;
+    font-size: 8pt;
+    color: #888;
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<!-- ──────────────── FRONT SHEET ──────────────── -->
+<div class="sheet">
+  <!-- 4 copies of FRONT -->
+  <div class="card front">
+    <span class="b-text">BLOOM</span>
+    <svg class="b-flower" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+      </g>
+    </svg>
+  </div>
+  <div class="card front">
+    <span class="b-text">BLOOM</span>
+    <svg class="b-flower" viewBox="-100 -100 200 200"><g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+    </g></svg>
+  </div>
+  <div class="card front">
+    <span class="b-text">BLOOM</span>
+    <svg class="b-flower" viewBox="-100 -100 200 200"><g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+    </g></svg>
+  </div>
+  <div class="card front">
+    <span class="b-text">BLOOM</span>
+    <svg class="b-flower" viewBox="-100 -100 200 200"><g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+    </g></svg>
+  </div>
+</div>
+
+<!-- ──────────────── BACK SHEET ──────────────── -->
+<div class="sheet" style="page-break-before: always;">
+  <div class="card back">
+    <div class="top">
+      <div>
+        <div class="name">Siddharth<br>Mehta</div>
+        <div class="role">Designer · Technologist</div>
+      </div>
+      <svg class="flower-bw" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(315)"/>
+      </g></svg>
+    </div>
+    <div class="contact">
+      <span>mehts818@newschool.edu</span>
+      <span>siddharthmehta.design/mandalas</span>
+    </div>
+    <div class="tagline">be better everyday<span class="dot">.</span></div>
+  </div>
+  <div class="card back">
+    <div class="top">
+      <div>
+        <div class="name">Siddharth<br>Mehta</div>
+        <div class="role">Designer · Technologist</div>
+      </div>
+      <svg class="flower-bw" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(315)"/>
+      </g></svg>
+    </div>
+    <div class="contact">
+      <span>mehts818@newschool.edu</span>
+      <span>siddharthmehta.design/mandalas</span>
+    </div>
+    <div class="tagline">be better everyday<span class="dot">.</span></div>
+  </div>
+  <div class="card back">
+    <div class="top">
+      <div>
+        <div class="name">Siddharth<br>Mehta</div>
+        <div class="role">Designer · Technologist</div>
+      </div>
+      <svg class="flower-bw" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(315)"/>
+      </g></svg>
+    </div>
+    <div class="contact">
+      <span>mehts818@newschool.edu</span>
+      <span>siddharthmehta.design/mandalas</span>
+    </div>
+    <div class="tagline">be better everyday<span class="dot">.</span></div>
+  </div>
+  <div class="card back">
+    <div class="top">
+      <div>
+        <div class="name">Siddharth<br>Mehta</div>
+        <div class="role">Designer · Technologist</div>
+      </div>
+      <svg class="flower-bw" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f5f1e8" transform="rotate(315)"/>
+      </g></svg>
+    </div>
+    <div class="contact">
+      <span>mehts818@newschool.edu</span>
+      <span>siddharthmehta.design/mandalas</span>
+    </div>
+    <div class="tagline">be better everyday<span class="dot">.</span></div>
+  </div>
+</div>
+
+<p class="cut-tip">Print on heavy white cardstock (300+ gsm). 4 cards per A4 sheet. Cut on the rounded boundaries (use a corner-rounder if available, otherwise straight-cut and round by hand). Pages alternate FRONT/BACK — print double-sided.</p>
+
+</body>
+</html>

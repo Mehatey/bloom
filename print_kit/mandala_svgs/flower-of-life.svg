@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Flower of Life — 19 circles + 2 outer rings. For laser engrave. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-160 -160 320 320" width="400" height="400">
+  <g fill="none" stroke="#000" stroke-width="0.8">
+    <circle cx="0.00" cy="0.00" r="30"/>
+    <circle cx="30.00" cy="0.00" r="30"/>
+    <circle cx="15.00" cy="25.98" r="30"/>
+    <circle cx="-15.00" cy="25.98" r="30"/>
+    <circle cx="-30.00" cy="0.00" r="30"/>
+    <circle cx="-15.00" cy="-25.98" r="30"/>
+    <circle cx="15.00" cy="-25.98" r="30"/>
+    <circle cx="45.00" cy="25.98" r="30"/>
+    <circle cx="0.00" cy="51.96" r="30"/>
+    <circle cx="-45.00" cy="25.98" r="30"/>
+    <circle cx="-45.00" cy="-25.98" r="30"/>
+    <circle cx="-0.00" cy="-51.96" r="30"/>
+    <circle cx="45.00" cy="-25.98" r="30"/>
+    <circle cx="60.00" cy="0.00" r="30"/>
+    <circle cx="30.00" cy="51.96" r="30"/>
+    <circle cx="-30.00" cy="51.96" r="30"/>
+    <circle cx="-60.00" cy="0.00" r="30"/>
+    <circle cx="-30.00" cy="-51.96" r="30"/>
+    <circle cx="30.00" cy="-51.96" r="30"/>
+    <circle cx="0" cy="0" r="90.00"/>
+    <circle cx="0" cy="0" r="96.00"/>
+  </g>
+</svg>

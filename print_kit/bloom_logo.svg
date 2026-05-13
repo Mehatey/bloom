@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BLOOM logo — for laser cut OR full-color print.
+  ────────────────────────────────────────────────
+  NOTES FOR THE LASER OPERATOR:
+   1. Open in Illustrator. Select all <text>. Type → Create Outlines.
+      (Inkscape: Path → Object to Path. LightBurn: opens as paths natively.)
+   2. The rounded rectangle outline is a CUT line (red).
+      The BLOOM text + flower are FILL ENGRAVE (black).
+   3. Suggested material: 1/8" black acrylic OR 1/8" birch plywood.
+   4. Target physical size: 12" wide × 3.6" tall for the A1 piece;
+      scale down to 3.5" × 1.05" for the business-card sticker version.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 240"
+     width="800" height="240">
+
+  <!-- CUT line — outer badge shape -->
+  <rect x="6" y="6" width="788" height="228" rx="22" ry="22"
+        fill="none" stroke="#ff0000" stroke-width="1"/>
+
+  <!-- ENGRAVE — BLOOM wordmark (convert to outlines before cut) -->
+  <text x="60" y="170"
+        font-family="Helvetica Neue, Helvetica, Arial Black, sans-serif"
+        font-weight="900"
+        font-size="180"
+        letter-spacing="-6"
+        fill="#000000">BLOOM</text>
+
+  <!-- ENGRAVE — 8-petal flower mark -->
+  <g transform="translate(680 120)">
+    <g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Celtic interwoven knot. 4-fold. For laser engrave. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 400 400" width="400" height="400">
+  <g fill="none" stroke="#000" stroke-width="2">
+    <circle cx="0" cy="0" r="180"/>
+    <ellipse cx="0" cy="0" rx="160" ry="55" transform="rotate(0)"/>
+    <ellipse cx="0" cy="0" rx="160" ry="55" transform="rotate(45)"/>
+    <ellipse cx="0" cy="0" rx="160" ry="55" transform="rotate(90)"/>
+    <ellipse cx="0" cy="0" rx="160" ry="55" transform="rotate(135)"/>
+    <ellipse cx="0" cy="0" rx="120" ry="35" transform="rotate(22.5)"/>
+    <ellipse cx="0" cy="0" rx="120" ry="35" transform="rotate(67.5)"/>
+    <ellipse cx="0" cy="0" rx="120" ry="35" transform="rotate(112.5)"/>
+    <ellipse cx="0" cy="0" rx="120" ry="35" transform="rotate(157.5)"/>
+    <circle cx="0" cy="0" r="22"/>
+    <circle cx="0" cy="0" r="8"/>
+  </g>
+</svg>

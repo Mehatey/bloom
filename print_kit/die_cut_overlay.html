@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Die-cut clear film overlay</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  /* A2 portrait — print on clear/translucent die-cut film.
+     Hangs in front of wall or screen as an overlay layer.
+     "be here now" repeats in 12 concentric rings, with rotational drift. */
+
+  @page { size: 420mm 594mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 420mm; height: 594mm;
+    background: #ffffff;            /* white preview — print on clear film */
+    color: #0a0a0a;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .page {
+    position: relative;
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Define a circle path for each ring via SVG textPath */
+  svg { width: 100%; height: 100%; }
+
+  text {
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    font-style: italic;
+    fill: #0a0a0a;
+  }
+
+  .corner-meta {
+    position: absolute;
+    bottom: 14mm; right: 16mm;
+    font-family: "Inter", -apple-system, sans-serif;
+    font-size: 3mm;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <svg viewBox="-300 -300 600 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- 12 concentric circle paths -->
+      <path id="r1"  d="M 0,-30  a 30,30  0 1,1 0,60  a 30,30  0 1,1 0,-60"  fill="none"/>
+      <path id="r2"  d="M 0,-60  a 60,60  0 1,1 0,120 a 60,60  0 1,1 0,-120" fill="none"/>
+      <path id="r3"  d="M 0,-90  a 90,90  0 1,1 0,180 a 90,90  0 1,1 0,-180" fill="none"/>
+      <path id="r4"  d="M 0,-120 a 120,120 0 1,1 0,240 a 120,120 0 1,1 0,-240" fill="none"/>
+      <path id="r5"  d="M 0,-150 a 150,150 0 1,1 0,300 a 150,150 0 1,1 0,-300" fill="none"/>
+      <path id="r6"  d="M 0,-180 a 180,180 0 1,1 0,360 a 180,180 0 1,1 0,-360" fill="none"/>
+      <path id="r7"  d="M 0,-210 a 210,210 0 1,1 0,420 a 210,210 0 1,1 0,-420" fill="none"/>
+      <path id="r8"  d="M 0,-240 a 240,240 0 1,1 0,480 a 240,240 0 1,1 0,-480" fill="none"/>
+      <path id="r9"  d="M 0,-270 a 270,270 0 1,1 0,540 a 270,270 0 1,1 0,-540" fill="none"/>
+    </defs>
+
+    <!-- Each ring repeats "be here now · " enough times to wrap. -->
+    <text font-size="14"><textPath href="#r1">be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r2" startOffset="10">be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r3" startOffset="20">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r4" startOffset="30">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r5" startOffset="40">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r6" startOffset="50">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r7" startOffset="60">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r8" startOffset="70">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+    <text font-size="14"><textPath href="#r9" startOffset="80">be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · be here now · </textPath></text>
+
+    <!-- Center: 8-petal bloom mark -->
+    <g transform="scale(0.18)">
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+    </g>
+  </svg>
+
+  <div class="corner-meta">be here now · clear film overlay · A2</div>
+</div>
+
+</body>
+</html>

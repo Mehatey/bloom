@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Tomorrow's Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Instrument Serif", serif; background: #f5f1e8; color: #1a1814; padding: 60px; line-height: 1.55; font-size: 16px; }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  h1 { font-size: 52px; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 8px; }
+  h2 { font-size: 28px; margin: 48px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #c8c2b4; line-height: 1.2; }
+  h3 { font-family: "Inter"; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #8a7e6e; margin: 28px 0 8px; font-weight: 500; }
+  p { margin-bottom: 12px; max-width: 38em; }
+  em { color: #6a0c1a; font-style: italic; }
+  ol, ul { padding-left: 24px; margin-bottom: 16px; }
+  ol li, ul li { margin-bottom: 6px; padding-left: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 24px; font-size: 14px; }
+  table th { font-family: "Inter"; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #8a7e6e; text-align: left; padding: 8px; border-bottom: 1px solid #c8c2b4; font-weight: 500; }
+  table td { padding: 8px; border-bottom: 0.5px solid #d8d2c6; vertical-align: top; }
+  td.tag { font-family: "Inter"; font-size: 11px; letter-spacing: 0.05em; color: #8a7e6e; width: 90px; }
+  td.priority { font-family: "Inter"; font-size: 11px; font-weight: 500; }
+  .priority.high  { color: #6a0c1a; }
+  .priority.med   { color: #b8742c; }
+  .priority.low   { color: #6a8a6a; }
+  .box {
+    margin: 20px 0; padding: 20px 26px;
+    background: #ede7d8; border-left: 3px solid #6a0c1a; border-radius: 2px;
+  }
+  .box.warm { border-color: #b8742c; background: #efe8d6; }
+  .checklist { font-family: "Inter"; font-size: 14px; }
+  .checklist li { list-style: none; padding-left: 24px; position: relative; margin-bottom: 8px; }
+  .checklist li::before { content: "☐"; position: absolute; left: 0; font-size: 16px; }
+  .tagline { font-style: italic; color: #5a564e; font-size: 22px; margin-top: 4px; }
+  hr { border: 0; border-top: 1px solid #c8c2b4; margin: 36px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>BLOOM — Tomorrow.</h1>
+<p class="tagline">11am laser cutting · Parsons print shop · physical install kit</p>
+
+<div class="box">
+  <strong>The whole vision in one sentence:</strong>
+  A room that holds you for six minutes — entered through holographic logo and a placard,
+  surrounded by mandalas and surveillance critique, anchored by a chair, a cork wall,
+  and a small altar. <em>Sacred geometry meets surveillance language.</em>
+</div>
+
+
+<h2>1 · TOMORROW'S RUN-OF-DAY</h2>
+<table>
+  <tr><th>Time</th><th>Where</th><th>What</th></tr>
+  <tr><td><strong>10:30</strong></td><td>Studio</td><td>Final review of files in <code>print_kit/</code>. Bring laptop + USB drive.</td></tr>
+  <tr><td><strong>11:00</strong></td><td>Laser shop</td><td>Logo cuts + mandala engravings. <em>~90 min</em></td></tr>
+  <tr><td><strong>13:00</strong></td><td>Parsons print</td><td>Placard, business cards, wall question cards, die-cut film overlays. <em>~90 min</em></td></tr>
+  <tr><td><strong>15:00</strong></td><td>Print shop / studio</td><td>Book interior printing on handmade paper. <em>~2 hrs</em></td></tr>
+  <tr><td><strong>17:00</strong></td><td>Studio</td><td>Hand-binding the book + business card cut to size.</td></tr>
+  <tr><td><strong>19:00</strong></td><td>Room 1205 (if avail.)</td><td>Start staging — wall layout planning. Sleep there if needed.</td></tr>
+</table>
+
+
+<h2>2 · WHAT YOU'RE PRINTING — THE FULL LIST</h2>
+<p>Every file is in <code>print_kit/</code>. Open in Chrome → ⌘P → Save as PDF → bring to shop on USB. SVGs go straight to laser.</p>
+
+<table>
+  <tr><th>#</th><th>File</th><th>Format</th><th>Where</th><th>Priority</th></tr>
+  <tr><td class="tag">01</td><td><code>bloom_logo.svg</code></td><td>SVG · vector</td><td>Laser cutter — 1/8" black acrylic or birch ply</td><td class="priority high">MUST</td></tr>
+  <tr><td class="tag">02</td><td><code>bloom_logo_A1.html</code></td><td>A1 poster · holographic film</td><td>Print shop — die-cut iridescent film</td><td class="priority high">MUST</td></tr>
+  <tr><td class="tag">03</td><td><code>placard.html</code></td><td>A2 · cream paper</td><td>Print shop — wall placard for entry</td><td class="priority high">MUST</td></tr>
+  <tr><td class="tag">04</td><td><code>wall_questions.html</code></td><td>3× A4 cards</td><td>Print shop — above cork wall</td><td class="priority high">MUST</td></tr>
+  <tr><td class="tag">05</td><td><code>business_card.html</code></td><td>3.5×2" · cardstock</td><td>Print shop — 100ct, double-sided</td><td class="priority high">MUST</td></tr>
+  <tr><td class="tag">06</td><td><code>mandala_svgs/*.svg</code></td><td>5× SVG · vector</td><td>Laser engraver — wood discs or acrylic</td><td class="priority med">SHOULD</td></tr>
+  <tr><td class="tag">07</td><td><code>red_filter_reveals.html</code></td><td>A4 · transparent film</td><td>Print shop — only legible through red filter</td><td class="priority med">SHOULD</td></tr>
+  <tr><td class="tag">08</td><td><code>die_cut_overlay.html</code></td><td>A2 · clear die-cut film</td><td>Print shop — hangs over wall</td><td class="priority med">SHOULD</td></tr>
+  <tr><td class="tag">09</td><td><code>book_pages/</code></td><td>Book · 24pp</td><td>Print shop — handmade paper, hand-bind</td><td class="priority low">NICE</td></tr>
+</table>
+
+
+<h2>3 · CONTENT DECISIONS I MADE FOR YOU</h2>
+<p>You said you didn't know — here are the calls. Override anything that doesn't feel right.</p>
+
+<h3>3a — What to engrave on the laser</h3>
+<p>Pick <strong>5 mandalas</strong> from the show's scene library that translate to line-art best:</p>
+<ol>
+  <li><strong>Flower of Life</strong> — universal, classic sacred geometry. Engrave on the cube.</li>
+  <li><strong>Rose mandala (12-fold)</strong> — your beauty chapter. Engrave on a wood disc to sit on the turntable.</li>
+  <li><strong>Golden phyllotaxis</strong> — the bloom chapter. Spiral inward. Wood plaque on entry wall.</li>
+  <li><strong>Celtic interwoven (4-pointed knot)</strong> — patterns chapter. Engrave on acrylic; backlit.</li>
+  <li><strong>Lunar phase ring</strong> — impermanence. Engrave on mirror or acrylic.</li>
+</ol>
+<p>SVGs for all five are in <code>print_kit/mandala_svgs/</code> and ready for the laser.</p>
+
+<h3>3b — What to engrave the TEXT pieces with</h3>
+<p>The text engravings hold both halves of your work — the meditation half AND the surveillance critique. Pair them.</p>
+<ul>
+  <li><em>Meditation side:</em> "you have always been bloom."</li>
+  <li><em>Critique side:</em> "be here now · be sold to · be tracked"</li>
+  <li><em>Cork wall:</em> "what was beautiful · who has held you · what can you put down"</li>
+  <li><em>Entry placard:</em> "a meditation that listens"</li>
+  <li><em>Closing:</em> "you are not a notification."</li>
+</ul>
+<p>These read like haiku when set in Instrument Serif. They are the work's language in object form.</p>
+
+<h3>3c — Should the printed media be quotes or imagery?</h3>
+<p><strong>Both, divided by surface.</strong></p>
+<ul>
+  <li><strong>Mandalas</strong> on opaque surfaces (wood, mirror, acrylic) — beauty, anchored, lit.</li>
+  <li><strong>Text</strong> on translucent surfaces (die-cut film, mylar, red filter) — language as overlay, layered, revealed.</li>
+</ul>
+<p>This mirrors your thesis: <em>the body</em> is anchored; <em>the message</em> floats.</p>
+
+<h3>3d — A1 logo?</h3>
+<p><strong>Yes — A1.</strong> Above the room's entrance. It is the first contact. Big enough to be a brand statement,
+small enough that the room is the experience, not the marketing. Also print one A4 backup for the wall card.</p>
+
+<h3>3e — Lenticular sheets?</h3>
+<p><strong>SKIP for now.</strong> The novelty fights the meditation tone. Save them for one VERY specific moment if you find one (e.g., a portrait that flickers between "calm self" and "surveilled self") — but only if it lands. Otherwise they're a distraction.</p>
+
+<h3>3f — Business card design</h3>
+<p>Two-sided. Front: holographic BLOOM logo only. Back: name + email + URL + tagline. White-on-black or cream-on-black. Cardstock with a velvet finish if available.</p>
+
+
+<h2>4 · INSTALLATION — HOW EACH PHYSICAL OBJECT IS USED</h2>
+<p>Walking through Room 1205 from entry to back:</p>
+
+<div class="box warm">
+  <h3 style="margin-top: 0;">A · ENTRY (the threshold)</h3>
+  <ul>
+    <li><strong>A1 holographic BLOOM logo</strong> — above the door</li>
+    <li><strong>A2 placard</strong> — chest-height, beside the door. "A meditation that listens."</li>
+    <li><strong>A small bowl of business cards</strong> — on a plinth or shelf for visitors to take.</li>
+  </ul>
+</div>
+
+<div class="box warm">
+  <h3 style="margin-top: 0;">B · CENTER (the chair)</h3>
+  <ul>
+    <li><strong>Chair</strong> facing 75-inch TV</li>
+    <li><strong>BrainBit station</strong> — small side table with attendant chair</li>
+    <li><strong>Behind the chair</strong>: BLUE FIRE GLASS in a Fibonacci spiral on the wall.
+        Use clear silicone adhesive. Spiral mimics scene 13 (golden phyllotaxis).
+        Light from below with a single warm LED uplight.</li>
+  </ul>
+</div>
+
+<div class="box warm">
+  <h3 style="margin-top: 0;">C · BACK WALL (the cork wall)</h3>
+  <ul>
+    <li><strong>3 question cards</strong> at top — A4 each, evenly spaced</li>
+    <li><strong>Cards + pens + pushpins</strong> in three small bowls beneath</li>
+    <li><strong>Cork wall</strong> grows through the night — visitors pin their cards</li>
+  </ul>
+</div>
+
+<div class="box warm">
+  <h3 style="margin-top: 0;">D · THE ALTAR (coda corner)</h3>
+  <ul>
+    <li><strong>Glass cube</strong> on the <strong>turntable</strong> — turntable rotates slowly (60 RPM too fast — use 33⅓ or even slower if possible). Cube refracts the projection.</li>
+    <li><strong>Two two-way mirrors</strong> face each other on either side of the cube — INFINITY EFFECT looking inward. Visitors look from the entry side toward the back; the mirrors create a tunnel of cubes.</li>
+    <li><strong>Vision Pro</strong> on a small stool beside it for the AR coda — IMG_3825 marker on the altar surface.</li>
+  </ul>
+</div>
+
+<div class="box warm">
+  <h3 style="margin-top: 0;">E · CEILING — layers of light</h3>
+  <ul>
+    <li><strong>MYLAR</strong> — cut into 6-8 strips, 8-10 ft long, twisted gently. Hang from ceiling in irregular cluster above the chair. Catches projection scatter + ambient light. If you have time: cut tiny mandala/flower-of-life holes in the strips with hole punch or laser — light dances through.</li>
+    <li><strong>FRESNEL LENS</strong> — drill a single hole at the top edge. Hang from ceiling on monofilament at <em>eye level when seated</em>. Place it so when the visitor leans forward, the lens magnifies the wall message
+    behind it. <em>This is the surveillance moment</em> — what looks like meditation becomes magnification, scrutiny, the watching eye.</li>
+  </ul>
+</div>
+
+<div class="box warm">
+  <h3 style="margin-top: 0;">F · HIDDEN LAYERS (the critique, revealed)</h3>
+  <ul>
+    <li><strong>RED PHOTO FILTER PAPER</strong> — print decoy text on the wall (looks like calm wellness language). Print the REAL message in cyan/red dot patterns that disappear unless viewed through the red filter.
+        Provide one filter card on the entry table: <em>"hold this up to the wall."</em>
+        Examples below in section 5.</li>
+    <li><strong>DIE-CUT FILM</strong> — print "be here now" repeating in concentric rings on clear film. Hang in front of the chair near the screen at an angle. Visitors see the meditation through the surveillance language. Pure overlap.</li>
+  </ul>
+</div>
+
+
+<h2>5 · RED-FILTER REVEAL MESSAGES</h2>
+<p>The decoy text (cyan, visible without filter) reads like a wellness app. The hidden text (red, only legible through red filter) is the critique. Both layered on one print.</p>
+
+<table>
+  <tr><th>Without filter (cyan)</th><th>With filter (red)</th></tr>
+  <tr><td><em>"breathe in"</em></td><td><em>"be tracked"</em></td></tr>
+  <tr><td><em>"be present"</em></td><td><em>"be sold to"</em></td></tr>
+  <tr><td><em>"find your calm"</em></td><td><em>"buy your calm"</em></td></tr>
+  <tr><td><em>"you are enough"</em></td><td><em>"update available"</em></td></tr>
+  <tr><td><em>"slow down"</em></td><td><em>"or fall behind"</em></td></tr>
+</table>
+<p>Print sheet is in <code>print_kit/red_filter_reveals.html</code>.</p>
+
+
+<h2>6 · THE BOOK</h2>
+<p>24 pages on handmade cream paper, hand-bound. The book is the artifact a visitor can take with them OR see on the side table.</p>
+<table>
+  <tr><th>Spread</th><th>Content</th></tr>
+  <tr><td>Cover</td><td>Holographic BLOOM mark on cream paper (or printed on iridescent then glued)</td></tr>
+  <tr><td>p. 1</td><td>Title page + dedication: "for the people who sat in the chair"</td></tr>
+  <tr><td>p. 2–3</td><td>The opening question — full bleed quote</td></tr>
+  <tr><td>p. 4–5</td><td>Origin — workshop mind-map photo + caption</td></tr>
+  <tr><td>p. 6–7</td><td>Process — BrainBit + Kinect (small images + 200-word essay)</td></tr>
+  <tr><td>p. 8–13</td><td>The 15 scenes — 3 per spread, image + 1-line caption</td></tr>
+  <tr><td>p. 14–15</td><td>The other half — overstim collage stills</td></tr>
+  <tr><td>p. 16–17</td><td>The room — install diagram</td></tr>
+  <tr><td>p. 18–19</td><td>Voices from the wall — sample visitor cards (anonymized)</td></tr>
+  <tr><td>p. 20–21</td><td>Closing: "you have always been bloom."</td></tr>
+  <tr><td>p. 22–23</td><td>Credits + thanks</td></tr>
+  <tr><td>Back</td><td>Logo + URL: siddharthmehta.design/mandalas</td></tr>
+</table>
+<p>Template is in <code>print_kit/book_pages/book.html</code>. <em>Print spreads on US Letter or A4. Hand-stitch with cream linen thread.</em></p>
+
+
+<h2>7 · CHECKLIST FOR THE BAG</h2>
+<ul class="checklist">
+  <li>Laptop + USB stick with all PDFs/SVGs from <code>print_kit/</code></li>
+  <li>Wallet with funds for print shop ($60–120 estimate)</li>
+  <li>Tape measure (for placement decisions in 1205 later)</li>
+  <li>One sample of die-cut film, mylar, red filter to compare to print proofs</li>
+  <li>Notebook + pen for any decisions made at the shop</li>
+  <li>Phone charger</li>
+  <li>Snack — you skipped breakfast last time</li>
+</ul>
+
+
+<h2>8 · TIME BUDGET FOR THE REMAINING DAYS</h2>
+<table>
+  <tr><th>Day</th><th>Hours</th><th>Focus</th></tr>
+  <tr><td><strong>Wed (tomorrow)</strong></td><td>~10 hrs</td><td>Print + laser cut. Pick up materials. Possibly begin staging.</td></tr>
+  <tr><td><strong>Thursday</strong></td><td>~14 hrs</td><td>Video final cut (7-8h) · Vision Pro coda (4h) · evening: room staging start. Sleep at Parsons if possible.</td></tr>
+  <tr><td><strong>Friday 1–3pm</strong></td><td>2 hrs</td><td>Official setup window — chair, TV, BrainBit station, projection alignment</td></tr>
+  <tr><td><strong>Friday 3–6pm</strong></td><td>3 hrs</td><td>Wall finishing — cork wall pins, blue fire glass spiral, mylar hanging</td></tr>
+  <tr><td><strong>Friday 6pm</strong></td><td>SHOW</td><td><strong>Bloom opens.</strong></td></tr>
+</table>
+
+
+<h2>9 · IF YOU FEEL OVERWHELMED</h2>
+<div class="box">
+<p>Rank everything in this doc against this priority: <strong>does it serve the visitor sitting in the chair?</strong></p>
+<p>Logo, placard, the chair, the screen, the BrainBit, the cork wall, the closing — these are non-negotiable.</p>
+<p>Mylar, fresnel, blue fire glass, red filters, lenticular, book — every one of these is <em>amplification</em>.
+The piece works without them. Add what you have time to add well; don't add what you only have time to add badly.</p>
+<p>You have one job tomorrow: <strong>walk out of the print shop with the must-haves printed and the laser cuts done.</strong> Everything else is a bonus round.</p>
+</div>
+
+<hr>
+
+<p style="text-align: center; color: #8a7e6e; font-style: italic;">
+You have always been bloom.<br>
+<span style="font-family: 'Inter'; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;">
+— compiled May 13, 2026 · for tomorrow's appointment
+</span>
+</p>
+
+</div>
+</body>
+</html>

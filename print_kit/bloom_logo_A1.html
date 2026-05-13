@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BLOOM — A1 Poster</title>
+<style>
+  /* ────────────────────────────────────────────────────
+     A1 Poster — 841mm × 594mm landscape
+     Print: Chrome → ⌘P → Paper size = A1 → Landscape →
+            Margins = None → Save as PDF
+     For the print shop: print on holographic foil OR
+     print as-is with the printed iridescent background.
+     ──────────────────────────────────────────────────── */
+  @page { size: 841mm 594mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 841mm; height: 594mm;
+    background: #0a0a0a;
+    margin: 0;
+    overflow: hidden;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .stage {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    background: #0a0a0a;
+    padding: 60mm;
+  }
+
+  .mark {
+    position: relative;
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 30mm;
+    padding: 40mm 60mm;
+    border-radius: 18mm;
+    background:
+      radial-gradient(ellipse 70% 50% at 30% 30%, rgba(255,255,255,0.45) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 70% at 80% 70%, rgba(255,255,255,0.25) 0%, transparent 60%),
+      conic-gradient(from 0deg at 50% 50%,
+        #d3a7ff 0%, #ffd3a7 14%, #fff3a7 26%, #a7ffc5 38%,
+        #a7e0ff 50%, #c5a7ff 62%, #ffa7e0 74%, #ffd3a7 86%, #d3a7ff 100%);
+    box-shadow: 0 0 60mm rgba(220,200,255,0.25),
+                inset 0 1mm 1mm rgba(255,255,255,0.55),
+                inset 0 -1mm 1mm rgba(0,0,0,0.25);
+  }
+
+  .text {
+    font-family: "Helvetica Neue", "Arial Black", sans-serif;
+    font-weight: 900;
+    font-size: 280mm;
+    letter-spacing: -12mm;
+    color: #0a0a0a;
+    line-height: 0.85;
+  }
+
+  .flower {
+    width: 180mm; height: 180mm;
+  }
+
+  .tagline {
+    position: absolute;
+    bottom: 40mm;
+    left: 0; right: 0;
+    text-align: center;
+    font: italic 30mm "EB Garamond", Georgia, serif;
+    color: #f5f1e8;
+    letter-spacing: 2mm;
+  }
+  .tagline .dot { color: #d97961; }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="mark">
+      <span class="text">BLOOM</span>
+      <svg class="flower" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(45)"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(90)"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(135)"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(180)"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(225)"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(270)"/>
+          <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#0a0a0a" transform="rotate(315)"/>
+        </g>
+      </svg>
+    </div>
+    <div class="tagline">be better everyday<span class="dot">.</span></div>
+  </div>
+</body>
+</html>

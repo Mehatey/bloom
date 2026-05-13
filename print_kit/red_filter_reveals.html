@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Red-filter reveal sheets</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ── HOW THIS WORKS ──────────────────────────────────────────
+     • DECOY text printed in red (#d63838) — close to red-filter color.
+       Without filter: visible. With red filter: washes to background, INVISIBLE.
+     • REVEAL text printed in cyan (#3a6fc8) — opposite of red.
+       Without filter: visible but recedes. With red filter: turns near-black, READS.
+     Visitor holds the small red filter card up to the wall message.
+     The wellness language fades. The surveillance critique appears.
+     ──────────────────────────────────────────────────────────── */
+
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 210mm;
+    background: #ffffff;
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .sheet { width: 210mm; height: 297mm; padding: 22mm; page-break-after: always; position: relative; }
+  .sheet:last-child { page-break-after: auto; }
+
+  .header {
+    font-family: "Inter", sans-serif;
+    font-size: 8pt; letter-spacing: 0.22em; text-transform: uppercase;
+    color: #999;
+    margin-bottom: 8mm;
+  }
+
+  .reveal-pair {
+    position: relative;
+    height: 50mm;
+    margin-bottom: 14mm;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* Both stack at same x,y — overlay them */
+  .decoy, .reveal {
+    position: absolute;
+    inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    line-height: 1.0;
+  }
+
+  .decoy {
+    color: #d63838;          /* RED — disappears through red filter */
+    font-size: 28mm;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    z-index: 2;
+  }
+
+  .reveal {
+    color: #3a6fc8;          /* BLUE — emerges through red filter */
+    font-size: 18mm;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    z-index: 1;
+    /* small offset so layers feel layered, not stacked */
+    transform: translate(2mm, 4mm);
+  }
+
+  .label {
+    font-family: "Inter", sans-serif;
+    font-size: 8pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #999;
+    text-align: center;
+    margin-bottom: 4mm;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 18mm; left: 22mm; right: 22mm;
+    font-family: "Inter", sans-serif;
+    font-size: 7pt; letter-spacing: 0.15em; text-transform: uppercase;
+    color: #ccc;
+    text-align: center;
+  }
+
+  /* Instruction sheet (last page) */
+  .instr h2 { font-size: 18pt; font-weight: 400; margin-bottom: 6mm; font-family: "Instrument Serif", serif; }
+  .instr p  { font-size: 11pt; line-height: 1.5; margin-bottom: 4mm; max-width: 28em; color: #333; }
+  .instr code { font-family: ui-monospace, monospace; font-size: 10pt; background: #f4f1ea; padding: 1px 5px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<!-- Sheet 1 — five pairs -->
+<div class="sheet">
+  <div class="header">bloom · reveal sheet · 01</div>
+
+  <div class="label">— pair 01 —</div>
+  <div class="reveal-pair">
+    <div class="decoy">breathe in</div>
+    <div class="reveal">be tracked</div>
+  </div>
+
+  <div class="label">— pair 02 —</div>
+  <div class="reveal-pair">
+    <div class="decoy">be present</div>
+    <div class="reveal">be sold to</div>
+  </div>
+
+  <div class="label">— pair 03 —</div>
+  <div class="reveal-pair">
+    <div class="decoy">find your calm</div>
+    <div class="reveal">buy your calm</div>
+  </div>
+
+  <div class="footer">hold the red filter card up to the wall</div>
+</div>
+
+<!-- Sheet 2 — three more pairs -->
+<div class="sheet">
+  <div class="header">bloom · reveal sheet · 02</div>
+
+  <div class="label">— pair 04 —</div>
+  <div class="reveal-pair">
+    <div class="decoy">you are enough</div>
+    <div class="reveal">update available</div>
+  </div>
+
+  <div class="label">— pair 05 —</div>
+  <div class="reveal-pair">
+    <div class="decoy">slow down</div>
+    <div class="reveal">or fall behind</div>
+  </div>
+
+  <div class="label">— pair 06 —</div>
+  <div class="reveal-pair">
+    <div class="decoy">be here now</div>
+    <div class="reveal">be watched now</div>
+  </div>
+
+  <div class="footer">hold the red filter card up to the wall</div>
+</div>
+
+<!-- Sheet 3 — instructions for the print operator + studio -->
+<div class="sheet instr">
+  <div class="header">bloom · how this print works</div>
+
+  <h2>Two-layer reveal · red filter</h2>
+
+  <p>This sheet contains two overlapping text layers:</p>
+  <p>
+    <strong style="color: #d63838;">RED text</strong> (decoy, wellness language) — printed in <code>#d63838</code>.<br>
+    <strong style="color: #3a6fc8;">BLUE text</strong> (reveal, surveillance language) — printed in <code>#3a6fc8</code>.
+  </p>
+
+  <h2>How it reads</h2>
+  <p>Without a red filter held in front: the visitor sees both messages,
+  red dominant. The wellness phrase is the foreground.</p>
+
+  <p>Through a red photo filter (or red gel): the red text fades to near-white
+  (filter passes red, so red ink looks white against red-washed paper).
+  The blue text darkens to near-black, becoming the new foreground.
+  The hidden surveillance critique appears.</p>
+
+  <h2>Print spec</h2>
+  <p>Print on bright white paper. NO color profile correction (the colors
+  must print exactly as specified — ask print shop to disable auto color
+  matching). Use a fine-grain matte or semi-gloss paper. Size: A4 or larger.</p>
+
+  <p>For installation: mount at face height on wall behind chair. Leave a
+  small wooden tray of red filter cards (3 × 5") on a side table with a
+  note: <em>"hold this up to the wall."</em></p>
+
+</div>
+
+</body>
+</html>

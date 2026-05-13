@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lunar phase ring · 12 moons. For laser engrave (mix of fill + stroke). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 400 400" width="400" height="400">
+  <g stroke="#000" stroke-width="0.8" fill="none">
+    <circle cx="0" cy="0" r="190"/>
+    <circle cx="0" cy="0" r="60"/>
+  </g>
+  <g transform="translate(0.00 -140.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 24.0,24 0 0,0 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(70.00 -121.24)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 20.0,24 0 0,0 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(121.24 -70.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 16.0,24 0 0,0 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(140.00 0.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 12.0,24 0 0,0 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(121.24 70.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 8.0,24 0 0,0 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(70.00 121.24)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 3.999999999999999,24 0 0,0 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(0.00 140.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 0.0,24 0 0,1 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(-70.00 121.24)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 4.000000000000002,24 0 0,1 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(-121.24 70.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 7.999999999999998,24 0 0,1 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(-140.00 0.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 12.0,24 0 0,1 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(-121.24 -70.00)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 16.0,24 0 0,1 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+  <g transform="translate(-70.00 -121.24)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#000" stroke-width="1"/>
+    <path d="M 0,-24 A 20.0,24 0 0,1 0,24 A 24,24 0 0,0 0,-24 Z" fill="#000"/>
+  </g>
+</svg>

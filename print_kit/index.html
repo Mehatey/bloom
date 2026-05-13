@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom — Print Kit Index</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    background: #0a0a0a; color: #f5f1e8;
+    padding: 60px 40px;
+    line-height: 1.55;
+    font-size: 16px;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+
+  h1 { font-size: 56px; line-height: 1.0; margin-bottom: 4px; font-weight: 400; letter-spacing: -0.02em; }
+  .tagline { color: rgba(245,241,232,0.5); font-style: italic; font-size: 22px; margin-bottom: 50px; }
+
+  h2 { font-size: 22px; margin: 44px 0 16px; padding-bottom: 4px; border-bottom: 1px solid rgba(245,241,232,0.10); font-weight: 400; }
+  h2 .num { font-family: "Inter"; font-size: 10px; letter-spacing: 0.25em; color: #d97961; margin-right: 12px; font-weight: 500; vertical-align: middle; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+  a.tile {
+    display: block;
+    padding: 22px 26px;
+    background: #131310;
+    border: 0.5px solid rgba(245,241,232,0.10);
+    border-radius: 4px;
+    text-decoration: none;
+    color: #f5f1e8;
+    transition: border-color 0.25s, background 0.25s, transform 0.25s;
+  }
+  a.tile:hover { border-color: #d97961; background: #161613; transform: translateY(-2px); }
+
+  a.tile .label { font-family: "Inter"; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #d97961; font-weight: 500; display: block; margin-bottom: 6px; }
+  a.tile .title { font-size: 22px; line-height: 1.15; margin-bottom: 4px; }
+  a.tile .desc  { font-family: "Inter"; font-size: 12px; color: rgba(245,241,232,0.55); line-height: 1.5; }
+  a.tile .fmt   { font-family: "Inter"; font-size: 10px; letter-spacing: 0.16em; color: rgba(245,241,232,0.4); text-transform: uppercase; display: block; margin-top: 10px; }
+
+  .priority { display: inline-block; padding: 2px 8px; border-radius: 2px; font-family: "Inter"; font-size: 9px; letter-spacing: 0.18em; font-weight: 500; margin-left: 8px; vertical-align: middle; }
+  .priority.must  { background: #d97961; color: #0a0a0a; }
+  .priority.should{ background: #d9b061; color: #0a0a0a; }
+  .priority.nice  { background: #8a857a; color: #0a0a0a; }
+
+  .lead {
+    color: rgba(245,241,232,0.7);
+    max-width: 38em;
+    margin-bottom: 14px;
+  }
+  .lead em { color: #d97961; font-style: italic; }
+
+  .top-bar {
+    margin-bottom: 50px;
+    padding: 20px 24px;
+    background: #131310;
+    border-left: 2px solid #d97961;
+    border-radius: 2px;
+  }
+  .top-bar .row { display: flex; flex-wrap: wrap; gap: 24px; }
+  .top-bar .row > div { flex: 1; min-width: 200px; }
+  .top-bar .micro { font-family: "Inter"; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(245,241,232,0.45); margin-bottom: 3px; }
+  .top-bar .val  { font-family: "Instrument Serif"; font-size: 17px; color: #f5f1e8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Print Kit.</h1>
+<p class="tagline">everything you need at the laser cutter + print shop tomorrow.</p>
+
+<div class="top-bar">
+  <div class="row">
+    <div><div class="micro">appointment</div><div class="val">11am · laser shop</div></div>
+    <div><div class="micro">show</div><div class="val">Fri May 15 · 6pm</div></div>
+    <div><div class="micro">room</div><div class="val">1205 · Parsons</div></div>
+    <div><div class="micro">live site</div><div class="val">mehatey.github.io/bloom</div></div>
+  </div>
+</div>
+
+<p class="lead">Open each file in Chrome. <strong>⌘P</strong> → set paper size from the file header (A1 / A2 / A4 / business-card size) → margins off → Save as PDF. Bring USB to print shop. <em>SVG files go straight to the laser cutter.</em></p>
+
+
+<!-- ════ START HERE ════ -->
+<h2><span class="num">00</span>Start here</h2>
+<div class="grid">
+  <a class="tile" href="TOMORROW.html">
+    <span class="label">the plan · read first</span>
+    <div class="title">TOMORROW.html</div>
+    <div class="desc">The whole strategic plan — run-of-day, decisions made for you, checklist, bag contents, time budget for remaining days.</div>
+    <span class="fmt">HTML · print to PDF if you want a paper copy</span>
+  </a>
+  <a class="tile" href="installation_brief.html">
+    <span class="label">room map</span>
+    <div class="title">installation_brief.html</div>
+    <div class="desc">Overhead diagram of Room 1205 — where every object goes, build order for Friday, what to do if something breaks.</div>
+    <span class="fmt">HTML</span>
+  </a>
+</div>
+
+
+<!-- ════ MUST PRINT ════ -->
+<h2><span class="num">01</span>Must print — entry · cards · placard</h2>
+<div class="grid">
+  <a class="tile" href="bloom_logo_A1.html">
+    <span class="label">poster · entry<span class="priority must">MUST</span></span>
+    <div class="title">A1 BLOOM logo</div>
+    <div class="desc">Holographic mark · 841 × 594 mm landscape. Print on iridescent foil if available; otherwise print the design as-is.</div>
+    <span class="fmt">HTML → PDF · A1 landscape</span>
+  </a>
+  <a class="tile" href="placard.html">
+    <span class="label">wall placard<span class="priority must">MUST</span></span>
+    <div class="title">A2 thesis placard</div>
+    <div class="desc">Title · subtitle · concept · meta — for next to the door. Cream paper, dark ink.</div>
+    <span class="fmt">HTML → PDF · A2 portrait</span>
+  </a>
+  <a class="tile" href="wall_questions.html">
+    <span class="label">cork wall<span class="priority must">MUST</span></span>
+    <div class="title">3 question cards</div>
+    <div class="desc">A4 each — "what was beautiful · who has held you · what can you put down." Mount above the cork wall.</div>
+    <span class="fmt">HTML → PDF · 3× A4 portrait</span>
+  </a>
+  <a class="tile" href="business_card.html">
+    <span class="label">business cards<span class="priority must">MUST</span></span>
+    <div class="title">Business cards</div>
+    <div class="desc">Holographic BLOOM front · name + URL + tagline back. 100ct minimum, heavy white card.</div>
+    <span class="fmt">HTML → PDF · 4-up on A4 · double-sided</span>
+  </a>
+</div>
+
+
+<!-- ════ LASER CUT ════ -->
+<h2><span class="num">02</span>Laser cutter — vectors</h2>
+<div class="grid">
+  <a class="tile" href="bloom_logo.svg">
+    <span class="label">cut + engrave<span class="priority must">MUST</span></span>
+    <div class="title">BLOOM logo · full mark</div>
+    <div class="desc">Rounded badge outline (cut) · BLOOM wordmark + flower (engrave). <em>Open in Illustrator → convert text to outlines before cut.</em></div>
+    <span class="fmt">SVG · 1/8" black acrylic or birch ply</span>
+  </a>
+  <a class="tile" href="bloom_logo_mark.svg">
+    <span class="label">engrave<span class="priority must">MUST</span></span>
+    <div class="title">BLOOM flower · mark only</div>
+    <div class="desc">Just the 8-petal spiral. For engraving onto wood discs, the cube, anything else you decide.</div>
+    <span class="fmt">SVG · pure vector path</span>
+  </a>
+  <a class="tile" href="mandala_svgs/flower-of-life.svg">
+    <span class="label">mandala 01<span class="priority should">SHOULD</span></span>
+    <div class="title">Flower of Life</div>
+    <div class="desc">19-circle sacred geometry. Engrave on the cube, or on a wood plaque.</div>
+    <span class="fmt">SVG · stroke only</span>
+  </a>
+  <a class="tile" href="mandala_svgs/rose-12fold.svg">
+    <span class="label">mandala 02<span class="priority should">SHOULD</span></span>
+    <div class="title">Rose · 12-fold</div>
+    <div class="desc">Beauty chapter. Twelve petals · 24 outer accents. Wood disc for the turntable.</div>
+    <span class="fmt">SVG · stroke only</span>
+  </a>
+  <a class="tile" href="mandala_svgs/phyllotaxis.svg">
+    <span class="label">mandala 03<span class="priority should">SHOULD</span></span>
+    <div class="title">Golden Phyllotaxis</div>
+    <div class="desc">Bloom chapter. 120 seeds at the golden angle. Sunflower spiral. Entry wall.</div>
+    <span class="fmt">SVG · stroke only</span>
+  </a>
+  <a class="tile" href="mandala_svgs/celtic-interwoven.svg">
+    <span class="label">mandala 04<span class="priority should">SHOULD</span></span>
+    <div class="title">Celtic Interwoven</div>
+    <div class="desc">Patterns chapter. 4-fold knot. Engrave on acrylic for backlit installation.</div>
+    <span class="fmt">SVG · stroke only</span>
+  </a>
+  <a class="tile" href="mandala_svgs/lunar-phases.svg">
+    <span class="label">mandala 05<span class="priority should">SHOULD</span></span>
+    <div class="title">Lunar Phases</div>
+    <div class="desc">Impermanence chapter. 12 moons in a ring. Engrave + fill on mirror.</div>
+    <span class="fmt">SVG · mixed stroke + fill</span>
+  </a>
+</div>
+
+
+<!-- ════ CRITIQUE LAYER ════ -->
+<h2><span class="num">03</span>Critique layer — film + reveal</h2>
+<div class="grid">
+  <a class="tile" href="red_filter_reveals.html">
+    <span class="label">reveal sheets<span class="priority should">SHOULD</span></span>
+    <div class="title">Red-filter reveal sheets</div>
+    <div class="desc">Two-color overlays — wellness language in red (fades through filter), surveillance language in blue (emerges). Includes operator instructions.</div>
+    <span class="fmt">HTML → PDF · A4 · bright white paper · no color correction</span>
+  </a>
+  <a class="tile" href="die_cut_overlay.html">
+    <span class="label">overlay<span class="priority should">SHOULD</span></span>
+    <div class="title">"be here now" — clear film</div>
+    <div class="desc">Nine concentric rings of <em>be here now</em> in italic serif. Print on transparent die-cut film. Hang between chair and wall.</div>
+    <span class="fmt">HTML → PDF · A2 · clear film</span>
+  </a>
+</div>
+
+
+<!-- ════ THE BOOK ════ -->
+<h2><span class="num">04</span>The book</h2>
+<div class="grid">
+  <a class="tile" href="book_pages/book.html" style="grid-column: span 2;">
+    <span class="label">artifact<span class="priority nice">NICE</span></span>
+    <div class="title">Bloom — 24-page book interior</div>
+    <div class="desc">Cover · concept · origin · process · 15 scenes · the other half · install diagram · voices from the wall · coda · credits. Print on cream / handmade paper. Hand-stitch with cream linen thread. A5 portrait.</div>
+    <span class="fmt">HTML → PDF · A5 portrait · 24 pages</span>
+  </a>
+</div>
+
+
+<!-- ════ END ════ -->
+<h2 style="margin-top: 60px;">↳ remember</h2>
+<p class="lead" style="font-style: italic; font-size: 18px;">
+You walk out of the print shop with the MUSTs. Everything else is bonus. The piece works without amplification — but tomorrow, build as much amplification as you can do well.
+</p>
+<p class="lead" style="font-style: italic; color: #d97961;">be better everyday.</p>
+
+</div>
+</body>
+</html>
