@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- CD 03 · cells · 150×150mm square. Mandala center, 4 corner labels.
-     For LASER ENGRAVE on CD: only the round area within r=58 engraves.
-     For PRINT on paper/film: full square prints with all 4 corners visible.
-     Convert <text> to outlines in Illustrator before sending to laser. -->
+<!-- CD 03 · cells · 150×150mm. Mandala center, 4 corner labels. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-75 -75 150 150" width="600" height="600">
   <circle r="58" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="0.6,1.2" opacity="0.35"/>
   <circle r="7.5" fill="none" stroke="#000" stroke-width="0.4"/>
@@ -16,20 +13,20 @@
     <circle cx="-22" cy="-10" r="10"/>
     <circle cx="22" cy="-10" r="10"/>
   </g>
-  <g transform="translate(-65 -62)">
-    <g transform="scale(0.06)">
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+  <g transform="translate(-67 -62)">
+    <g transform="translate(0 -2) scale(0.07)">
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
     </g>
-    <text x="8" y="2" font-family="Helvetica, Arial Black, sans-serif" font-weight="900" font-size="5" letter-spacing="-0.2" fill="#000">BLOOM</text>
+    <text x="8" y="3" font-family="Avenir Next Rounded Bold, Helvetica Rounded, SF Pro Rounded, Inter, sans-serif" font-weight="900" font-size="6" letter-spacing="-0.15" fill="#000">BLOOM</text>
   </g>
   <text x="70" y="-62" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="5" fill="#000">N° 03</text>
-  <text x="-65" y="70" font-family="Helvetica, Arial, sans-serif" font-size="3.2" letter-spacing="0.15em" fill="#000">bloom · 2026</text>
+  <text x="-65" y="70" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="4" letter-spacing="0.05em" fill="#000">by siddhartha</text>
   <text x="70" y="70" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="9" fill="#000">cells</text>
 </svg>
