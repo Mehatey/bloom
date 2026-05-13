@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — What just happened</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Small card given AFTER the meditation. 4 × 6 inches (101.6 × 152.4 mm).
+     Print 2-up on A4, double-sided. Cut by hand. */
+  @page { size: A4 portrait; margin: 8mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Lora", Georgia, serif;
+    line-height: 1.5;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .sheet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6mm;
+    page-break-after: always;
+  }
+  .sheet:last-child { page-break-after: auto; }
+
+  .card {
+    width: 101.6mm; height: 152.4mm;
+    padding: 12mm;
+    border-radius: 2.5mm;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 0 0.2mm #ddd;
+  }
+
+  /* FRONT — cream */
+  .card.front {
+    background: #f5f1e8;
+    color: #1a1814;
+  }
+  .card.front .mark {
+    width: 12mm; height: 12mm;
+    margin: 0 auto 8mm;
+  }
+  .card.front .mark path { fill: #1a1814; }
+  .card.front .title {
+    font-size: 7mm;
+    font-style: italic;
+    color: #6a0c1a;
+    text-align: center;
+    margin-bottom: 8mm;
+  }
+  .card.front p {
+    font-size: 3.6mm;
+    line-height: 1.55;
+    margin-bottom: 4mm;
+    color: #2a2620;
+  }
+  .card.front p em { font-style: italic; color: #1a1814; }
+  .card.front .closer {
+    font-style: italic;
+    color: #6a0c1a;
+    font-size: 4mm;
+    text-align: center;
+    margin-top: 4mm;
+  }
+
+  /* BACK — dark with tagline */
+  .card.back {
+    background: #1a1814;
+    color: #f5f1e8;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+  }
+  .card.back .quote {
+    font-style: italic;
+    font-size: 9mm;
+    line-height: 1.1;
+    color: #f5f1e8;
+    margin-bottom: 8mm;
+  }
+  .card.back .quote .warm { color: #d97961; }
+  .card.back .url {
+    font-family: "Inter", sans-serif;
+    font-size: 2.8mm;
+    letter-spacing: 0.18em;
+    color: rgba(245,241,232,0.55);
+  }
+</style>
+</head>
+<body>
+
+<!-- ──── FRONT SHEET ──── -->
+<div class="sheet">
+  <div class="card front">
+    <svg class="mark" viewBox="-100 -100 200 200">
+      <g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(315)"/>
+      </g>
+    </svg>
+    <div class="title">what just happened</div>
+    <p>For six minutes, the room was reading you.</p>
+    <p>A small sensor on your forehead measured your <em>stillness</em>. A camera in the corner saw your <em>body</em>. The visuals you watched were tuned to your nervous system in real time.</p>
+    <p>The breath ring widened as you slowed. The mandala opened as you leaned. The lightning grew when you held your hand up.</p>
+    <p>Most wellness apps tell you what to do. <em>This one listened.</em></p>
+    <div class="closer">it was always you.</div>
+  </div>
+
+  <div class="card front">
+    <svg class="mark" viewBox="-100 -100 200 200">
+      <g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(315)"/>
+      </g>
+    </svg>
+    <div class="title">what just happened</div>
+    <p>For six minutes, the room was reading you.</p>
+    <p>A small sensor on your forehead measured your <em>stillness</em>. A camera in the corner saw your <em>body</em>. The visuals you watched were tuned to your nervous system in real time.</p>
+    <p>The breath ring widened as you slowed. The mandala opened as you leaned. The lightning grew when you held your hand up.</p>
+    <p>Most wellness apps tell you what to do. <em>This one listened.</em></p>
+    <div class="closer">it was always you.</div>
+  </div>
+</div>
+
+<!-- ──── BACK SHEET ──── -->
+<div class="sheet" style="page-break-before: always;">
+  <div class="card back">
+    <div class="quote">you have<br>always been<br><span class="warm">bloom.</span></div>
+    <div class="url">siddharthmehta.design/mandalas</div>
+  </div>
+  <div class="card back">
+    <div class="quote">you have<br>always been<br><span class="warm">bloom.</span></div>
+    <div class="url">siddharthmehta.design/mandalas</div>
+  </div>
+</div>
+
+</body>
+</html>

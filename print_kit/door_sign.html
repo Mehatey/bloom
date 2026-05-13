@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Door Sign</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Two-sided A5 sign. Page 1 = OPEN. Page 2 = IN SESSION.
+     Print double-sided. Cut, hang on the door, flip as needed. */
+  @page { size: A5 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Lora", Georgia, serif;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 148mm; height: 210mm;
+    padding: 30mm 20mm;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    page-break-after: always;
+    position: relative;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .open  { background: #f5f1e8; color: #1a1814; }
+  .session { background: #1a1814; color: #f5f1e8; }
+
+  .mark { width: 20mm; height: 20mm; margin-bottom: 18mm; }
+  .open .mark path { fill: #1a1814; }
+  .session .mark path { fill: #f5f1e8; }
+
+  .label {
+    font-family: "Inter", sans-serif;
+    font-size: 4mm; font-weight: 500;
+    letter-spacing: 0.3em; text-transform: uppercase;
+    margin-bottom: 10mm;
+  }
+  .open .label { color: #8a7e6e; }
+  .session .label { color: rgba(245,241,232,0.55); }
+
+  h1 {
+    font-size: 32mm;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    margin-bottom: 8mm;
+  }
+  .session h1 em { font-style: italic; color: #d97961; }
+
+  .sub {
+    font-style: italic;
+    font-size: 8mm;
+    line-height: 1.25;
+  }
+  .open .sub { color: #5a564e; }
+  .session .sub { color: rgba(245,241,232,0.7); }
+
+  .footer {
+    position: absolute;
+    bottom: 20mm; left: 0; right: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 3mm;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .open .footer { color: #8a7e6e; }
+  .session .footer { color: rgba(245,241,232,0.45); }
+</style>
+</head>
+<body>
+
+<!-- ──── SIDE A · OPEN ──── -->
+<div class="page open">
+  <svg class="mark" viewBox="-100 -100 200 200">
+    <g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(315)"/>
+    </g>
+  </svg>
+
+  <div class="label">come in</div>
+  <h1>open.</h1>
+  <div class="sub">step in, take your time</div>
+
+  <div class="footer">bloom · room 1205</div>
+</div>
+
+<!-- ──── SIDE B · IN SESSION ──── -->
+<div class="page session">
+  <svg class="mark" viewBox="-100 -100 200 200">
+    <g>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" transform="rotate(315)"/>
+    </g>
+  </svg>
+
+  <div class="label">someone is sitting</div>
+  <h1>in <em>session.</em></h1>
+  <div class="sub">please pause<br>back in 8 minutes</div>
+
+  <div class="footer">bloom · room 1205</div>
+</div>
+
+</body>
+</html>

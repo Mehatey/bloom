@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Show-day Runbook</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Lora", Georgia, serif;
+    background: #f5f1e8;
+    color: #1a1814;
+    line-height: 1.5;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    padding: 16mm 16mm 12mm;
+    page-break-after: always;
+    position: relative;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  h1 { font-size: 32pt; line-height: 0.95; letter-spacing: -0.02em; font-weight: 400; margin-bottom: 2mm; }
+  .sub { font-style: italic; font-size: 12pt; color: #5a564e; margin-bottom: 7mm; }
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 9pt; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #6a0c1a;
+    margin: 7mm 0 3mm;
+    border-bottom: 0.5px solid #c8c2b4;
+    padding-bottom: 2mm;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 24mm 1fr;
+    gap: 5mm;
+    margin-bottom: 4mm;
+    align-items: baseline;
+  }
+  .row .when {
+    font-family: "Inter", sans-serif;
+    font-size: 9pt; font-weight: 500;
+    color: #6a0c1a;
+    letter-spacing: 0.06em;
+    padding-top: 1mm;
+  }
+  .row .what {
+    font-size: 10.5pt; line-height: 1.45;
+  }
+  .row .what strong { color: #1a1814; font-weight: 500; }
+  .row .what em { font-style: italic; color: #5a564e; }
+
+  .checklist { list-style: none; padding-left: 0; }
+  .checklist li {
+    padding-left: 7mm;
+    position: relative;
+    margin-bottom: 1.5mm;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+  .checklist li::before {
+    content: "☐";
+    position: absolute;
+    left: 0;
+    font-size: 11pt;
+  }
+  .checklist li em { color: #5a564e; font-style: italic; }
+
+  .footer {
+    position: absolute;
+    bottom: 10mm; left: 16mm; right: 16mm;
+    padding-top: 3mm;
+    border-top: 0.5px solid #c8c2b4;
+    display: flex; justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a7e6e;
+  }
+</style>
+</head>
+<body>
+
+<!-- ════ PAGE 1 ════ -->
+<div class="page">
+
+  <h1>Friday.</h1>
+  <div class="sub">Show-day runbook · 12pm → 9pm · Room 1205</div>
+
+  <h2>Morning — before you arrive</h2>
+  <ul class="checklist">
+    <li>Charge laptop to 100%. <em>The show runs from here.</em></li>
+    <li>Charge BrainBit fully. Bring charging cable.</li>
+    <li>Pack: HDMI cable, USB-C adapter, extension cord (6ft minimum), backup laptop charger.</li>
+    <li>Eat a real breakfast. You will forget to eat after 1pm.</li>
+    <li>Wear black. Move freely. Closed shoes.</li>
+  </ul>
+
+  <h2>1:00 — Arrive at Room 1205</h2>
+  <div class="row">
+    <span class="when">1:00</span>
+    <div class="what"><strong>Walk the room.</strong> Note power outlets, sightlines, where to hide cables. Decide chair orientation if not already locked.</div>
+  </div>
+  <div class="row">
+    <span class="when">1:15</span>
+    <div class="what"><strong>Hang the A1 BLOOM logo</strong> above the door. <strong>Mount the WHY + HOW placards</strong> at chest height, one on each side of the entry.</div>
+  </div>
+  <div class="row">
+    <span class="when">1:30</span>
+    <div class="what"><strong>Position the 75" TV</strong>. Eye level when seated. About 8 ft from chair. Run HDMI from laptop. <strong>Place the chair.</strong></div>
+  </div>
+  <div class="row">
+    <span class="when">1:45</span>
+    <div class="what"><strong>Set up BrainBit station</strong> table on the chair's right side. Lay the headband on a clean towel. Plug in charger.</div>
+  </div>
+  <div class="row">
+    <span class="when">2:00</span>
+    <div class="what"><strong>Run a full end-to-end test.</strong> Open <em>complete.html?show=1</em>. Wear the BrainBit yourself. Sit in the chair. Confirm: overstim opens, transitions to meditation, all 15 scenes play, closing breath ring appears. <em>If anything breaks, you have 4 hours to fix it.</em></div>
+  </div>
+
+  <h2>3:00 — The walls + the altar</h2>
+  <div class="row">
+    <span class="when">3:00</span>
+    <div class="what"><strong>Blue fire glass</strong> spiral on the wall behind the chair. Use clear silicone. One piece at a time. Follow a Fibonacci spiral template. Takes ~45 min.</div>
+  </div>
+  <div class="row">
+    <span class="when">3:45</span>
+    <div class="what"><strong>Mylar strips</strong> from ceiling above the chair. 6-8 strips. Twisted. Irregular heights.</div>
+  </div>
+  <div class="row">
+    <span class="when">4:00</span>
+    <div class="what"><strong>Fresnel lens</strong> hanging at seated eye level. Drilled hole, monofilament from ceiling tile.</div>
+  </div>
+  <div class="row">
+    <span class="when">4:15</span>
+    <div class="what"><strong>The altar</strong> — turntable in back-right corner. Glass cube on top. Two two-way mirrors flanking. <strong>Vision Pro</strong> on a small stool beside it. Place the printed AR marker on the altar surface.</div>
+  </div>
+  <div class="row">
+    <span class="when">4:45</span>
+    <div class="what"><strong>Cork wall</strong> setup. Engraved plaque at top. 200 blank cards. Pens. Pushpins. Red filter cards in bowl at entry.</div>
+  </div>
+
+  <h2>5:00 — Lighting + final pass</h2>
+  <ul class="checklist">
+    <li>Dim room lights. Single warm uplight on blue fire glass.</li>
+    <li>Hang die-cut overlay between chair and TV (clear film, monofilament).</li>
+    <li>Mount red-filter reveal sheets on side wall.</li>
+    <li>Place sticker sheet of overstim notifications on door / entry wall.</li>
+    <li>Lay out: business cards bowl, thank-you cards, red filter cards.</li>
+    <li>Walk the room as a visitor would. <em>Sit in the chair. Look around. Adjust whatever feels off.</em></li>
+  </ul>
+
+  <h2>5:45 — Final test + breathe</h2>
+  <ul class="checklist">
+    <li>Restart laptop. Open <em>complete.html?show=1</em>. Confirm it plays on the TV.</li>
+    <li>Check BrainBit connection. Backup: <em>?brain=force</em></li>
+    <li>Check Kinect connection. Backup: scenes work without it.</li>
+    <li>Hand the <strong>attendant script</strong> to whoever is helping you.</li>
+    <li>Drink water. Sit on the chair yourself. Breathe for 6 minutes.</li>
+  </ul>
+
+  <div class="footer">
+    <span>Bloom · MFA D+T · Parsons</span>
+    <span>page 01 · friday</span>
+  </div>
+</div>
+
+
+<!-- ════ PAGE 2 ════ -->
+<div class="page">
+
+  <h1>6 → 9pm.</h1>
+  <div class="sub">Doors open · the show · the end of the night</div>
+
+  <h2>6:00 — Doors open</h2>
+  <div class="row">
+    <span class="when">6:00</span>
+    <div class="what"><strong>Take the door sign off.</strong> Let people in. <em>You are no longer the artist. You are the host.</em></div>
+  </div>
+
+  <h2>Per visitor — the loop</h2>
+
+  <div class="row">
+    <span class="when">~0:00</span>
+    <div class="what"><strong>Greet.</strong> Smile. Let them read the placards. Don't rush.</div>
+  </div>
+  <div class="row">
+    <span class="when">~0:30</span>
+    <div class="what"><strong>Seat them.</strong> Place BrainBit. Step back. Press <em>begin</em>.</div>
+  </div>
+  <div class="row">
+    <span class="when">~0:45</span>
+    <div class="what"><strong>Flip the door sign to "IN SESSION".</strong> Stand to the side, look away, give privacy.</div>
+  </div>
+  <div class="row">
+    <span class="when">~6:45</span>
+    <div class="what"><strong>When closing breath ring appears</strong> — wait for visitor to open eyes. <em>Take your time.</em> Help remove BrainBit.</div>
+  </div>
+  <div class="row">
+    <span class="when">~7:00</span>
+    <div class="what"><strong>Point to cork wall + altar.</strong> Offer thank-you card. Flip door sign back to OPEN.</div>
+  </div>
+  <div class="row">
+    <span class="when">~7:30</span>
+    <div class="what"><strong>Reset between visitors:</strong> wipe BrainBit forehead pad with alcohol swab (60 seconds). Refresh the show tab (idle screen returns). <em>Total turnaround per visitor: 8-9 min.</em></div>
+  </div>
+
+  <h2>Throughput math</h2>
+  <ul class="checklist" style="font-size: 10.5pt;">
+    <li>~6 min meditation + 2-3 min wrap = <strong>~9 min per visitor</strong></li>
+    <li>3 hours = <strong>~20 visitors maximum</strong></li>
+    <li>Realistic with social time, breaks: <strong>~15 visitors per night</strong></li>
+    <li>Two nights: <strong>30 visitors total</strong></li>
+  </ul>
+
+  <h2>If a line forms</h2>
+  <ul class="checklist" style="font-size: 10.5pt;">
+    <li>Tell people they can come back during the show window.</li>
+    <li>Hand out thank-you cards and business cards while they wait.</li>
+    <li>Let them write a card for the cork wall <em>before</em> their session — gives the wall extra cards.</li>
+  </ul>
+
+  <h2>9:00 — End of Friday</h2>
+  <ul class="checklist" style="font-size: 10.5pt;">
+    <li><strong>Photograph the cork wall</strong> — wide + close-ups before leaving.</li>
+    <li>Power down laptop. Charge BrainBit. Charge Vision Pro.</li>
+    <li>Note: scenes that hit hardest. Visitors who paused. Cards that surprised you.</li>
+    <li>Pack snacks for Saturday. Sleep.</li>
+  </ul>
+
+  <h2>Saturday — quick reset</h2>
+  <ul class="checklist" style="font-size: 10.5pt;">
+    <li>Arrive 4pm. Power on. Run end-to-end test. Refill cards if needed.</li>
+    <li>6pm doors open. Same loop.</li>
+    <li>9pm: photograph FINAL cork wall. Take everything down or leave for Sunday.</li>
+  </ul>
+
+  <h2>The wrap (Sunday onward)</h2>
+  <ul class="checklist" style="font-size: 10.5pt;">
+    <li>Save every card. They are the show's analog memory.</li>
+    <li>Send thank-you emails to attendees you know.</li>
+    <li>Post documentation: photo of wall + one card that hit you hardest.</li>
+    <li>Rest. You did the thing.</li>
+  </ul>
+
+  <p style="margin-top: 8mm; font-style: italic; color: #6a0c1a; text-align: center; font-size: 12pt;">
+    You have always been bloom.
+  </p>
+
+  <div class="footer">
+    <span>Bloom · MFA D+T · Parsons</span>
+    <span>page 02 · who are you, to you?</span>
+  </div>
+</div>
+
+</body>
+</html>
