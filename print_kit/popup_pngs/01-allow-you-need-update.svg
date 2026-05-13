@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420">
+  <rect width="700" height="420" fill="#ffffff"/>
+  <!-- Card -->
+  <rect x="50" y="40" width="600" height="340" rx="28" fill="#ffffff" stroke="#000" stroke-width="6"/>
+
+  <!-- Title -->
+  <text x="350" y="115" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#000">Software Update</text>
+
+  <!-- Italic subtitle -->
+  <text x="350" y="160" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="32" fill="#000">"You" need an update.</text>
+
+  <!-- Body -->
+  <text x="350" y="210" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#000">Version 47.3 is required to continue.</text>
+  <text x="350" y="238" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#000">This update cannot be skipped.</text>
+
+  <!-- Divider top of buttons -->
+  <line x1="50" y1="295" x2="650" y2="295" stroke="#000" stroke-width="3"/>
+  <!-- Divider between buttons -->
+  <line x1="350" y1="295" x2="350" y2="380" stroke="#000" stroke-width="3"/>
+
+  <!-- Buttons -->
+  <text x="200" y="345" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#000">Later</text>
+  <text x="500" y="345" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#000">Install Now</text>
+</svg>

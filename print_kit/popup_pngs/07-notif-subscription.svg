@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+  <rect width="700" height="320" fill="#ffffff"/>
+  <rect x="50" y="40" width="600" height="240" rx="28" fill="#ffffff" stroke="#000" stroke-width="6"/>
+  <text x="80" y="100" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#000">PREMIUM REQUIRED</text>
+  <text x="620" y="100" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#000">!</text>
+  <line x1="80" y1="115" x2="620" y2="115" stroke="#000" stroke-width="2"/>
+  <text x="350" y="160" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="32" fill="#000">Subscribe to keep breathing.</text>
+  <text x="350" y="200" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#000">$9.99/month after a 3-day trial.</text>
+  <line x1="50" y1="220" x2="650" y2="220" stroke="#000" stroke-width="3"/>
+  <line x1="350" y1="220" x2="350" y2="280" stroke="#000" stroke-width="3"/>
+  <text x="200" y="258" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#000">Maybe Later</text>
+  <text x="500" y="258" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#000">Continue</text>
+</svg>
