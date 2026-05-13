@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  BE HERE NOW — SQUARE composition v2
+  BE HERE NOW — SQUARE composition v3
   ───────────────────────────────────────────────────
   Pure black-on-white · optimized for Illustrator Image Trace.
-  No greys, no gradients, no opacity. Strong silhouettes.
 
   Composition:
-    • SACRED MANDALA · 12-fold rose at center (the meditation)
-    • 1 restrained "be here now" ring
-    • 3 iOS popups in 3 corners (the critique)
-    • 4 floating words for breathing tension
-
-  The juxtaposition IS the work — the sacred at center,
-  surrounded by surveillance + wellness language.
+    • SACRED MANDALA · 12-fold rose at center
+    • 1 ring of "be here now" outside the mandala
+    • 4 iOS popups in 4 corners — ONE is the ALLOW permission popup
+    • 3 floating words
   ─────────────────────────────────────────────────── -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1000 1000"
@@ -22,12 +18,8 @@
   <rect width="1000" height="1000" fill="#ffffff"/>
 
 
-  <!-- ════════════════════════════════════════════════════
-       CENTER · 12-FOLD ROSE MANDALA
-       ════════════════════════════════════════════════════ -->
+  <!-- ════ CENTER · 12-FOLD ROSE MANDALA ════ -->
   <g transform="translate(500 500)">
-
-    <!-- 12 outer petals (filled silhouette) -->
     <g>
       <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000"/>
       <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(30)"/>
@@ -43,11 +35,9 @@
       <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(330)"/>
     </g>
 
-    <!-- Middle ring -->
     <circle r="120" fill="none" stroke="#000" stroke-width="3"/>
     <circle r="80" fill="none" stroke="#000" stroke-width="3"/>
 
-    <!-- 24 inner spokes -->
     <g stroke="#000" stroke-width="2.5" fill="none">
       <line x1="0" y1="-78" x2="0" y2="-120"/>
       <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(15)"/>
@@ -75,7 +65,6 @@
       <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(345)"/>
     </g>
 
-    <!-- 6-petal Flower of Life pattern in middle -->
     <g fill="none" stroke="#000" stroke-width="3">
       <circle r="36"/>
       <circle r="36" cx="36" cy="0"/>
@@ -86,7 +75,6 @@
       <circle r="36" cx="-18" cy="-31.2"/>
     </g>
 
-    <!-- Center BLOOM mark · tiny -->
     <g transform="scale(0.18)">
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
@@ -97,26 +85,20 @@
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
     </g>
-
   </g>
 
 
-  <!-- ════════════════════════════════════════════════════
-       SINGLE RING OF "be here now" OUTSIDE THE MANDALA
-       ════════════════════════════════════════════════════ -->
+  <!-- ════ "be here now" RING ════ -->
   <defs>
     <path id="outer-ring" d="M 500,235 A 265,265 0 1,1 500,765 A 265,265 0 1,1 500,235"/>
   </defs>
-
   <text font-family="EB Garamond, Garamond, Georgia, serif"
         font-style="italic" font-size="22" fill="#000000">
     <textPath href="#outer-ring">  be here now  ·  be here now  ·  be here now  ·  be here now  ·  be here now  ·  be here now  ·</textPath>
   </text>
 
 
-  <!-- ════════════════════════════════════════════════════
-       3 iOS POPUPS · corners
-       ════════════════════════════════════════════════════ -->
+  <!-- ════ 4 POPUPS ════ -->
 
   <!-- Popup 01 · TOP-LEFT · CALM streak -->
   <g transform="translate(50 50)">
@@ -132,7 +114,7 @@
           font-size="14" font-weight="700" fill="#000">Resume</text>
   </g>
 
-  <!-- Popup 02 · TOP-RIGHT · "you" are not enough -->
+  <!-- Popup 02 · TOP-RIGHT · "You" Are Not Enough · Install -->
   <g transform="translate(710 50)">
     <rect x="0" y="0" width="240" height="98" rx="12"
           fill="#ffffff" stroke="#000" stroke-width="3.5"/>
@@ -146,7 +128,38 @@
           font-size="14" font-weight="700" fill="#000">Install</text>
   </g>
 
-  <!-- Popup 03 · BOTTOM-RIGHT · SCREEN TIME -->
+  <!-- Popup 03 · BOTTOM-LEFT · "You" Are Not Enough · ALLOW permission popup -->
+  <g transform="translate(40 800)">
+    <rect x="0" y="0" width="280" height="150" rx="14"
+          fill="#ffffff" stroke="#000" stroke-width="3.5"/>
+    <text x="140" y="32" text-anchor="middle"
+          font-family="EB Garamond, Georgia, serif"
+          font-style="italic" font-size="17" font-weight="500" fill="#000">"You" Are Not Enough</text>
+    <text x="140" y="54" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="13" fill="#000">Would Like Access to Your</text>
+    <text x="140" y="72" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="13" fill="#000">Stillness</text>
+    <text x="140" y="98" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="11" fill="#000">Bloom uses your presence to</text>
+    <text x="140" y="113" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="11" fill="#000">deliver enhanced calm.</text>
+
+    <!-- two-button split -->
+    <line x1="10" y1="125" x2="270" y2="125" stroke="#000" stroke-width="1.5"/>
+    <line x1="140" y1="125" x2="140" y2="148" stroke="#000" stroke-width="1.5"/>
+    <text x="75" y="142" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="13" fill="#000">Don't Allow</text>
+    <text x="205" y="142" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="13" font-weight="700" fill="#000">Allow</text>
+  </g>
+
+  <!-- Popup 04 · BOTTOM-RIGHT · SCREEN TIME -->
   <g transform="translate(700 870)">
     <rect x="0" y="0" width="250" height="90" rx="12"
           fill="#ffffff" stroke="#000" stroke-width="3.5"/>
@@ -161,9 +174,7 @@
   </g>
 
 
-  <!-- ════════════════════════════════════════════════════
-       4 FLOATING WORDS · italic serif
-       ════════════════════════════════════════════════════ -->
+  <!-- ════ FLOATING WORDS · italic serif ════ -->
 
   <text x="50" y="510" text-anchor="start"
         font-family="EB Garamond, Garamond, Georgia, serif"
@@ -173,12 +184,8 @@
         font-family="EB Garamond, Garamond, Georgia, serif"
         font-style="italic" font-weight="400" font-size="44" fill="#000">watching.</text>
 
-  <text x="50" y="930" text-anchor="start"
+  <text x="500" y="780" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="44" fill="#000">sold.</text>
-
-  <text x="350" y="960" text-anchor="start"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="28" fill="#000">be better everyday.</text>
+        font-style="italic" font-weight="400" font-size="32" fill="#000">be better everyday.</text>
 
 </svg>
