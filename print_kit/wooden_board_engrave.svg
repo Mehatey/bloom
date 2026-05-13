@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BLOOM — WOODEN BOARD ENGRAVE
+  ─────────────────────────────────────────────────────
+  Physical size: 600mm × 300mm  (≈ 24" × 12") horizontal
+  Material:      thick wooden board (birch, walnut, oak)
+  Process:       raster engrave at moderate-high power
+                 (~70-80% on 60W CO2)
+  Mount:         entry wall, eye level, beside or under the placards
+
+  Scale up/down proportionally in Illustrator as needed.
+  Common alternative sizes: 30"×15"  ·  36"×18"  ·  18"×9"
+
+  BEFORE LASER:
+    1. Open in Illustrator
+    2. Select all <text> → Type → Create Outlines
+    3. All paths fill black · no cut lines
+  ───────────────────────────────────────────────────── -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 300"
+     preserveAspectRatio="xMidYMid meet"
+     style="background: #f5f1e8;">
+
+  <!-- ── BLOOM title with flower mark ─────────────────── -->
+  <g transform="translate(300 48)">
+    <text x="0" y="0"
+          text-anchor="middle"
+          font-family="EB Garamond, Garamond, Georgia, serif"
+          font-weight="500"
+          font-size="40"
+          letter-spacing="0.04em"
+          fill="#000">BLOOM</text>
+
+    <!-- Small flower mark to the right -->
+    <g transform="translate(80 -10) scale(0.13)">
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
+    </g>
+  </g>
+
+  <!-- ── Subtitle ─────────────────────────────────────── -->
+  <text x="300" y="78"
+        text-anchor="middle"
+        font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic"
+        font-weight="400"
+        font-size="14"
+        letter-spacing="0.04em"
+        fill="#000">a meditation that listens.</text>
+
+  <!-- ── Thin separator rule ──────────────────────────── -->
+  <line x1="240" y1="100" x2="360" y2="100"
+        stroke="#000" stroke-width="0.6"/>
+
+  <!-- ── Body — poetic description ────────────────────── -->
+  <g font-family="EB Garamond, Garamond, Georgia, serif"
+     font-weight="400" font-size="13" fill="#000" text-anchor="middle">
+
+    <text x="300" y="130">Most wellness apps narrate at you. They sell you presence.</text>
+    <text x="300" y="150">They charge for stillness. They turn breath into a streak.</text>
+
+    <text x="300" y="180">This work asks what is left when nothing is being sold.</text>
+    <text x="300" y="200">What you are when no one is watching.</text>
+
+    <text x="300" y="225"
+          font-style="italic" font-size="15">Six minutes. One breath. A room built for one body at a time.</text>
+
+  </g>
+
+  <!-- ── Closing tagline ──────────────────────────────── -->
+  <text x="300" y="265"
+        text-anchor="middle"
+        font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic"
+        font-weight="400"
+        font-size="17"
+        letter-spacing="0.02em"
+        fill="#000">who are you, to you?</text>
+
+  <!-- ── Tiny attribution bottom right ────────────────── -->
+  <text x="585" y="290"
+        text-anchor="end"
+        font-family="EB Garamond, Garamond, Georgia, serif"
+        font-weight="400"
+        font-size="6"
+        letter-spacing="0.18em"
+        fill="#000">bloom · siddharth mehta · 2026</text>
+
+</svg>
