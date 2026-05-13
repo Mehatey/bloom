@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  BLOOM — VERTICAL CONCEPT BOARD v2 (the COMPLETE manifesto)
+  BLOOM — VERTICAL CONCEPT BOARD v3
   ─────────────────────────────────────────────────────
   Physical size: 19" × 28" vertical (483mm × 711mm)
-  Material:      thick wood (birch / walnut / oak) — laser engrave
-                 OR heavy cream paper — large-format print
-  Power:         ~70-80% on 60W CO2 · raster engrave
-  Mount:         back wall · the room's anchor · eye level
+  Material:      thick wood — laser engrave
+                 OR heavy cream paper — large print
+
+  No BLOOM logo here (you have a separate one).
+  No cork-wall prompt (you have a separate plaque for that).
+  Bigger text. Full board. Proper spacing.
 
   Composition top → bottom:
-    01 · small BLOOM flower mark
-    02 · BLOOM. + tagline
-    03 · origin question + 3 real answers
-    04 · 12-fold mandala + 4 floating critique words
-    05 · WHY (poetic, 4 lines)
-    06 · HOW (poetic, 4 lines)
-    07 · 3 cork wall prompts
-    08 · two paired taglines · who are you, to you?
-    09 · show details footer
-
-  BEFORE LASER: Type → Create Outlines on all text
+    01 · origin question
+    02 · 4 scattered answers
+    03 · MANDALA center + 4 floating critique words
+    04 · THE WHY (poetic)
+    05 · THE HOW (poetic)
+    06 · closing invitation to express on wall or headset
   ───────────────────────────────────────────────────── -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 483 711"
@@ -29,126 +26,100 @@
   <rect width="483" height="711" fill="#f5f1e8"/>
 
 
-  <!-- ═══════ TOP · MARK + TITLE ═══════ -->
+  <!-- ═══════ TOP · ORIGIN QUESTION ═══════ -->
 
-  <!-- Flower mark · small, top-center -->
-  <g transform="translate(241.5 38) scale(0.13)">
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
-  </g>
-
-  <!-- Title BLOOM. -->
-  <text x="241.5" y="85" text-anchor="middle"
+  <text x="241.5" y="75" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-weight="500" font-size="46" letter-spacing="-0.01em" fill="#000">BLOOM.</text>
+        font-style="italic" font-size="18" fill="#000">i asked twenty people —</text>
 
-  <!-- Subtitle -->
-  <text x="241.5" y="110" text-anchor="middle"
+  <text x="241.5" y="103" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="16" fill="#000">a meditation that listens.</text>
-
-  <!-- Decorative rule -->
-  <line x1="200" y1="128" x2="283" y2="128" stroke="#000" stroke-width="0.6"/>
+        font-style="italic" font-size="18" fill="#000">when did you feel the spirit?</text>
 
 
-  <!-- ═══════ ORIGIN QUOTE + REAL ANSWERS ═══════ -->
+  <!-- ═══════ 4 SCATTERED ANSWERS ═══════ -->
 
-  <text x="241.5" y="153" text-anchor="middle"
+  <text x="115" y="148" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="11" fill="#000">i asked twenty people —</text>
+        font-style="italic" font-size="13" fill="#000">"at a concert."</text>
 
-  <text x="241.5" y="170" text-anchor="middle"
+  <text x="370" y="142" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="11" fill="#000">when did you feel the spirit?</text>
+        font-style="italic" font-size="13" fill="#000">"in a kitchen."</text>
 
-  <!-- Scattered answers -->
-  <text x="115" y="200" text-anchor="middle"
+  <text x="241.5" y="172" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="10" fill="#000">"at a concert."</text>
+        font-style="italic" font-size="13" fill="#000">"holding my grandmother's hand."</text>
 
-  <text x="370" y="195" text-anchor="middle"
+  <text x="241.5" y="197" text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="10" fill="#000">"in a kitchen."</text>
-
-  <text x="241.5" y="215" text-anchor="middle"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="10" fill="#000">"holding my grandmother's hand."</text>
-
-  <text x="241.5" y="232" text-anchor="middle"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="10" fill="#000">"the silence after a song."</text>
+        font-style="italic" font-size="13" fill="#000">"the silence after a song."</text>
 
 
-  <!-- ═══════ MANDALA + FLOATING WORDS ═══════ -->
+  <!-- ═══════ MANDALA · CENTER · larger ═══════ -->
 
-  <g transform="translate(241.5 335)">
+  <g transform="translate(241.5 330)">
 
     <!-- 12 outer petals -->
     <g>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(30)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(60)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(90)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(120)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(150)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(180)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(210)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(240)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(270)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(300)"/>
-      <path d="M 0,-78 C 14,-66 14,-48 0,-34 C -14,-48 -14,-66 0,-78 Z" fill="#000" transform="rotate(330)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(30)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(60)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(90)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(120)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(150)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(180)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(210)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(240)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(270)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(300)"/>
+      <path d="M 0,-105 C 18,-90 18,-66 0,-50 C -18,-66 -18,-90 0,-105 Z" fill="#000" transform="rotate(330)"/>
     </g>
 
-    <circle r="47" fill="none" stroke="#000" stroke-width="1.5"/>
-    <circle r="31" fill="none" stroke="#000" stroke-width="1.2"/>
+    <circle r="63" fill="none" stroke="#000" stroke-width="1.8"/>
+    <circle r="42" fill="none" stroke="#000" stroke-width="1.4"/>
 
     <!-- 24 inner spokes -->
-    <g stroke="#000" stroke-width="1" fill="none">
-      <line x1="0" y1="-30" x2="0" y2="-47"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(15)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(30)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(45)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(60)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(75)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(90)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(105)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(120)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(135)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(150)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(165)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(180)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(195)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(210)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(225)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(240)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(255)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(270)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(285)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(300)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(315)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(330)"/>
-      <line x1="0" y1="-30" x2="0" y2="-47" transform="rotate(345)"/>
+    <g stroke="#000" stroke-width="1.1" fill="none">
+      <line x1="0" y1="-41" x2="0" y2="-63"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(15)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(30)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(45)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(60)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(75)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(90)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(105)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(120)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(135)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(150)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(165)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(180)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(195)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(210)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(225)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(240)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(255)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(270)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(285)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(300)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(315)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(330)"/>
+      <line x1="0" y1="-41" x2="0" y2="-63" transform="rotate(345)"/>
     </g>
 
-    <!-- 7-circle Flower of Life center -->
-    <g fill="none" stroke="#000" stroke-width="1.2">
-      <circle r="14"/>
-      <circle r="14" cx="14" cy="0"/>
-      <circle r="14" cx="-14" cy="0"/>
-      <circle r="14" cx="7" cy="12.12"/>
-      <circle r="14" cx="-7" cy="12.12"/>
-      <circle r="14" cx="7" cy="-12.12"/>
-      <circle r="14" cx="-7" cy="-12.12"/>
+    <!-- Flower of Life center -->
+    <g fill="none" stroke="#000" stroke-width="1.4">
+      <circle r="19"/>
+      <circle r="19" cx="19" cy="0"/>
+      <circle r="19" cx="-19" cy="0"/>
+      <circle r="19" cx="9.5" cy="16.45"/>
+      <circle r="19" cx="-9.5" cy="16.45"/>
+      <circle r="19" cx="9.5" cy="-16.45"/>
+      <circle r="19" cx="-9.5" cy="-16.45"/>
     </g>
 
-    <!-- Center tiny bloom mark -->
-    <g transform="scale(0.06)">
+    <!-- Tiny bloom mark dead center -->
+    <g transform="scale(0.08)">
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
       <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
@@ -160,66 +131,59 @@
     </g>
   </g>
 
-  <!-- Floating critique words around mandala -->
-  <text x="65" y="320" font-family="EB Garamond, serif" font-style="italic" font-size="16" fill="#000">still.</text>
-  <text x="418" y="320" font-family="EB Garamond, serif" font-style="italic" font-size="16" text-anchor="end" fill="#000">watching.</text>
-  <text x="65" y="370" font-family="EB Garamond, serif" font-style="italic" font-size="16" fill="#000">sold.</text>
-  <text x="418" y="370" font-family="EB Garamond, serif" font-style="italic" font-size="16" text-anchor="end" fill="#000">enough.</text>
+
+  <!-- ═══════ FLOATING CRITIQUE WORDS · larger ═══════ -->
+
+  <text x="55" y="310" font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-size="22" fill="#000">still.</text>
+
+  <text x="428" y="310" text-anchor="end"
+        font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-size="22" fill="#000">watching.</text>
+
+  <text x="55" y="370" font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-size="22" fill="#000">sold.</text>
+
+  <text x="428" y="370" text-anchor="end"
+        font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-size="22" fill="#000">enough.</text>
 
 
   <!-- Decorative rule -->
-  <text x="241.5" y="442" text-anchor="middle"
-        font-family="EB Garamond, serif" font-size="10" fill="#000">─  ✻  ─</text>
+  <text x="241.5" y="465" text-anchor="middle"
+        font-family="EB Garamond, serif" font-size="14" fill="#000">─  ✻  ─</text>
 
 
   <!-- ═══════ THE WHY ═══════ -->
 
-  <text x="241.5" y="465" text-anchor="middle"
+  <text x="241.5" y="498" text-anchor="middle"
         font-family="Helvetica, Arial, sans-serif"
-        font-size="9" font-weight="500" letter-spacing="3" fill="#000">THE WHY</text>
+        font-size="12" font-weight="500" letter-spacing="4" fill="#000">THE WHY</text>
 
   <g font-family="EB Garamond, Garamond, Georgia, serif"
-     font-weight="400" font-size="11" fill="#000" text-anchor="middle">
-    <text x="241.5" y="488">most wellness apps narrate at you.</text>
-    <text x="241.5" y="504">they sell you presence. they charge for stillness.</text>
-    <text x="241.5" y="525" font-style="italic">i wanted a room that listened</text>
-    <text x="241.5" y="541" font-style="italic">more than it spoke.</text>
+     font-weight="400" font-size="15" fill="#000" text-anchor="middle">
+    <text x="241.5" y="528">most wellness apps narrate at you.</text>
+    <text x="241.5" y="551">they sell you presence. they charge for stillness.</text>
+    <text x="241.5" y="582" font-style="italic">i wanted a room that listened</text>
+    <text x="241.5" y="605" font-style="italic">more than it spoke.</text>
   </g>
 
 
   <!-- Decorative rule -->
-  <text x="241.5" y="565" text-anchor="middle"
-        font-family="EB Garamond, serif" font-size="10" fill="#000">─  ✻  ─</text>
+  <text x="241.5" y="635" text-anchor="middle"
+        font-family="EB Garamond, serif" font-size="14" fill="#000">─  ✻  ─</text>
 
 
   <!-- ═══════ THE HOW ═══════ -->
 
-  <text x="241.5" y="586" text-anchor="middle"
+  <text x="241.5" y="666" text-anchor="middle"
         font-family="Helvetica, Arial, sans-serif"
-        font-size="9" font-weight="500" letter-spacing="3" fill="#000">THE HOW</text>
+        font-size="12" font-weight="500" letter-spacing="4" fill="#000">THE HOW</text>
 
   <g font-family="EB Garamond, Garamond, Georgia, serif"
-     font-weight="400" font-size="11" fill="#000" text-anchor="middle">
-    <text x="241.5" y="608">you sit. a sensor reads your stillness.</text>
-    <text x="241.5" y="624">a screen unfolds for six minutes.</text>
-    <text x="241.5" y="645" font-style="italic">you write one card,</text>
-    <text x="241.5" y="661" font-style="italic">pin it to the wall, walk out.</text>
+     font-weight="400" font-size="15" fill="#000" text-anchor="middle">
+    <text x="241.5" y="694">you sit. a sensor reads your stillness.</text>
+    <text x="241.5" y="717" font-style="italic">the room unfolds — yours.</text>
   </g>
-
-
-  <!-- ═══════ CLOSING TAGLINE ═══════ -->
-
-  <text x="241.5" y="687" text-anchor="middle"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="14"
-        letter-spacing="0.02em" fill="#000">who are you, to you?</text>
-
-
-  <!-- ═══════ FOOTER ═══════ -->
-
-  <text x="241.5" y="703" text-anchor="middle"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-weight="400" font-size="6.5"
-        letter-spacing="0.18em" fill="#000">bloom · siddharth mehta · parsons mfa d+t · 2026</text>
 
 </svg>
