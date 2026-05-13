@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CD engraving · transparent polycarbonate disc · ~120mm diameter.
+     For LASER ENGRAVE: low power (~15-25%), 1 pass.
+     Text below MUST be converted to outlines in Illustrator before sending to laser. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-65 -65 130 130" width="480" height="480">
+  <g fill="none" stroke="#000" stroke-width="0.4">
+    <circle r="58"/>
+    <circle r="7.5"/>
+    <circle r="11" stroke-dasharray="0.5,1" opacity="0.25"/>
+    <g transform="translate(35.0 0.0) rotate(90)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(24.7 24.7) rotate(135)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(0.0 35.0) rotate(180)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(-24.7 24.7) rotate(225)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(-35.0 0.0) rotate(270)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(-24.7 -24.7) rotate(315)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(-0.0 -35.0) rotate(360)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+    <g transform="translate(24.7 -24.7) rotate(405)">
+      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/>
+      <circle r="2.5"/>
+      <circle r="0.8" fill="#000" stroke="none"/>
+    </g>
+  </g>
+  <text x="0" y="50" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="6.5" fill="#000">eye</text>
+  <g transform="translate(0 -49) scale(0.045)">
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+  </g>
+</svg>

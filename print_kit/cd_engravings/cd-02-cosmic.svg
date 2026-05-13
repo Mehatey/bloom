@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CD engraving · transparent polycarbonate disc · ~120mm diameter.
+     For LASER ENGRAVE: low power (~15-25%), 1 pass.
+     Text below MUST be converted to outlines in Illustrator before sending to laser. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-65 -65 130 130" width="480" height="480">
+  <g fill="none" stroke="#000" stroke-width="0.4">
+    <circle r="58"/>
+    <circle r="7.5"/>
+    <circle r="11" stroke-dasharray="0.5,1" opacity="0.25"/>
+    <line x1="0" y1="-24" x2="0" y2="-52.94482252534198" transform="rotate(0.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52.74785968942439" transform="rotate(7.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-31.357232825443408" transform="rotate(15.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-32.036927883814116" transform="rotate(22.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-50.05197307510679" transform="rotate(30.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-47.66327973764456" transform="rotate(37.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-46.073529634565304" transform="rotate(45.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-37.39527498213946" transform="rotate(52.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-44.5426599762831" transform="rotate(60.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-44.56324160738011" transform="rotate(67.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-43.94889641068808" transform="rotate(75.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-33.801188886115334" transform="rotate(82.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-40.336071366990446" transform="rotate(90.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-39.444763684928915" transform="rotate(97.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-47.352289949699184" transform="rotate(105.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-53.87566951079383" transform="rotate(112.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52.78549135423785" transform="rotate(120.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-43.0602491383037" transform="rotate(127.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-40.67650052942049" transform="rotate(135.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-36.43777779958388" transform="rotate(142.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-30.862183905428584" transform="rotate(150.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-30.658676570179658" transform="rotate(157.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-41.15745269033549" transform="rotate(165.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-37.643163068488256" transform="rotate(172.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-39.12035812561708" transform="rotate(180.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-51.4029469878789" transform="rotate(187.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-42.618066459504675" transform="rotate(195.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-43.452248664635974" transform="rotate(202.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-35.66696177076149" transform="rotate(210.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-30.572593899378774" transform="rotate(217.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-37.80343029026784" transform="rotate(225.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-33.2807374316752" transform="rotate(232.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-42.245372300092825" transform="rotate(240.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-53.96840563662125" transform="rotate(247.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-46.18751273630088" transform="rotate(255.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-34.36424392375547" transform="rotate(262.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-51.44571687799173" transform="rotate(270.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-49.12223811411935" transform="rotate(277.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-47.625640605455466" transform="rotate(285.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-51.75824759754146" transform="rotate(292.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-48.3092516119937" transform="rotate(300.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-48.95394329908232" transform="rotate(307.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-38.49088746819848" transform="rotate(315.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-53.54343775373104" transform="rotate(322.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-53.08562250955742" transform="rotate(330.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-33.86843167929645" transform="rotate(337.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-48.09609771964493" transform="rotate(345.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-47.16362155769888" transform="rotate(352.5)"/>
+    <circle r="28" opacity="0.6"/>
+    <circle r="38" opacity="0.6"/>
+    <circle r="48" opacity="0.6"/>
+  </g>
+  <text x="0" y="50" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="6.5" fill="#000">cosmic</text>
+  <g transform="translate(0 -49) scale(0.045)">
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+  </g>
+</svg>

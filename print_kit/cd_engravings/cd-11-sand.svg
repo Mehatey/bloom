@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CD engraving · transparent polycarbonate disc · ~120mm diameter.
+     For LASER ENGRAVE: low power (~15-25%), 1 pass.
+     Text below MUST be converted to outlines in Illustrator before sending to laser. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-65 -65 130 130" width="480" height="480">
+  <g fill="none" stroke="#000" stroke-width="0.4">
+    <circle r="58"/>
+    <circle r="7.5"/>
+    <circle r="11" stroke-dasharray="0.5,1" opacity="0.25"/>
+    <circle r="24"/>
+    <circle r="28"/>
+    <circle r="32"/>
+    <circle r="36"/>
+    <circle r="40"/>
+    <circle r="44"/>
+    <circle r="48"/>
+    <circle r="52"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(0.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(22.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(45.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(67.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(90.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(112.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(135.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(157.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(180.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(202.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(225.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(247.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(270.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(292.5)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(315.0)"/>
+    <line x1="0" y1="-24" x2="0" y2="-52" transform="rotate(337.5)"/>
+    <circle cx="0.00" cy="-48.00" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="18.37" cy="-44.35" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="33.94" cy="-33.94" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="44.35" cy="-18.37" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="48.00" cy="-0.00" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="44.35" cy="18.37" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="33.94" cy="33.94" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="18.37" cy="44.35" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="0.00" cy="48.00" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-18.37" cy="44.35" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-33.94" cy="33.94" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-44.35" cy="18.37" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-48.00" cy="0.00" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-44.35" cy="-18.37" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-33.94" cy="-33.94" r="1.2" fill="#000" stroke="none"/>
+    <circle cx="-18.37" cy="-44.35" r="1.2" fill="#000" stroke="none"/>
+  </g>
+  <text x="0" y="50" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="6.5" fill="#000">sand</text>
+  <g transform="translate(0 -49) scale(0.045)">
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+  </g>
+</svg>
