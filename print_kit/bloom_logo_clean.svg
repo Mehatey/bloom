@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BLOOM logo — CLEAN VERSION · no background, no border, no fill rectangle.
+
+  USE THIS FOR:
+    · Laser engraving on wood / glass / CD / acrylic
+    · Printing on mylar (silver shimmer from the material)
+    · Printing on iridescent paper (foil shimmer from the paper)
+    · Vinyl cutting
+
+  DO NOT USE bloom_logo.svg (the version with the red rectangle outline) —
+  that one has a cut line for making a separate badge silhouette.
+  THIS file is just the mark itself, black on transparent.
+
+  LASER OPERATOR NOTES:
+    1. Open in Illustrator → select the <text> → Type → Create Outlines.
+       (Inkscape: Path → Object to Path)
+    2. All paths should be FILL black, no stroke.
+    3. Suggested scale:
+        — wooden board sign: 12-16" wide
+        — A1 mylar poster: scale to full A1
+        — small object (cube face, CD center): 1-2" wide
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 220"
+     width="800" height="220">
+
+  <!-- BLOOM wordmark — outlined sans-serif -->
+  <text x="60" y="170"
+        font-family="Helvetica Neue, Helvetica, Arial Black, Inter, sans-serif"
+        font-weight="900"
+        font-size="180"
+        letter-spacing="-6"
+        fill="#000000">BLOOM</text>
+
+  <!-- 8-petal flower mark -->
+  <g transform="translate(680 120)">
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
+  </g>
+
+</svg>
