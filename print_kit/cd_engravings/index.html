@@ -3,18 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CD engravings · 20 designs</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<title>CD engravings · 20 designs · 4-corner layout</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: "Instrument Serif", serif; background: #0a0a0a; color: #f5f1e8; padding: 50px 40px; line-height: 1.55; }
-  .wrap { max-width: 1200px; margin: 0 auto; }
+  .wrap { max-width: 1300px; margin: 0 auto; }
   h1 { font-size: 48px; line-height: 1.0; margin-bottom: 8px; font-weight: 400; letter-spacing: -0.02em; }
   .tagline { font-style: italic; color: rgba(245,241,232,0.55); font-size: 19px; margin-bottom: 30px; }
-  p { color: rgba(245,241,232,0.65); max-width: 40em; margin-bottom: 16px; }
+  p { color: rgba(245,241,232,0.7); max-width: 40em; margin-bottom: 14px; }
   p em { color: #d97961; font-style: italic; }
   a.back { font-family: "Inter"; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(245,241,232,0.5); display: inline-block; margin-bottom: 30px; text-decoration: none; }
   a.back:hover { color: #d97961; }
+
+  .actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0 40px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #d97961; color: #0a0a0a;
+    padding: 14px 22px; border-radius: 4px;
+    font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(217,121,97,0.3); }
+  .btn.ghost {
+    background: transparent; color: #f5f1e8; border: 1px solid rgba(245,241,232,0.25);
+  }
+  .btn.ghost:hover { border-color: #d97961; color: #d97961; box-shadow: none; }
+
+  .info-box {
+    background: #131310; border-left: 2px solid #d97961;
+    padding: 18px 24px; border-radius: 4px; margin: 16px 0 32px;
+  }
+  .info-box h3 { font-family: "Inter"; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #d97961; font-weight: 500; margin-bottom: 6px; }
+  .info-box p { color: rgba(245,241,232,0.75); font-size: 15px; max-width: none; }
+  .info-box code { background: #1a1a1a; padding: 1px 6px; border-radius: 2px; font-size: 13px; }
 
   .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 30px; }
   @media (max-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
@@ -22,7 +45,7 @@
 
   a.tile { display: block; background: #131310; border: 0.5px solid rgba(245,241,232,0.10); border-radius: 6px; overflow: hidden; text-decoration: none; transition: all 0.25s; }
   a.tile:hover { border-color: #d97961; transform: translateY(-2px); }
-  .preview { aspect-ratio: 1/1; background: #f5f1e8; display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .preview { aspect-ratio: 1/1; background: #f5f1e8; display: flex; align-items: center; justify-content: center; padding: 12px; }
   .preview img { width: 100%; height: 100%; display: block; }
   .meta { padding: 12px 14px 14px; }
   .num { font-family: "Inter"; font-size: 9px; letter-spacing: 0.25em; color: #d97961; font-weight: 500; }
@@ -36,9 +59,32 @@
 <a class="back" href="../">← back to print kit</a>
 
 <h1>CD engravings.</h1>
-<p class="tagline">20 transparent CDs · each a different mandala + italic word.</p>
-<p>Bring all 20 transparent CDs to the laser appointment. Operator engraves at low power, single pass per disc. <em>~20-30 min total for all 20.</em></p>
-<p>For SVG-to-laser: convert all <code>&lt;text&gt;</code> elements to outlines in Illustrator first. The mandala paths are already vector.</p>
+<p class="tagline">20 designs · 4-corner layout · square 150×150mm canvas.</p>
+
+<div class="actions">
+  <a class="btn" href="../cd_engravings_ALL.zip" download>↓ Download all 20 SVGs (ZIP)</a>
+  <a class="btn ghost" href="../print_kit_EVERYTHING.zip" download>↓ Download EVERYTHING</a>
+</div>
+
+<div class="info-box">
+  <h3>Layout · what's in each corner</h3>
+  <p><strong>Top-left:</strong> BLOOM ✻ mark · <strong>Top-right:</strong> N° XX · <strong>Bottom-left:</strong> bloom · 2026 · <strong>Bottom-right:</strong> italic word. Mandala is clean in the center — nothing covers the pattern anymore.</p>
+</div>
+
+<div class="info-box">
+  <h3>To convert SVG → Illustrator .ai</h3>
+  <p>Open any <code>.svg</code> in Illustrator (File → Open). It loads as fully editable vectors. Then <code>File → Save As</code> → choose Illustrator (<code>.ai</code>) format. <em>No conversion tool needed — Illustrator reads SVG natively.</em></p>
+</div>
+
+<div class="info-box">
+  <h3>Before laser engraving</h3>
+  <p>Open in Illustrator → <strong>select all <code>&lt;text&gt;</code></strong> → <code>Type → Create Outlines</code>. This converts the italic word + BLOOM text + N° label into vector paths so the laser doesn't need the font installed.</p>
+</div>
+
+<div class="info-box">
+  <h3>Print or laser?</h3>
+  <p><strong>Laser on CD:</strong> only the round center (within the dashed CD boundary) engraves. The 4 corner labels would be off the disc. <strong>Print on paper / shiny paper / mylar:</strong> the full square prints — everything visible including corners.</p>
+</div>
 
 <div class="grid">
   <a class="tile" href="cd-01-silence.svg" download>

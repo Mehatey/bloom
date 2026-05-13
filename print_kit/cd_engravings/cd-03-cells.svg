@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- CD engraving · transparent polycarbonate disc · ~120mm diameter.
-     For LASER ENGRAVE: low power (~15-25%), 1 pass.
-     Text below MUST be converted to outlines in Illustrator before sending to laser. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-65 -65 130 130" width="480" height="480">
-  <g fill="none" stroke="#000" stroke-width="0.4">
-    <circle r="58"/>
-    <circle r="7.5"/>
-    <circle r="11" stroke-dasharray="0.5,1" opacity="0.25"/>
+<!-- CD 03 · cells · 150×150mm square. Mandala center, 4 corner labels.
+     For LASER ENGRAVE on CD: only the round area within r=58 engraves.
+     For PRINT on paper/film: full square prints with all 4 corners visible.
+     Convert <text> to outlines in Illustrator before sending to laser. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-75 -75 150 150" width="600" height="600">
+  <circle r="58" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="0.6,1.2" opacity="0.35"/>
+  <circle r="7.5" fill="none" stroke="#000" stroke-width="0.4"/>
+  <circle r="11" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="0.4,0.8" opacity="0.25"/>
+  <g fill="none" stroke="#000" stroke-width="0.5">
     <circle cx="0" cy="-8" r="16"/>
     <circle cx="-14" cy="4" r="14"/>
     <circle cx="14" cy="4" r="14"/>
@@ -15,15 +16,20 @@
     <circle cx="-22" cy="-10" r="10"/>
     <circle cx="22" cy="-10" r="10"/>
   </g>
-  <text x="0" y="50" text-anchor="middle" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="6.5" fill="#000">cells</text>
-  <g transform="translate(0 -49) scale(0.045)">
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+  <g transform="translate(-65 -62)">
+    <g transform="scale(0.06)">
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+    </g>
+    <text x="8" y="2" font-family="Helvetica, Arial Black, sans-serif" font-weight="900" font-size="5" letter-spacing="-0.2" fill="#000">BLOOM</text>
   </g>
+  <text x="70" y="-62" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="5" fill="#000">N° 03</text>
+  <text x="-65" y="70" font-family="Helvetica, Arial, sans-serif" font-size="3.2" letter-spacing="0.15em" fill="#000">bloom · 2026</text>
+  <text x="70" y="70" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="9" fill="#000">cells</text>
 </svg>

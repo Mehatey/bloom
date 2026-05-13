@@ -4,70 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cube + Mirror engravings</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
-    background: #0a0a0a; color: #f5f1e8;
-    padding: 50px 40px;
-    line-height: 1.55;
-  }
+  body { font-family: "Instrument Serif", serif; background: #0a0a0a; color: #f5f1e8; padding: 50px 40px; line-height: 1.55; }
   .wrap { max-width: 1100px; margin: 0 auto; }
   h1 { font-size: 48px; line-height: 1.0; margin-bottom: 8px; font-weight: 400; letter-spacing: -0.02em; }
-  .tagline { font-style: italic; color: rgba(245,241,232,0.55); font-size: 19px; margin-bottom: 40px; }
+  .tagline { font-style: italic; color: rgba(245,241,232,0.55); font-size: 19px; margin-bottom: 30px; }
   h2 { font-size: 22px; margin: 36px 0 16px; font-weight: 400; padding-bottom: 4px; border-bottom: 1px solid rgba(245,241,232,0.10); }
   h2 .num { font-family: "Inter"; font-size: 10px; letter-spacing: 0.25em; color: #d97961; margin-right: 12px; font-weight: 500; }
   p { color: rgba(245,241,232,0.7); max-width: 38em; margin-bottom: 10px; }
   p em { color: #d97961; font-style: italic; }
-  a { color: #f5f1e8; border-bottom: 0.5px solid rgba(245,241,232,0.4); text-decoration: none; padding-bottom: 1px; }
-  a:hover { color: #d97961; border-color: #d97961; }
-  .back { font-family: "Inter"; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(245,241,232,0.5); display: inline-block; margin-bottom: 30px; }
+  a.back { font-family: "Inter"; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(245,241,232,0.5); display: inline-block; margin-bottom: 30px; text-decoration: none; }
+  a.back:hover { color: #d97961; }
+  .actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0 36px; }
+  .btn { display: inline-flex; gap: 8px; background: #d97961; color: #0a0a0a; padding: 14px 22px; border-radius: 4px; font-family: "Inter", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: transform 0.2s; }
+  .btn:hover { transform: translateY(-2px); }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-top: 20px;
-  }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 20px; }
   @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
 
-  a.tile {
-    display: block;
-    background: #131310;
-    border: 0.5px solid rgba(245,241,232,0.10);
-    border-radius: 6px;
-    overflow: hidden;
-    transition: border-color 0.25s, transform 0.25s;
-    border-bottom: 0.5px solid rgba(245,241,232,0.10);
-  }
+  a.tile { display: block; background: #131310; border: 0.5px solid rgba(245,241,232,0.10); border-radius: 6px; overflow: hidden; transition: all 0.25s; text-decoration: none; }
   a.tile:hover { border-color: #d97961; transform: translateY(-2px); }
-
-  .tile .preview {
-    aspect-ratio: 1/1;
-    background: #f5f1e8;
-    display: flex; align-items: center; justify-content: center;
-    padding: 22px;
-  }
+  .preview { aspect-ratio: 1/1; background: #f5f1e8; display: flex; align-items: center; justify-content: center; padding: 22px; }
   .tile.mirror .preview { background: #1c2025; }
-  .tile.mirror .preview object,
   .tile.mirror .preview img { filter: invert(1); }
-  .tile .preview object,
-  .tile .preview img { width: 100%; height: 100%; display: block; }
-
-  .tile .meta { padding: 16px 20px 18px; }
-  .tile .label { font-family: "Inter"; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #d97961; margin-bottom: 4px; }
-  .tile .title { font-size: 22px; line-height: 1.15; color: #f5f1e8; margin-bottom: 4px; }
-  .tile .desc { font-family: "Inter"; font-size: 12px; color: rgba(245,241,232,0.55); line-height: 1.5; }
-
-  .download {
-    display: inline-block;
-    margin-top: 10px;
-    font-family: "Inter"; font-size: 11px; letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(245,241,232,0.45);
-    border: none; padding: 0;
-  }
+  .preview img { width: 100%; height: 100%; display: block; }
+  .meta { padding: 16px 20px 18px; }
+  .label { font-family: "Inter"; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #d97961; margin-bottom: 4px; font-weight: 500; }
+  .title { font-size: 22px; line-height: 1.15; color: #f5f1e8; margin-bottom: 4px; }
+  .desc { font-family: "Inter"; font-size: 12px; color: rgba(245,241,232,0.55); line-height: 1.5; }
+  .download { display: inline-block; margin-top: 10px; font-family: "Inter"; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,241,232,0.45); }
 </style>
 </head>
 <body>
@@ -78,55 +45,54 @@
 <h1>Cube · Mirror engravings.</h1>
 <p class="tagline">5 laser files · 4 cube faces + 1 mirror pattern (engrave on BOTH mirrors).</p>
 
+<div class="actions">
+  <a class="btn" href="../cube_engravings_ALL.zip" download>↓ Download all 5 SVGs (ZIP)</a>
+</div>
+
 <h2><span class="num">01</span>Glass Cube · 4 faces</h2>
-<p>Engrave at low power on the cube faces. Artboard size depends on your cube — see TOMORROW.html for sizing. <em>4mm safe margin from edges.</em></p>
+<p>iPhone 15 Pro height = 146.6mm. Artboard: 146.6 × 146.6 mm. Engrave area: 140 × 140 mm (4mm safe margin).</p>
 
 <div class="grid">
-
   <a class="tile" href="cube-01-mandala-rose.svg" download>
     <div class="preview"><img src="cube-01-mandala-rose.svg" alt=""></div>
     <div class="meta">
       <div class="label">face 01 · front</div>
       <div class="title">Mandala · 12-fold rose</div>
-      <div class="desc">Sacred geometry — beauty chapter. The meditation half of your thesis on the entry-facing face.</div>
+      <div class="desc">Sacred geometry · meditation half of thesis · entry-facing.</div>
       <div class="download">↓ cube-01-mandala-rose.svg</div>
     </div>
   </a>
-
   <a class="tile" href="cube-02-nature-waves.svg" download>
     <div class="preview"><img src="cube-02-nature-waves.svg" alt=""></div>
     <div class="meta">
       <div class="label">face 02 · right</div>
       <div class="title">Nature · Layered waves</div>
-      <div class="desc">7 wave layers with foam dots. The flow / motion side of nature.</div>
+      <div class="desc">7 wave layers with foam dots · the flow side of nature.</div>
       <div class="download">↓ cube-02-nature-waves.svg</div>
     </div>
   </a>
-
   <a class="tile" href="cube-03-animals-bird.svg" download>
     <div class="preview"><img src="cube-03-animals-bird.svg" alt=""></div>
     <div class="meta">
       <div class="label">face 03 · left</div>
       <div class="title">Animals · Bird in flight</div>
-      <div class="desc">Single bird silhouette + small distant flock. Life and breath.</div>
+      <div class="desc">Single bird silhouette + distant flock · life and breath.</div>
       <div class="download">↓ cube-03-animals-bird.svg</div>
     </div>
   </a>
-
   <a class="tile" href="cube-04-surveillance-eye.svg" download>
     <div class="preview"><img src="cube-04-surveillance-eye.svg" alt=""></div>
     <div class="meta">
       <div class="label">face 04 · back</div>
       <div class="title">Surveillance · Open eye</div>
-      <div class="desc">Almond eye + iris + crosshair reticle. The critique half of your thesis on the altar-facing back.</div>
+      <div class="desc">Almond eye + iris + crosshair · critique half · altar-facing.</div>
       <div class="download">↓ cube-04-surveillance-eye.svg</div>
     </div>
   </a>
-
 </div>
 
 <h2><span class="num">02</span>Two-way mirror engraving</h2>
-<p>Engrave <em>both</em> mirrors with the SAME file. Engraved areas remove the reflective coating — they become transparent windows. When two mirrors face each other with the cube between, the rings become infinity portals.</p>
+<p>Engrave BOTH mirrors with the SAME file. Engraved areas remove the reflective coating → become transparent windows. With cube between two mirrors → infinity portals.</p>
 
 <div class="grid">
   <a class="tile mirror" href="mirror-breath-rings.svg" download style="grid-column: span 2;">
@@ -134,7 +100,7 @@
     <div class="meta">
       <div class="label">mirror engrave · both</div>
       <div class="title">Breath rings + center bloom</div>
-      <div class="desc">6 concentric rings + tiny BLOOM mark center. Same file on both mirrors — they face each other and create the infinity tunnel. Engraved at ~20% power on a 60W CO2 laser.</div>
+      <div class="desc">6 concentric rings + tiny BLOOM mark center. Same file on both mirrors. ~20% power on a 60W CO2 laser. <em>Test on scrap first!</em></div>
       <div class="download">↓ mirror-breath-rings.svg</div>
     </div>
   </a>
