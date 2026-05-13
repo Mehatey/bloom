@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- CD 09 · eye · 150×150mm. Mandala center, 4 corner labels. -->
+<!-- CD 09 · eye · 150×150mm. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-75 -75 150 150" width="600" height="600">
   <circle r="58" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="0.6,1.2" opacity="0.35"/>
   <circle r="7.5" fill="none" stroke="#000" stroke-width="0.4"/>
@@ -46,18 +46,18 @@
       <circle r="0.8" fill="#000" stroke="none"/>
     </g>
   </g>
-  <g transform="translate(-67 -62)">
-    <g transform="translate(0 -2) scale(0.07)">
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
-      <path d="M 0,0 C 4,-18 -2,-38 -10,-52 C -24,-46 -30,-28 -22,-14 C -14,-6 -5,-3 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+  <g transform="translate(-67 -64)">
+    <text x="0" y="2.5" font-family="Helvetica Neue, Helvetica, Inter, Arial Black, sans-serif" font-weight="900" font-stretch="condensed" font-size="7" letter-spacing="-0.3" fill="#000">BLOOM</text>
+    <g transform="translate(23 -0.5) scale(0.085)">
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+      <path d="M 0,0 C 4,-14 10,-26 4,-44 C -2,-50 -14,-50 -20,-42 C -24,-32 -22,-18 -14,-10 C -8,-5 -2,-2 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
     </g>
-    <text x="8" y="3" font-family="Avenir Next Rounded Bold, Helvetica Rounded, SF Pro Rounded, Inter, sans-serif" font-weight="900" font-size="6" letter-spacing="-0.15" fill="#000">BLOOM</text>
   </g>
   <text x="70" y="-62" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="5" fill="#000">N° 09</text>
   <text x="-65" y="70" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="4" letter-spacing="0.05em" fill="#000">by siddhartha</text>
