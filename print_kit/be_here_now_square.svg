@@ -1,138 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  BE HERE NOW — SQUARE composition
+  BE HERE NOW — SQUARE composition v2
   ───────────────────────────────────────────────────
-  Pure black-on-white for Adobe Illustrator IMAGE TRACE.
-  No gradients, no opacity, no greys — only solid black + white.
-  All shapes have clean edges so trace renders perfect vectors.
+  Pure black-on-white · optimized for Illustrator Image Trace.
+  No greys, no gradients, no opacity. Strong silhouettes.
 
   Composition:
-    • CCTV camera silhouette · CENTER
-    • 2 concentric "be here now" rings (restrained)
-    • 3 iOS popups scattered (surveillance + wellness language)
-    • 4 floating single words for breathing space
+    • SACRED MANDALA · 12-fold rose at center (the meditation)
+    • 1 restrained "be here now" ring
+    • 3 iOS popups in 3 corners (the critique)
+    • 4 floating words for breathing tension
 
-  Canvas:    1000 × 1000 (scales freely)
-  Print at:  any size · suggested 12"×12" or 18"×18"
-  Material:  paper, mylar, vinyl, fabric — all work
+  The juxtaposition IS the work — the sacred at center,
+  surrounded by surveillance + wellness language.
   ─────────────────────────────────────────────────── -->
 <svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 1000 1000"
      width="1000" height="1000"
      style="background: #ffffff;">
 
-  <!-- ════ White background (image trace will ignore) ════ -->
   <rect width="1000" height="1000" fill="#ffffff"/>
 
 
-  <!-- ════ 2 CONCENTRIC "be here now" RINGS ════ -->
-  <defs>
-    <path id="ring-outer" d="M 500,170 A 330,330 0 1,1 500,830 A 330,330 0 1,1 500,170"/>
-    <path id="ring-inner" d="M 500,295 A 205,205 0 1,1 500,705 A 205,205 0 1,1 500,295"/>
-  </defs>
-
-  <text font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="32" fill="#000000">
-    <textPath href="#ring-outer">be here now  ·  be here now  ·  be here now  ·  be here now  ·  be here now  ·</textPath>
-  </text>
-
-  <text font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-size="26" fill="#000000">
-    <textPath href="#ring-inner">be here now  ·  be here now  ·  be here now  ·  be here now  ·</textPath>
-  </text>
-
-
-  <!-- ════ CCTV CAMERA · CENTER ════ -->
+  <!-- ════════════════════════════════════════════════════
+       CENTER · 12-FOLD ROSE MANDALA
+       ════════════════════════════════════════════════════ -->
   <g transform="translate(500 500)">
-    <!-- Mount bracket from above -->
-    <rect x="-6" y="-130" width="12" height="50" fill="#000"/>
-    <rect x="-26" y="-138" width="52" height="10" rx="2" fill="#000"/>
 
-    <!-- Main camera body (rounded rectangle) -->
-    <rect x="-78" y="-80" width="120" height="62" rx="8" fill="#000"/>
+    <!-- 12 outer petals (filled silhouette) -->
+    <g>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(30)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(60)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(90)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(120)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(150)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(180)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(210)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(240)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(270)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(300)"/>
+      <path d="M 0,-220 C 36,-180 36,-130 0,-90 C -36,-130 -36,-180 0,-220 Z" fill="#000" transform="rotate(330)"/>
+    </g>
 
-    <!-- Lens cylinder protruding RIGHT -->
-    <rect x="38" y="-66" width="60" height="34" rx="4" fill="#000"/>
+    <!-- Middle ring -->
+    <circle r="120" fill="none" stroke="#000" stroke-width="3"/>
+    <circle r="80" fill="none" stroke="#000" stroke-width="3"/>
 
-    <!-- Lens glass (white circle ring with black pupil) -->
-    <circle cx="92" cy="-49" r="20" fill="#ffffff" stroke="#000" stroke-width="6"/>
-    <circle cx="92" cy="-49" r="9" fill="#000"/>
+    <!-- 24 inner spokes -->
+    <g stroke="#000" stroke-width="2.5" fill="none">
+      <line x1="0" y1="-78" x2="0" y2="-120"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(15)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(30)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(45)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(60)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(75)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(90)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(105)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(120)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(135)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(150)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(165)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(180)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(195)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(210)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(225)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(240)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(255)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(270)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(285)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(300)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(315)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(330)"/>
+      <line x1="0" y1="-78" x2="0" y2="-120" transform="rotate(345)"/>
+    </g>
 
-    <!-- LED indicator dot (white-on-black on body) -->
-    <circle cx="-58" cy="-65" r="4" fill="#ffffff" stroke="#000" stroke-width="2.5"/>
+    <!-- 6-petal Flower of Life pattern in middle -->
+    <g fill="none" stroke="#000" stroke-width="3">
+      <circle r="36"/>
+      <circle r="36" cx="36" cy="0"/>
+      <circle r="36" cx="-36" cy="0"/>
+      <circle r="36" cx="18" cy="31.2"/>
+      <circle r="36" cx="-18" cy="31.2"/>
+      <circle r="36" cx="18" cy="-31.2"/>
+      <circle r="36" cx="-18" cy="-31.2"/>
+    </g>
 
-    <!-- Tiny vent slits on top of body -->
-    <rect x="-50" y="-77" width="2" height="6" fill="#ffffff"/>
-    <rect x="-42" y="-77" width="2" height="6" fill="#ffffff"/>
-    <rect x="-34" y="-77" width="2" height="6" fill="#ffffff"/>
-    <rect x="-26" y="-77" width="2" height="6" fill="#ffffff"/>
+    <!-- Center BLOOM mark · tiny -->
+    <g transform="scale(0.18)">
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
+    </g>
 
-    <!-- Subtle base/cable from bottom -->
-    <rect x="-8" y="-18" width="16" height="14" fill="#000"/>
   </g>
 
 
-  <!-- ════ 3 iOS-MODAL POPUPS ════ -->
+  <!-- ════════════════════════════════════════════════════
+       SINGLE RING OF "be here now" OUTSIDE THE MANDALA
+       ════════════════════════════════════════════════════ -->
+  <defs>
+    <path id="outer-ring" d="M 500,235 A 265,265 0 1,1 500,765 A 265,265 0 1,1 500,235"/>
+  </defs>
 
-  <!-- Popup 01 · top-left · CALM app -->
-  <g transform="translate(55 80)">
-    <rect x="0" y="0" width="240" height="86" rx="11"
+  <text font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-size="22" fill="#000000">
+    <textPath href="#outer-ring">  be here now  ·  be here now  ·  be here now  ·  be here now  ·  be here now  ·  be here now  ·</textPath>
+  </text>
+
+
+  <!-- ════════════════════════════════════════════════════
+       3 iOS POPUPS · corners
+       ════════════════════════════════════════════════════ -->
+
+  <!-- Popup 01 · TOP-LEFT · CALM streak -->
+  <g transform="translate(50 50)">
+    <rect x="0" y="0" width="240" height="90" rx="12"
           fill="#ffffff" stroke="#000" stroke-width="3.5"/>
-    <line x1="10" y1="56" x2="230" y2="56" stroke="#000" stroke-width="1.5"/>
+    <line x1="10" y1="60" x2="230" y2="60" stroke="#000" stroke-width="1.5"/>
     <text x="18" y="30" font-family="Inter, Helvetica, sans-serif"
           font-size="13" font-weight="700" letter-spacing="2" fill="#000">CALM</text>
-    <text x="18" y="50" font-family="Inter, Helvetica, sans-serif"
+    <text x="18" y="52" font-family="Inter, Helvetica, sans-serif"
           font-size="14" fill="#000">Your streak: 0 days. Try again.</text>
-    <text x="120" y="76" text-anchor="middle"
+    <text x="120" y="80" text-anchor="middle"
           font-family="Inter, Helvetica, sans-serif"
           font-size="14" font-weight="700" fill="#000">Resume</text>
   </g>
 
-  <!-- Popup 02 · top-right · SYSTEM "you are not enough" -->
-  <g transform="translate(700 90)">
-    <rect x="0" y="0" width="245" height="92" rx="11"
+  <!-- Popup 02 · TOP-RIGHT · "you" are not enough -->
+  <g transform="translate(710 50)">
+    <rect x="0" y="0" width="240" height="98" rx="12"
           fill="#ffffff" stroke="#000" stroke-width="3.5"/>
-    <line x1="10" y1="62" x2="235" y2="62" stroke="#000" stroke-width="1.5"/>
+    <line x1="10" y1="68" x2="230" y2="68" stroke="#000" stroke-width="1.5"/>
     <text x="18" y="30" font-family="Inter, Helvetica, sans-serif"
           font-size="13" font-weight="700" letter-spacing="2" fill="#000">SYSTEM</text>
-    <text x="18" y="52" font-family="EB Garamond, Georgia, serif"
-          font-style="italic" font-size="16" fill="#000">"You" Are Not Enough.</text>
-    <text x="122" y="82" text-anchor="middle"
+    <text x="18" y="56" font-family="EB Garamond, Georgia, serif"
+          font-style="italic" font-size="17" fill="#000">"You" Are Not Enough.</text>
+    <text x="120" y="88" text-anchor="middle"
           font-family="Inter, Helvetica, sans-serif"
           font-size="14" font-weight="700" fill="#000">Install</text>
   </g>
 
-  <!-- Popup 03 · bottom-right · SCREEN TIME -->
-  <g transform="translate(680 830)">
-    <rect x="0" y="0" width="260" height="88" rx="11"
+  <!-- Popup 03 · BOTTOM-RIGHT · SCREEN TIME -->
+  <g transform="translate(700 870)">
+    <rect x="0" y="0" width="250" height="90" rx="12"
           fill="#ffffff" stroke="#000" stroke-width="3.5"/>
-    <line x1="10" y1="58" x2="250" y2="58" stroke="#000" stroke-width="1.5"/>
+    <line x1="10" y1="60" x2="240" y2="60" stroke="#000" stroke-width="1.5"/>
     <text x="18" y="30" font-family="Inter, Helvetica, sans-serif"
           font-size="13" font-weight="700" letter-spacing="2" fill="#000">SCREEN TIME</text>
-    <text x="18" y="50" font-family="Inter, Helvetica, sans-serif"
-          font-size="14" fill="#000">Up 23% this week. 7h 14m daily.</text>
-    <text x="130" y="78" text-anchor="middle"
+    <text x="18" y="52" font-family="Inter, Helvetica, sans-serif"
+          font-size="14" fill="#000">Up 23%. 7h 14m daily.</text>
+    <text x="125" y="80" text-anchor="middle"
           font-family="Inter, Helvetica, sans-serif"
           font-size="14" font-weight="700" fill="#000">See Report</text>
   </g>
 
 
-  <!-- ════ 4 FLOATING WORDS · breathing space ════ -->
+  <!-- ════════════════════════════════════════════════════
+       4 FLOATING WORDS · italic serif
+       ════════════════════════════════════════════════════ -->
 
-  <text x="100" y="510" text-anchor="start"
+  <text x="50" y="510" text-anchor="start"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="38" fill="#000">still.</text>
+        font-style="italic" font-weight="400" font-size="44" fill="#000">still.</text>
 
-  <text x="900" y="520" text-anchor="end"
+  <text x="950" y="520" text-anchor="end"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="38" fill="#000">watching.</text>
+        font-style="italic" font-weight="400" font-size="44" fill="#000">watching.</text>
 
-  <text x="100" y="900" text-anchor="start"
+  <text x="50" y="930" text-anchor="start"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="38" fill="#000">sold.</text>
+        font-style="italic" font-weight="400" font-size="44" fill="#000">sold.</text>
 
-  <text x="500" y="945" text-anchor="middle"
+  <text x="350" y="960" text-anchor="start"
         font-family="EB Garamond, Garamond, Georgia, serif"
-        font-style="italic" font-weight="400" font-size="42" fill="#000">be better everyday.</text>
+        font-style="italic" font-weight="400" font-size="28" fill="#000">be better everyday.</text>
 
 </svg>
