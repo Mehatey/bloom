@@ -4,34 +4,17 @@
   <circle r="7.5" fill="none" stroke="#000" stroke-width="0.4"/>
   <circle r="11" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="0.4,0.8" opacity="0.25"/>
   <g fill="none" stroke="#000" stroke-width="0.5">
-    <g transform="translate(35.0 0.0) rotate(90)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(24.7 24.7) rotate(135)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(0.0 35.0) rotate(180)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(-24.7 24.7) rotate(225)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(-35.0 0.0) rotate(270)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(-24.7 -24.7) rotate(315)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(-0.0 -35.0) rotate(360)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
-    <g transform="translate(24.7 -24.7) rotate(405)">
-      <path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(35.0 0.0) rotate(90)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(24.7 24.7) rotate(135)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(0.0 35.0) rotate(180)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(-24.7 24.7) rotate(225)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(-35.0 0.0) rotate(270)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(-24.7 -24.7) rotate(315)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(-0.0 -35.0) rotate(360)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
+    <g transform="translate(24.7 -24.7) rotate(405)"><path d="M -8,0 Q 0,-5 8,0 Q 0,5 -8,0 Z"/><circle r="2.5"/><circle r="0.8" fill="#000"/></g>
   </g>
-  <g transform="translate(-63 -64) scale(0.075)">
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(0)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
-    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
-  </g>
-  <text x="70" y="-62" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="5" fill="#000">N° 09</text>
-  <text x="-65" y="70" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="4" letter-spacing="0.05em" fill="#000">by siddhartha</text>
+  <text x="-67" y="-62" font-family="EB Garamond, Georgia, serif" font-weight="400" font-size="6" fill="#000">bloom</text>
+  <text x="70" y="-62" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-weight="400" font-size="5" fill="#000">N° 09</text>
+  <text x="-65" y="70" font-family="EB Garamond, Georgia, serif" font-weight="400" font-size="4" letter-spacing="0.05em" fill="#000">by siddhartha</text>
   <text x="70" y="70" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="9" fill="#000">eye</text>
 </svg>
