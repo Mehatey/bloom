@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="400" height="400">
+  <rect width="80" height="80" fill="#ffffff"/>
+  <rect x="2" y="2" width="76" height="76" rx="4" fill="none" stroke="#ff0000" stroke-width="0.4"/>
+  <g transform="translate(40 38)" fill="none" stroke="#000" stroke-width="0.3" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="-1.33" cy="1.22" r="0.41" fill="#000" stroke="none"/>
+    <circle cx="0.22" cy="-2.54" r="0.42" fill="#000" stroke="none"/>
+    <circle cx="1.90" cy="2.47" r="0.43" fill="#000" stroke="none"/>
+    <circle cx="-3.54" cy="-0.63" r="0.44" fill="#000" stroke="none"/>
+    <circle cx="3.40" cy="-2.16" r="0.45" fill="#000" stroke="none"/>
+    <circle cx="-1.14" cy="4.26" r="0.46" fill="#000" stroke="none"/>
+    <circle cx="-2.20" cy="-4.23" r="0.47" fill="#000" stroke="none"/>
+    <circle cx="4.78" cy="1.75" r="0.48" fill="#000" stroke="none"/>
+    <circle cx="-4.99" cy="2.06" r="0.49" fill="#000" stroke="none"/>
+    <circle cx="2.41" cy="-5.16" r="0.50" fill="#000" stroke="none"/>
+    <circle cx="1.79" cy="5.70" r="0.51" fill="#000" stroke="none"/>
+    <circle cx="-5.39" cy="-3.13" r="0.52" fill="#000" stroke="none"/>
+    <circle cx="6.34" cy="-1.39" r="0.53" fill="#000" stroke="none"/>
+    <circle cx="-3.87" cy="5.51" r="0.54" fill="#000" stroke="none"/>
+    <circle cx="-0.90" cy="-6.91" r="0.55" fill="#000" stroke="none"/>
+    <circle cx="5.51" cy="4.64" r="0.56" fill="#000" stroke="none"/>
+    <circle cx="-7.42" cy="0.31" r="0.57" fill="#000" stroke="none"/>
+    <circle cx="5.41" cy="-5.39" r="0.58" fill="#000" stroke="none"/>
+    <circle cx="-0.36" cy="7.84" r="0.59" fill="#000" stroke="none"/>
+    <circle cx="-5.16" cy="-6.18" r="0.60" fill="#000" stroke="none"/>
+    <circle cx="8.17" cy="1.10" r="0.61" fill="#000" stroke="none"/>
+    <circle cx="-6.93" cy="4.82" r="0.62" fill="#000" stroke="none"/>
+    <circle cx="1.89" cy="-8.42" r="0.63" fill="#000" stroke="none"/>
+    <circle cx="4.38" cy="7.65" r="0.64" fill="#000" stroke="none"/>
+    <circle cx="-8.57" cy="-2.74" r="0.65" fill="#000" stroke="none"/>
+    <circle cx="8.33" cy="-3.85" r="0.66" fill="#000" stroke="none"/>
+    <circle cx="-3.61" cy="8.63" r="0.67" fill="#000" stroke="none"/>
+    <circle cx="-3.22" cy="-8.96" r="0.68" fill="#000" stroke="none"/>
+    <circle cx="8.58" cy="4.51" r="0.69" fill="#000" stroke="none"/>
+    <circle cx="-9.53" cy="2.51" r="0.70" fill="#000" stroke="none"/>
+    <circle cx="5.42" cy="-8.43" r="0.71" fill="#000" stroke="none"/>
+    <circle cx="1.72" cy="10.04" r="0.72" fill="#000" stroke="none"/>
+    <circle cx="-8.18" cy="-6.33" r="0.73" fill="#000" stroke="none"/>
+    <circle cx="10.46" cy="-0.87" r="0.74" fill="#000" stroke="none"/>
+    <circle cx="-7.23" cy="7.82" r="0.75" fill="#000" stroke="none"/>
+    <circle cx="0.05" cy="-10.80" r="0.76" fill="#000" stroke="none"/>
+    <circle cx="7.36" cy="8.11" r="0.77" fill="#000" stroke="none"/>
+    <circle cx="-11.05" cy="-1.02" r="0.78" fill="#000" stroke="none"/>
+    <circle cx="8.95" cy="-6.80" r="0.79" fill="#000" stroke="none"/>
+    <circle cx="-2.04" cy="11.20" r="0.80" fill="#000" stroke="none"/>
+    <circle cx="-6.14" cy="-9.75" r="0.81" fill="#000" stroke="none"/>
+    <circle cx="11.25" cy="3.08" r="0.82" fill="#000" stroke="none"/>
+    <circle cx="-10.50" cy="5.39" r="0.83" fill="#000" stroke="none"/>
+    <circle cx="4.15" cy="-11.20" r="0.84" fill="#000" stroke="none"/>
+    <circle cx="4.55" cy="11.18" r="0.85" fill="#000" stroke="none"/>
+    <circle cx="-11.03" cy="-5.23" r="0.86" fill="#000" stroke="none"/>
+    <circle cx="11.79" cy="-3.64" r="0.87" fill="#000" stroke="none"/>
+    <circle cx="-6.31" cy="10.76" r="0.88" fill="#000" stroke="none"/>
+    <circle cx="-2.65" cy="-12.32" r="0.89" fill="#000" stroke="none"/>
+    <circle cx="10.38" cy="7.37" r="0.90" fill="#000" stroke="none"/>
+    <circle cx="-12.76" cy="1.59" r="0.91" fill="#000" stroke="none"/>
+    <circle cx="8.41" cy="-9.88" r="0.92" fill="#000" stroke="none"/>
+    <circle cx="0.48" cy="13.10" r="0.93" fill="#000" stroke="none"/>
+    <circle cx="-9.28" cy="-9.42" r="0.94" fill="#000" stroke="none"/>
+    <circle cx="13.33" cy="0.68" r="0.95" fill="#000" stroke="none"/>
+    <circle cx="-10.38" cy="8.58" r="0.96" fill="#000" stroke="none"/>
+    <circle cx="1.88" cy="-13.46" r="0.97" fill="#000" stroke="none"/>
+    <circle cx="7.77" cy="11.29" r="0.98" fill="#000" stroke="none"/>
+    <circle cx="-13.47" cy="-3.10" r="0.99" fill="#000" stroke="none"/>
+    <circle cx="12.13" cy="-6.87" r="1.00" fill="#000" stroke="none"/>
+    <circle cx="-4.34" cy="13.37" r="1.01" fill="#000" stroke="none"/>
+    <circle cx="-5.88" cy="-12.90" r="1.02" fill="#000" stroke="none"/>
+    <circle cx="13.15" cy="5.58" r="1.03" fill="#000" stroke="none"/>
+    <circle cx="-13.57" cy="4.81" r="1.04" fill="#000" stroke="none"/>
+    <circle cx="6.81" cy="-12.81" r="1.05" fill="#000" stroke="none"/>
+    <circle cx="3.66" cy="14.16" r="1.06" fill="#000" stroke="none"/>
+    <circle cx="-12.35" cy="-8.03" r="1.07" fill="#000" stroke="none"/>
+    <circle cx="14.64" cy="-2.44" r="1.08" fill="#000" stroke="none"/>
+    <circle cx="-9.21" cy="11.78" r="1.09" fill="#000" stroke="none"/>
+    <circle cx="-1.17" cy="-15.01" r="1.10" fill="#000" stroke="none"/>
+    <circle cx="11.08" cy="10.35" r="1.11" fill="#000" stroke="none"/>
+    <circle cx="-15.27" cy="-0.15" r="1.12" fill="#000" stroke="none"/>
+    <circle cx="11.44" cy="-10.28" r="1.13" fill="#000" stroke="none"/>
+    <circle cx="-1.50" cy="15.41" r="1.14" fill="#000" stroke="none"/>
+    <circle cx="-9.36" cy="-12.46" r="1.15" fill="#000" stroke="none"/>
+    <circle cx="15.42" cy="2.88" r="1.16" fill="#000" stroke="none"/>
+    <circle cx="-13.41" cy="8.35" r="1.17" fill="#000" stroke="none"/>
+    <circle cx="4.28" cy="-15.31" r="1.18" fill="#000" stroke="none"/>
+    <circle cx="7.24" cy="14.27" r="1.19" fill="#000" stroke="none"/>
+    <circle r="22" stroke-width="0.3"/>
+  </g>
+  <g transform="translate(7 7) scale(0.045)">
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(0)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
+  </g>
+  <text x="73" y="10" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="3.5" fill="#000">N° 09</text>
+  <text x="7" y="75" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="2.6" letter-spacing="0.04em" fill="#000">by siddhartha</text>
+  <text x="73" y="75" text-anchor="end" font-family="EB Garamond, Georgia, serif" font-style="italic" font-size="6" fill="#000">bloom</text>
+</svg>
