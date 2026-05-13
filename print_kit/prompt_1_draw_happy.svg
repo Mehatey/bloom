@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DRAWING PROMPT 1 of 2
+     Physical: 12" × 4" horizontal · birch plywood
+     Mount: above cork wall · paired side by side -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 102" width="610" height="204" style="background:#f5f1e8;">
+  <rect width="305" height="102" fill="#f5f1e8"/>
+
+  <text x="152.5" y="36" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="7" font-weight="500" letter-spacing="3" fill="#000">PROMPT 1</text>
+
+  <line x1="125" y1="48" x2="180" y2="48" stroke="#000" stroke-width="0.6"/>
+
+  <text x="152.5" y="80" text-anchor="middle"
+        font-family="EB Garamond, Georgia, serif"
+        font-style="italic" font-weight="400" font-size="20" fill="#000">draw your happy place or person</text>
+</svg>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NAVIGATION · TRANSPARENT ACRYLIC SHEET
+     Physical: 10" × 14" portrait acrylic (transparent)
+     Process:  laser engrave at low power
+               · engraved lines turn frosted-white
+               · transparent acrylic between makes the text float
+     Mount:    on the wall near the chair OR hanging from ceiling
+     Note:     ONLY essential navigation. No description here. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 356" width="508" height="712" style="background:#ffffff;">
+  <rect width="254" height="356" fill="#ffffff"/>
+
+  <!-- Step 1 -->
+  <text x="127" y="60" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="9" font-weight="500" letter-spacing="3" fill="#000">ONE</text>
+  <text x="127" y="92" text-anchor="middle"
+        font-family="EB Garamond, Georgia, serif"
+        font-size="20" font-weight="400" fill="#000">sit.</text>
+
+  <line x1="100" y1="118" x2="154" y2="118" stroke="#000" stroke-width="0.4"/>
+
+  <!-- Step 2 -->
+  <text x="127" y="148" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="9" font-weight="500" letter-spacing="3" fill="#000">TWO</text>
+  <text x="127" y="180" text-anchor="middle"
+        font-family="EB Garamond, Georgia, serif"
+        font-size="20" font-weight="400" fill="#000">breathe.</text>
+
+  <line x1="100" y1="206" x2="154" y2="206" stroke="#000" stroke-width="0.4"/>
+
+  <!-- Step 3 -->
+  <text x="127" y="236" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="9" font-weight="500" letter-spacing="3" fill="#000">THREE</text>
+  <text x="127" y="268" text-anchor="middle"
+        font-family="EB Garamond, Georgia, serif"
+        font-size="20" font-weight="400" fill="#000">stay.</text>
+
+  <line x1="100" y1="294" x2="154" y2="294" stroke="#000" stroke-width="0.4"/>
+
+  <!-- Step 4 -->
+  <text x="127" y="324" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="9" font-weight="500" letter-spacing="3" fill="#000">AFTER</text>
+  <text x="127" y="350" text-anchor="middle"
+        font-family="EB Garamond, Georgia, serif"
+        font-style="italic" font-size="14" font-weight="400" fill="#000">write. draw. leave.</text>
+</svg>
