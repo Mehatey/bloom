@@ -3,104 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <title>Bloom — Placard · Why</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-  /* A2 portrait · 420 × 594 mm · placard read while waiting. */
+  /* A2 portrait · 420 × 594 mm · description only, large readable type. */
   @page { size: 420mm 594mm; margin: 0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
     width: 420mm; height: 594mm;
     background: #f5f1e8;
     color: #1a1814;
-    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    font-family: "Lora", "Crimson Text", Georgia, serif;
     line-height: 1.55;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
   .page {
     width: 100%; height: 100%;
-    padding: 50mm 50mm 45mm;
+    padding: 70mm 55mm;
     display: flex; flex-direction: column;
-    position: relative;
+    justify-content: center;
   }
 
-  /* Logo · centered top */
-  .logo {
-    align-self: center;
-    width: 42mm; height: 42mm;
-    margin-bottom: 24mm;
-  }
-
-  /* Title */
-  h1 {
-    text-align: center;
-    font-size: 96mm;
-    line-height: 0.92;
-    letter-spacing: -0.02em;
-    font-weight: 400;
-    margin-bottom: 10mm;
-  }
-  .subtitle {
-    text-align: center;
-    font-style: italic;
-    font-size: 16mm;
-    line-height: 1.15;
-    color: #5a564e;
-    margin-bottom: 28mm;
-  }
-
-  /* Body · LARGE readable text */
-  .body {
-    max-width: 280mm;
-    margin: 0 auto;
-  }
+  /* Body — LARGE readable, generous spacing */
   .body p {
-    font-size: 10mm;
+    font-size: 11mm;
     line-height: 1.55;
-    margin-bottom: 7mm;
+    margin-bottom: 10mm;
     color: #1a1814;
+    max-width: 300mm;
   }
-  .body p em { font-style: italic; color: #6a0c1a; }
+  .body p em {
+    font-style: italic;
+    color: #6a0c1a;
+  }
   .body p:last-child {
     font-style: italic;
     color: #5a564e;
     margin-top: 4mm;
+    margin-bottom: 0;
+    font-size: 10mm;
   }
 
-  /* Footer */
+  /* Tiny bloom mark in bottom corner */
   .footer {
     position: absolute;
-    bottom: 35mm; left: 50mm; right: 50mm;
-    padding-top: 12mm;
-    border-top: 0.5px solid #c8c2b4;
-    display: flex; justify-content: space-between;
-    font-family: "Inter", sans-serif;
+    bottom: 30mm; right: 55mm;
+    font-family: "Lora", serif;
     font-size: 4mm;
     letter-spacing: 0.18em;
-    text-transform: uppercase;
     color: #8a7e6e;
   }
 </style>
 </head>
 <body>
 <div class="page">
-
-  <!-- Centered flower mark -->
-  <svg class="logo" viewBox="-100 -100 200 200">
-    <g>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(45)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(90)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(135)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(180)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(225)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(270)"/>
-      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#1a1814" transform="rotate(315)"/>
-    </g>
-  </svg>
-
-  <h1>Bloom.</h1>
-  <div class="subtitle">A meditation that listens.</div>
 
   <div class="body">
     <p>Most wellness apps narrate at you. They sell you presence. They charge for stillness. They turn breath into a streak.</p>
@@ -109,13 +65,10 @@
 
     <p>A chair. A screen that sees your stillness. A headband that hears it. A cork wall that holds what you can finally put down. A small altar for the ones who stay.</p>
 
-    <p>Six minutes. One breath. A room built for one body at a time — yours.</p>
+    <p>Six minutes. One breath. A room built for one body at a time. Yours.</p>
   </div>
 
-  <div class="footer">
-    <span>Bloom · MFA D+T · Parsons · 2026</span>
-    <span>be better everyday.</span>
-  </div>
+  <div class="footer">bloom · 2026</div>
 
 </div>
 </body>
