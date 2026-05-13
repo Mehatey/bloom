@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Attendant Script</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 210mm;
+    background: #f5f1e8;
+    color: #1a1814;
+    font-family: "Lora", "Crimson Text", Georgia, serif;
+    line-height: 1.5;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    padding: 18mm 18mm 14mm;
+    page-break-after: always;
+    position: relative;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  h1 {
+    font-size: 36pt;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    margin-bottom: 2mm;
+  }
+  .sub {
+    font-style: italic;
+    font-size: 13pt;
+    color: #5a564e;
+    margin-bottom: 8mm;
+  }
+
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #6a0c1a;
+    margin: 8mm 0 3mm;
+    border-bottom: 0.5px solid #c8c2b4;
+    padding-bottom: 2mm;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 14mm 1fr;
+    gap: 5mm;
+    margin-bottom: 5mm;
+    align-items: baseline;
+  }
+  .step .num {
+    font-family: "Inter", sans-serif;
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: #6a0c1a;
+    padding-top: 1mm;
+  }
+  .step .body {
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+  .step .say {
+    display: block;
+    margin-top: 1.5mm;
+    padding: 3mm 4mm;
+    background: #ede7d8;
+    border-left: 2px solid #6a0c1a;
+    font-style: italic;
+    color: #2a2620;
+    font-size: 10.5pt;
+  }
+  .step .note {
+    display: block;
+    margin-top: 1.5mm;
+    font-size: 9.5pt;
+    color: #5a564e;
+  }
+  .step .note em { color: #1a1814; font-style: italic; }
+
+  .troubleshoot {
+    margin-top: 8mm;
+    padding: 5mm 6mm;
+    background: #ede7d8;
+    border-radius: 2pt;
+  }
+  .troubleshoot h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6a0c1a;
+    margin-bottom: 3mm;
+  }
+  .troubleshoot table { width: 100%; font-size: 9.5pt; border-collapse: collapse; }
+  .troubleshoot td { padding: 1.5mm 0; vertical-align: top; border-bottom: 0.5px solid rgba(0,0,0,0.08); }
+  .troubleshoot td:first-child { font-weight: 500; color: #1a1814; width: 38%; padding-right: 4mm; }
+  .troubleshoot td:last-child { color: #5a564e; }
+  .troubleshoot tr:last-child td { border-bottom: none; }
+
+  .footer {
+    margin-top: 10mm;
+    padding-top: 4mm;
+    border-top: 0.5px solid #c8c2b4;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 7pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a7e6e;
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════ PAGE 1 — SCRIPT ════════════ -->
+<div class="page">
+
+  <h1>Attendant Script.</h1>
+  <div class="sub">For whoever is helping a visitor sit · Friday + Saturday</div>
+
+  <h2>Before doors open</h2>
+  <p style="font-size: 10.5pt; margin-bottom: 4mm;">
+    Check: laptop running <em style="color: #6a0c1a;">complete.html?show=1</em> · BrainBit charged + connected · Kinect powered on · idle screen showing on TV · 200 blank cards stacked · pens · pushpins · red filter cards on entry table.
+  </p>
+
+
+  <h2>When a visitor approaches the room</h2>
+
+  <div class="step">
+    <span class="num">01</span>
+    <div class="body">
+      <strong>Smile. Let them read the placards first.</strong> Don't rush them. Some people want context before they sit. Some want to dive in.
+      <span class="say">"Hi. Take your time reading. Let me know when you're ready."</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">02</span>
+    <div class="body">
+      <strong>Invite them into the chair.</strong>
+      <span class="say">"Have a seat in the chair. Get comfortable. You'll be here for about six minutes."</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">03</span>
+    <div class="body">
+      <strong>Place the BrainBit headband.</strong> Two sensors on the forehead, just above the eyebrows. Adjust the back strap so it's snug but not tight. Ask about glasses.
+      <span class="say">"This is a brain sensor. It just reads your stillness — it can't read your thoughts. Tell me if it feels too tight."</span>
+      <span class="note">If the visitor seems nervous: <em>"Most people forget they're wearing it within thirty seconds."</em></span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">04</span>
+    <div class="body">
+      <strong>Step back. Press <em style="color: #6a0c1a;">begin</em>.</strong> Either on the laptop or via remote. The overstim plays first — about 40 seconds of chaos — then the meditation begins.
+      <span class="say">"It opens with something loud. Let it pass. The quiet part starts after."</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">05</span>
+    <div class="body">
+      <strong>Hold space for 6 minutes.</strong> Stand to the side. Don't watch them — give them privacy. Look at your phone, look at the wall, look down. Be available but invisible.
+      <span class="note">If the visitor cries, breathes hard, or laughs — <em>that's the work happening. Don't intervene.</em></span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">06</span>
+    <div class="body">
+      <strong>When the closing breath ring appears, approach gently.</strong> Wait for the visitor to open their eyes. Don't speak until they do.
+      <span class="say">"Take your time."</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">07</span>
+    <div class="body">
+      <strong>Help them remove the BrainBit.</strong> Slide it forward. Place it back on the charging tray.
+      <span class="say">"Thank you for sitting."</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">08</span>
+    <div class="body">
+      <strong>Point to the cork wall + altar.</strong>
+      <span class="say">"There are three questions on the wall. Take a card, write one thing, pin it anywhere. The altar in the corner has a second piece — about ninety seconds — if you want to stay longer."</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="num">09</span>
+    <div class="body">
+      <strong>Offer a thank-you card on their way out.</strong> Hand it to them or point to the stack.
+      <span class="say">"This is yours to take. Thank you for being here."</span>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <span>Bloom · MFA D+T · Parsons</span>
+    <span>page 01</span>
+  </div>
+</div>
+
+
+<!-- ════════════ PAGE 2 — TROUBLESHOOTING + TONE ════════════ -->
+<div class="page">
+
+  <h1>If something happens.</h1>
+  <div class="sub">Troubleshooting · tone · the work behind the work</div>
+
+
+  <h2>Things that might break</h2>
+
+  <div class="troubleshoot">
+    <h3>Quick reference</h3>
+    <table>
+      <tr><td>BrainBit won't connect</td><td>Reload the page with <em>?brain=force</em> — uses simulated signal. Visitor experience is unchanged.</td></tr>
+      <tr><td>Kinect freezes</td><td>Scenes default to ambient values. Lose lean / hand response but story arc intact. Don't restart mid-session.</td></tr>
+      <tr><td>Audio cuts out</td><td>Reload tab. Backup: <em>?noaudio=1</em> for silent run.</td></tr>
+      <tr><td>Scene won't advance</td><td>Wait 30 seconds. If still stuck, refresh — visitor will need to sit through it again. Apologize. It happens.</td></tr>
+      <tr><td>Visitor wants to leave mid-piece</td><td>Don't stop them. Help remove the BrainBit, thank them, point to the cork wall on the way out.</td></tr>
+      <tr><td>Visitor starts crying</td><td>Stay in the room. Don't approach. Have a tissue ready for after.</td></tr>
+      <tr><td>Cork wall fills up</td><td>Don't remove anything. Let cards overlap. The accumulation IS the piece.</td></tr>
+      <tr><td>Cards run out</td><td>200 should last the show. If not — blank 3×5 index cards from any office store.</td></tr>
+      <tr><td>Big line forms</td><td>Tell people they can come back at any time during the show window. Hand out thank-you cards while they wait.</td></tr>
+    </table>
+  </div>
+
+
+  <h2>Tone — how to be</h2>
+
+  <p style="font-size: 11pt; margin-bottom: 4mm;">
+    The piece is about <em style="color: #6a0c1a;">listening</em>. You are part of that. Don't sell it. Don't explain it. Don't apologize for it. Let it speak.
+  </p>
+
+  <p style="font-size: 11pt; margin-bottom: 4mm;">
+    Speak softly. Move slowly. Stand still. If you don't know what to say, say nothing.
+  </p>
+
+  <p style="font-size: 11pt; margin-bottom: 4mm;">
+    The visitor is not a customer. They are a guest. The room is theirs for six minutes.
+  </p>
+
+
+  <h2>If a visitor asks "what is this?"</h2>
+
+  <div class="step" style="margin-top: 2mm;">
+    <span class="num">say</span>
+    <div class="body">
+      <span class="say" style="margin-top: 0;">"It's a meditation that listens. The headband senses your stillness. The room responds. It's about what you are when no one is watching."</span>
+      <span class="note">If they want more: point to the WHY placard. Let them read.</span>
+    </div>
+  </div>
+
+
+  <h2>If a visitor asks "what's the point?"</h2>
+
+  <div class="step" style="margin-top: 2mm;">
+    <span class="num">say</span>
+    <div class="body">
+      <span class="say" style="margin-top: 0;">"There isn't one. Just sit. The point is whatever you bring."</span>
+      <span class="note">This is honest. Don't oversell.</span>
+    </div>
+  </div>
+
+
+  <h2>At the end of the night</h2>
+
+  <p style="font-size: 11pt; margin-bottom: 3mm;">
+    Don't pack up the cork wall. Photograph it first — wide shot + close-ups. The cards become the show's analog memory. Save them all.
+  </p>
+
+  <p style="font-size: 11pt; margin-bottom: 6mm;">
+    Power down the laptop. Charge the BrainBit. Eat something. <em style="color: #6a0c1a;">Be proud.</em>
+  </p>
+
+
+  <div class="footer">
+    <span>Bloom · MFA D+T · Parsons</span>
+    <span>page 02 · who are you, to you?</span>
+  </div>
+</div>
+
+</body>
+</html>
