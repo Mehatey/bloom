@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bloom — Thank-you card</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ── A small card to give the visitor when they LEAVE. ──────
+     They've sat in the chair. They've pinned a card to the wall.
+     This is the artifact they take home — pocketable, beautiful,
+     low-key reminder of what just happened.
+
+     Card size: 4 × 2.75 inches (101.6 × 69.85 mm)
+     Print 4-up per A4 sheet, double-sided. Cut to size by hand or
+     with the print shop's blade. */
+
+  @page { size: A4 portrait; margin: 10mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: "Instrument Serif", "EB Garamond", Georgia, serif;
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .sheet {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 6mm; width: 190mm; padding: 4mm 0;
+  }
+
+  .card {
+    width: 101.6mm; height: 69.85mm;
+    border-radius: 2.5mm;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 0 0.2mm #ddd;
+  }
+
+  /* ─── FRONT ─── soft cream paper with the closing line ─── */
+  .card.front {
+    background: #f1ecde;
+    color: #1a1814;
+    padding: 9mm;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+  }
+  .card.front .quote {
+    font-style: italic;
+    font-size: 9.5mm;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 4mm;
+  }
+  .card.front .quote .warm { color: #d97961; }
+  .card.front .underline {
+    width: 18mm; height: 0.3mm;
+    background: #1a1814; opacity: 0.4;
+    margin-bottom: 3mm;
+  }
+  .card.front .micro {
+    font-family: "Inter", sans-serif;
+    font-size: 2.4mm;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #8a7e6e;
+  }
+
+  /* ─── BACK ─── black with mark + URL ─── */
+  .card.back {
+    background: #0a0a0a;
+    color: #f1ecde;
+    padding: 8mm;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+  }
+  .card.back .top {
+    display: flex; align-items: flex-start; gap: 4mm;
+  }
+  .card.back .mark { width: 12mm; height: 12mm; flex-shrink: 0; }
+  .card.back .ty {
+    font-style: italic;
+    font-size: 6mm;
+    line-height: 1.1;
+  }
+  .card.back .body {
+    font-family: "Instrument Serif", serif;
+    font-size: 3.2mm;
+    line-height: 1.4;
+    color: rgba(241,236,222,0.75);
+    margin-top: 2mm;
+  }
+  .card.back .body em { color: #d97961; font-style: italic; }
+  .card.back .footer {
+    font-family: "Inter", sans-serif;
+    font-size: 2.2mm;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(241,236,222,0.4);
+  }
+
+  .note {
+    grid-column: 1 / -1;
+    font-family: "Inter", sans-serif;
+    font-size: 9pt; color: #888;
+    margin-top: 6mm;
+    page-break-after: always;
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── FRONT SHEET ─── -->
+<div class="sheet">
+
+  <div class="card front">
+    <div class="quote">you have<br>always been<br><span class="warm">bloom.</span></div>
+    <div class="underline"></div>
+    <div class="micro">for the breath you just took</div>
+  </div>
+
+  <div class="card front">
+    <div class="quote">you have<br>always been<br><span class="warm">bloom.</span></div>
+    <div class="underline"></div>
+    <div class="micro">for the breath you just took</div>
+  </div>
+
+  <div class="card front">
+    <div class="quote">you have<br>always been<br><span class="warm">bloom.</span></div>
+    <div class="underline"></div>
+    <div class="micro">for the breath you just took</div>
+  </div>
+
+  <div class="card front">
+    <div class="quote">you have<br>always been<br><span class="warm">bloom.</span></div>
+    <div class="underline"></div>
+    <div class="micro">for the breath you just took</div>
+  </div>
+
+  <div class="note">
+    <strong>front side</strong> · prints 4-up on A4 · cream paper · cut to 4 × 2.75"
+  </div>
+</div>
+
+
+<!-- ─── BACK SHEET ─── -->
+<div class="sheet" style="page-break-before: always;">
+
+  <div class="card back">
+    <div class="top">
+      <svg class="mark" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(315)"/>
+      </g></svg>
+      <div>
+        <div class="ty">thank you<br>for sitting.</div>
+        <div class="body">most of the things sold to us as presence <em>are not present</em> and are not for us. <em>be better everyday.</em></div>
+      </div>
+    </div>
+    <div class="footer">siddharthmehta.design/mandalas</div>
+  </div>
+
+  <div class="card back">
+    <div class="top">
+      <svg class="mark" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(315)"/>
+      </g></svg>
+      <div>
+        <div class="ty">thank you<br>for sitting.</div>
+        <div class="body">most of the things sold to us as presence <em>are not present</em> and are not for us. <em>be better everyday.</em></div>
+      </div>
+    </div>
+    <div class="footer">siddharthmehta.design/mandalas</div>
+  </div>
+
+  <div class="card back">
+    <div class="top">
+      <svg class="mark" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(315)"/>
+      </g></svg>
+      <div>
+        <div class="ty">thank you<br>for sitting.</div>
+        <div class="body">most of the things sold to us as presence <em>are not present</em> and are not for us. <em>be better everyday.</em></div>
+      </div>
+    </div>
+    <div class="footer">siddharthmehta.design/mandalas</div>
+  </div>
+
+  <div class="card back">
+    <div class="top">
+      <svg class="mark" viewBox="-100 -100 200 200"><g>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(45)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(90)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(135)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(180)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(225)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(270)"/>
+        <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#f1ecde" transform="rotate(315)"/>
+      </g></svg>
+      <div>
+        <div class="ty">thank you<br>for sitting.</div>
+        <div class="body">most of the things sold to us as presence <em>are not present</em> and are not for us. <em>be better everyday.</em></div>
+      </div>
+    </div>
+    <div class="footer">siddharthmehta.design/mandalas</div>
+  </div>
+
+  <div class="note"><strong>back side</strong> · prints 4-up on A4 · double-side with the cream front</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WALL VINYL CUT — closing quote.
+  ─────────────────────────────────
+  For vinyl cutter (Cricut / Silhouette / commercial plotter)
+  OR large-format laser cut on thin black acrylic/plexi.
+
+  Mount on the wall above the EXIT side, or above the cork wall, so it's
+  the LAST thing a visitor reads on the way out.
+
+  Suggested physical size: 36" wide × 9" tall.
+  Material: matte black vinyl OR 1/16" black acrylic letters mounted on
+  standoffs ~1/2" off the wall (casts a subtle shadow).
+
+  NOTE: Open in Illustrator → Type → Create Outlines on the <text>
+  before sending to a vinyl cutter or laser.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 300"
+     width="1200" height="300">
+
+  <text x="600" y="170"
+        font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic"
+        font-weight="400"
+        font-size="120"
+        text-anchor="middle"
+        letter-spacing="-2"
+        fill="#000000">you have always been bloom.</text>
+
+  <!-- Optional: tiny mark to the right of the quote -->
+  <g transform="translate(1140 165) scale(0.18)">
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(45)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(90)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(135)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(180)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(225)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(270)"/>
+    <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" transform="rotate(315)"/>
+  </g>
+
+</svg>
