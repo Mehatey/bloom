@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BLOOM — 3-STATION INSTRUCTIONS BOARD
+  ─────────────────────────────────────────────────────
+  Physical: 12" × 12" rounded square wooden board (305 × 305 mm)
+  Material: birch plywood OR walnut · laser raster engrave
+  Power:    ~70-80% on 60W CO2
+  Mount:    entry wall, eye level · the visitor reads before sitting
+
+  3 stations · 3 simple steps each:
+    01 · WATCH     — the chair + screen meditation
+    02 · STAY      — the vision pro coda
+    03 · EXPRESS   — the cork wall
+
+  BEFORE LASER: Type → Create Outlines on all text
+  ─────────────────────────────────────────────────── -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 305 305"
+     preserveAspectRatio="xMidYMid meet"
+     style="background: #f5f1e8;">
+
+  <rect width="305" height="305" fill="#f5f1e8"/>
+
+  <!-- Optional rounded square cut line (red) — REMOVE if your board is already cut -->
+  <rect x="3" y="3" width="299" height="299" rx="10" fill="none" stroke="#ff0000" stroke-width="0.4"/>
+
+
+  <!-- ═══════ STATION 01 · WATCH ═══════ -->
+
+  <text x="35" y="50" font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-weight="400" font-size="22" fill="#000">01</text>
+
+  <text x="65" y="50" font-family="Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="500" letter-spacing="5" fill="#000">WATCH</text>
+
+  <g font-family="EB Garamond, Garamond, Georgia, serif"
+     font-weight="400" font-size="11" fill="#000">
+    <text x="65" y="71">sit in the chair.</text>
+    <text x="65" y="88">a sensor reads your stillness.</text>
+    <text x="65" y="105" font-style="italic">watch the room respond.</text>
+  </g>
+
+  <!-- Decorative divider -->
+  <line x1="80" y1="125" x2="225" y2="125" stroke="#000" stroke-width="0.4"/>
+  <text x="152.5" y="129" text-anchor="middle"
+        font-family="EB Garamond, serif" font-size="9" fill="#000"
+        style="background:#f5f1e8;">✻</text>
+  <rect x="148" y="121" width="9" height="11" fill="#f5f1e8"/>
+  <text x="152.5" y="129" text-anchor="middle"
+        font-family="EB Garamond, serif" font-size="9" fill="#000">✻</text>
+
+
+  <!-- ═══════ STATION 02 · STAY (Vision Pro) ═══════ -->
+
+  <text x="35" y="158" font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-weight="400" font-size="22" fill="#000">02</text>
+
+  <text x="65" y="158" font-family="Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="500" letter-spacing="5" fill="#000">STAY</text>
+
+  <g font-family="EB Garamond, Garamond, Georgia, serif"
+     font-weight="400" font-size="11" fill="#000">
+    <text x="65" y="179">pick up the headset.</text>
+    <text x="65" y="196">look at the marker.</text>
+    <text x="65" y="213" font-style="italic">stay ninety seconds.</text>
+  </g>
+
+  <!-- Decorative divider -->
+  <line x1="80" y1="233" x2="225" y2="233" stroke="#000" stroke-width="0.4"/>
+  <rect x="148" y="229" width="9" height="11" fill="#f5f1e8"/>
+  <text x="152.5" y="237" text-anchor="middle"
+        font-family="EB Garamond, serif" font-size="9" fill="#000">✻</text>
+
+
+  <!-- ═══════ STATION 03 · EXPRESS ═══════ -->
+
+  <text x="35" y="265" font-family="EB Garamond, Garamond, Georgia, serif"
+        font-style="italic" font-weight="400" font-size="22" fill="#000">03</text>
+
+  <text x="65" y="265" font-family="Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="500" letter-spacing="5" fill="#000">EXPRESS</text>
+
+  <g font-family="EB Garamond, Garamond, Georgia, serif"
+     font-weight="400" font-size="11" fill="#000">
+    <text x="65" y="286">take a card.</text>
+    <text x="65" y="303" font-style="italic">draw, write, leave.</text>
+  </g>
+
+</svg>
