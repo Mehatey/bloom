@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MIRROR ENGRAVE · breath rings · same file on BOTH two-way mirrors.
+     Laser at low power. Engraved areas REMOVE the reflective coating,
+     becoming transparent windows. Combined with the cube + facing mirror,
+     this creates an infinity tunnel of glowing mandala portals. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -80 160 160" width="640" height="640">
+  <g fill="none" stroke="#000" stroke-width="0.8">
+    <circle r="18"/>
+    <circle r="28"/>
+    <circle r="38"/>
+    <circle r="48"/>
+    <circle r="58"/>
+    <circle r="68"/>
+    <g transform="scale(0.07)">
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(0)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(45)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(90)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(135)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(180)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(225)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(270)"/>
+      <path d="M 0,0 C 6,-22 16,-44 6,-78 C -8,-72 -22,-58 -18,-38 C -14,-22 -4,-10 0,0 Z" fill="#000" stroke="none" transform="rotate(315)"/>
+    </g>
+  </g>
+</svg>
