@@ -2,59 +2,47 @@
 <!--
   CORK WALL PLAQUE — laser engrave
   ─────────────────────────────────────────────────────
-  Physical size: 457mm × 203mm  (≈ 18" × 8")
+  Physical size: 500mm × 280mm  (≈ 19.7" × 11")
   Material:      1/8" birch plywood OR cream acrylic
   Power:         ~70% on a 60W CO2 laser · raster engrave
-  Mount:         top center of cork wall, screwed or strong-stuck
-                 to wall ABOVE the 200 blank cards
+  Mount:         top center of cork wall, ABOVE the cards
 
   BEFORE LASER:
     1. Open in Illustrator
     2. Select all <text> → Type → Create Outlines
-    3. All paths should be ENGRAVE (fill black, no cut lines)
+    3. Engrave (no cut lines)
+
+  PREVIEW: scales to fit browser. Real-world size is 500×280mm.
   ───────────────────────────────────────────────────── -->
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 457 203"
-     width="914" height="406">
+     viewBox="0 0 500 280"
+     preserveAspectRatio="xMidYMid meet"
+     style="background: #f5f1e8;">
 
-  <!-- ── HEADER · 'draw or write' — italic serif, centered, smaller -->
-  <text x="228.5" y="48"
+  <!-- ── HEADER · 'draw or write' — italic, centered, top -->
+  <text x="250" y="60"
         text-anchor="middle"
         font-family="EB Garamond, Garamond, Georgia, serif"
         font-style="italic"
         font-weight="400"
-        font-size="14"
-        letter-spacing="0.02em"
+        font-size="18"
+        letter-spacing="0.04em"
         fill="#000000">draw or write</text>
 
-  <!-- ── PROMPT 01 -->
-  <text x="80" y="100"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-weight="400"
-        font-size="20"
-        fill="#000000">1 · something beautiful</text>
+  <!-- ── 3 PROMPTS · centered block, left-aligned within -->
+  <g font-family="EB Garamond, Garamond, Georgia, serif" font-weight="400" font-size="22" fill="#000000">
+    <text x="120" y="125">1 · something beautiful</text>
+    <text x="120" y="165">2 · your happy place or person</text>
+    <text x="120" y="205">3 · something you fear</text>
+  </g>
 
-  <!-- ── PROMPT 02 -->
-  <text x="80" y="135"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-weight="400"
-        font-size="20"
-        fill="#000000">2 · your happy place or person</text>
-
-  <!-- ── PROMPT 03 -->
-  <text x="80" y="170"
-        font-family="EB Garamond, Garamond, Georgia, serif"
-        font-weight="400"
-        font-size="20"
-        fill="#000000">3 · something you fear</text>
-
-  <!-- ── 'bloom' attribution · bottom-right small -->
-  <text x="430" y="192"
+  <!-- ── 'bloom · 2026' bottom right small -->
+  <text x="475" y="262"
         text-anchor="end"
         font-family="EB Garamond, Garamond, Georgia, serif"
         font-weight="400"
-        font-size="7"
-        letter-spacing="0.1em"
+        font-size="9"
+        letter-spacing="0.15em"
         fill="#000000">bloom · 2026</text>
 
 </svg>
